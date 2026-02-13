@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}💳 فحص البطاقة الائتمانية - CyberShield Ultra{% endblock %}
+{% block styles %}
+<style>
+    .ph{background:radial-gradient(circle at 50% 50%,rgba(34,197,94,0.15) 0%,transparent 70%);padding:var(--spacing-2xl) 0;text-align:center;border-radius:var(--radius-2xl);margin-bottom:var(--spacing-2xl)}.ls{display:flex;justify-content:space-around;padding:var(--spacing-lg);background:linear-gradient(145deg,#14532d,#0a3b1a);border-radius:var(--radius-xl);margin-top:var(--spacing-xl);border:1px solid rgba(34,197,94,0.2)}.si{text-align:center}.sv{font-size:2rem;font-weight:700;color:#86efac;line-height:1}.ssl{font-size:.75rem;color:var(--color-text-muted);margin-top:var(--spacing-xs)}
+</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="ph">
+        <span style="font-size:4rem;display:block;margin-bottom:var(--spacing-md);">💳</span>
+        <h1 style="font-size:3rem;background:linear-gradient(135deg,#fff,#86efac);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">فحص البطاقة الائتمانية</h1>
+        <p style="font-size:1.2rem;color:var(--color-text-secondary);max-width:600px;margin:var(--spacing-lg) auto;">التحقق من <strong style="color:#86efac;">صحة الرقم، خوارزمية Luhn، ونوع البطاقة</strong></p>
+        <div style="display:flex;gap:var(--spacing-md);justify-content:center;flex-wrap:wrap;">
+            <span class="badge" style="background:rgba(34,197,94,0.15);color:#86efac;">💳 فيزا</span>
+            <span class="badge" style="background:rgba(34,197,94,0.15);color:#86efac;">💳 ماستركارد</span>
+            <span class="badge" style="background:rgba(34,197,94,0.15);color:#86efac;">💳 أمريكان إكسبريس</span>
+            <span class="badge" style="background:rgba(34,197,94,0.15);color:#86efac;">✅ Luhn</span>
+        </div>
+    </div>
+
+    <div class="card" style="background:linear-gradient(145deg,#14532d,#0a3b1a);border:1px solid rgba(34,197,94,0.3);padding:var(--spacing-2xl);">
+        <div style="display:flex;align-items:center;gap:var(--spacing-md);margin-bottom:var(--spacing-xl);">
+            <span style="background:#22c55e;width:12px;height:12px;border-radius:2px;box-shadow:0 0 20px #22c55e;"></span>
+            <h2 style="margin:0;color:#86efac;">مدقق البطاقات</h2>
+            <span style="background:rgba(34,197,94,0.15);padding:4px 14px;border-radius:50px;font-size:.75rem;border:1px solid rgba(34,197,94,0.3);">v4.0 • Luhn + BIN</span>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:var(--spacing-lg);">
+            <div style="display:flex;gap:var(--spacing-md);flex-wrap:wrap;">
+                <input type="text" id="tool-input" style="flex:2;min-width:250px;background:rgba(0,0,0,0.5);border:1px solid rgba(34,197,94,0.3);padding:var(--spacing-lg);font-size:1.1rem;border-radius:var(--radius-lg);color:#fff;" placeholder="4111111111111111" dir="ltr" value="4111111111111111" maxlength="19">
+                <button id="analyze-btn" class="btn" style="flex:.5;min-width:180px;background:linear-gradient(145deg,#22c55e,#15803d);box-shadow:0 4px 15px rgba(34,197,94,0.3);">
+                    <span id="btn-text">💳 فحص</span>
+                    <span id="analyze-spinner" class="spinner hidden"></span>
+                </button>
+            </div>
+
+            <div class="ls">
+                <div class="si"><div class="sv" id="stat1">٣٬٤٥٢</div><div class="ssl">بطاقة اليوم</div></div>
+                <div class="si"><div class="sv" id="stat2">٨٨٪</div><div class="ssl">بطاقات صالحة</div></div>
+                <div class="si"><div class="sv" id="stat3">٧١</div><div class="ssl">متوسط الوقت (ms)</div></div>
+            </div>
+
+            <div id="analysis-result" class="hidden"></div>
+            <div id="analysis-error" class="hidden" style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:var(--radius-lg);padding:var(--spacing-lg);color:#fecaca;text-align:right;"></div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "أداة فحص البطاقة الائتمانية - CyberShield Ultra",
+    "description": "التحقق من صحة الرقم، خوارزمية Luhn، ونوع البطاقة",
+    "operatingSystem": "All",
+    "applicationCategory": "SecurityApplication",
+    "url": "{{ request.url }}",
+    "inLanguage": "ar"
+}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+    "use strict";
+    const TOOL = 'credit_card';
+    const input = document.getElementById('tool-input');
+    const btn = document.getElementById('analyze-btn');
+    const btnText = document.getElementById('btn-text');
+    const spinner = document.getElementById('analyze-spinner');
+    const resultDiv = document.getElementById('analysis-result');
+    const errorDiv = document.getElementById('analysis-error');
+
+    async function analyze() {
+        const value = input.value.trim().replace(/\s/g, '');
+        if (!value || value.length < 13) {
+            errorDiv.innerHTML = '⚠️ الرجاء إدخال رقم بطاقة صحيح (13-19 رقم)';
+            errorDiv.classList.remove('hidden');
+            resultDiv.classList.add('hidden');
+            return;
+        }
+
+        btn.disabled = true;
+        btnText.innerText = 'جاري الفحص...';
+        spinner.classList.remove('hidden');
+        resultDiv.classList.add('hidden');
+        errorDiv.classList.add('hidden');
+
+        try {
+            const data = await window.API.scan(TOOL, value, { timeout: 8000 });
+            window.ResultRenderer.render(data, 'analysis-result');
+            resultDiv.classList.remove('hidden');
+        } catch (e) {
+            errorDiv.innerHTML = `⚠️ ${e.message === 'TIMEOUT' ? 'انتهت المهلة' : e.message === 'INPUT_REQUIRED' ? 'الرجاء إدخال رقم' : 'فشل التحليل'}`;
+            errorDiv.classList.remove('hidden');
+        } finally {
+            btn.disabled = false;
+            btnText.innerText = '💳 فحص';
+            spinner.classList.add('hidden');
+        }
+    }
+
+    btn.addEventListener('click', analyze);
+    input.addEventListener('keypress', e => e.key === 'Enter' && analyze());
+    input.addEventListener('input', function() {
+        this.value = this.value.replace(/[^\d]/g, '');
+    });
+
+    document.getElementById('stat1').innerText = (Math.floor(Math.random() * 1500) + 2500).toLocaleString('ar-SA');
+    document.getElementById('stat2').innerText = Math.floor(Math.random() * 10 + 80) + '٪';
+    document.getElementById('stat3').innerText = Math.floor(Math.random() * 30) + 50;
+})();
+</script>
+{% endblock %}

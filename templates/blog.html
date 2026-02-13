@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}📰 مدونة CyberShield Ultra - مقالات الأمن السيبراني{% endblock %}
+
+{% block meta_description %}مدونة متخصصة في الأمن السيبراني، حماية الخصوصية، أدوات الفحص الأمني، وأحدث التهديدات الرقمية.{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8" dir="rtl">
+    <!-- إعلان AdSense -->
+    <div class="adsense mb-8 text-center">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-xxxxxxxxxxxxxx"
+             data-ad-slot="xxxxxxxxxx"
+             data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">📰 مدونة CyberShield Ultra</h1>
+            <p class="text-xl text-gray-600">مقالات متخصصة في الأمن السيبراني وحماية الخصوصية</p>
+        </div>
+
+        <!-- المقالات المميزة -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b pb-2">✨ مقالات مميزة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-blue-600 mb-3">
+                            <span class="bg-blue-100 px-3 py-1 rounded-full">الأمن السيبراني</span>
+                            <span>📅 ١٥ يناير ٢٠٢٥</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">
+                            <a href="/blog/article/how-to-protect-email" class="hover:text-blue-600 transition">
+                                دليل شامل لحماية بريدك الإلكتروني من الاختراق
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            تعرف على أفضل الممارسات لحماية بريدك الإلكتروني، وكيفية اكتشاف محاولات التصيد، وتأمين حسابك بكلمة مرور قوية.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">⏱️ ٨ دقائق قراءة</span>
+                            <a href="/blog/article/how-to-protect-email" class="text-blue-600 font-semibold hover:underline">
+                                اقرأ المزيد ←
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-purple-600 mb-3">
+                            <span class="bg-purple-100 px-3 py-1 rounded-full">كلمات المرور</span>
+                            <span>📅 ١٠ يناير ٢٠٢٥</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">
+                            <a href="/blog/article/password-security-2025" class="hover:text-purple-600 transition">
+                                أحدث تقنيات تأمين كلمات المرور في ٢٠٢٥
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            من المصادقة متعددة العوامل إلى مفاتيح المرور: تعرف على أحدث التطورات في مجال حماية كلمات المرور.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">⏱️ ١٠ دقائق قراءة</span>
+                            <a href="/blog/article/password-security-2025" class="text-purple-600 font-semibold hover:underline">
+                                اقرأ المزيد ←
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- جميع المقالات -->
+        <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 border-b pb-2">📚 جميع المقالات</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {% for article in articles %}
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                            <span class="bg-gray-100 px-2 py-1 rounded-full">{{ article.category }}</span>
+                            <span>📅 {{ article.date }}</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">
+                            <a href="/blog/article/{{ article.slug }}" class="hover:text-blue-600 transition">
+                                {{ article.title }}
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-3">{{ article.excerpt }}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">⏱️ {{ article.read_time }}</span>
+                            <a href="/blog/article/{{ article.slug }}" class="text-blue-600 text-sm font-semibold hover:underline">
+                                اقرأ المزيد
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- ترقيم الصفحات -->
+        {% if pagination %}
+        <div class="flex justify-center mt-12">
+            <nav class="flex items-center gap-2">
+                {% if pagination.has_prev %}
+                <a href="{{ url_for('blog.page', page=pagination.prev_num) }}" class="px-4 py-2 border rounded-lg hover:bg-gray-50">&larr; السابق</a>
+                {% endif %}
+
+                {% for page_num in pagination.iter_pages() %}
+                    {% if page_num %}
+                        <a href="{{ url_for('blog.page', page=page_num) }}" class="px-4 py-2 border rounded-lg {% if page_num == pagination.page %}bg-blue-600 text-white{% else %}hover:bg-gray-50{% endif %}">
+                            {{ page_num }}
+                        </a>
+                    {% else %}
+                        <span class="px-4 py-2">...</span>
+                    {% endif %}
+                {% endfor %}
+
+                {% if pagination.has_next %}
+                <a href="{{ url_for('blog.page', page=pagination.next_num) }}" class="px-4 py-2 border rounded-lg hover:bg-gray-50">التالي &rarr;</a>
+                {% endif %}
+            </nav>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- بيانات JSON-LD للذكاء الاصطناعي -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "مدونة CyberShield Ultra",
+        "description": "مقالات متخصصة في الأمن السيبراني وحماية الخصوصية",
+        "url": "{{ request.url }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "CyberShield Ultra"
+        }
+    }
+    </script>
+</div>
+{% endblock %}

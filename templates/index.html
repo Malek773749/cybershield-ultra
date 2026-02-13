@@ -1,0 +1,1176 @@
+{% extends "base.html" %}
+
+{% block title %}CyberShield Ultra — منصة الأمن السيبراني العربية الأولى{% endblock %}
+
+{% block styles %}
+<style>
+    /* ============================================================
+       HERO SECTION - Aurora Glow
+       ============================================================ */
+    .hero {
+        position: relative;
+        padding: var(--space-16) 0 var(--space-12);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+            radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 40%),
+            radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+            radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+        animation: aurora-rotate 20s linear infinite;
+    }
+
+    @keyframes aurora-rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .hero-badge {
+        display: inline-block;
+        padding: var(--space-2) var(--space-5);
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+        border: 1px solid var(--border-glow-purple);
+        border-radius: var(--radius-2xl);
+        color: #e9d5ff;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: var(--space-4);
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    }
+
+    .hero h1 {
+        position: relative;
+        z-index: 1;
+        margin-bottom: var(--space-4);
+    }
+
+    .hero-subtitle {
+        color: var(--text-tertiary);
+        font-size: 1.15rem;
+        max-width: 700px;
+        margin: 0 auto var(--space-6);
+        line-height: 1.8;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-6);
+        margin-top: var(--space-8);
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: var(--space-5);
+        background: var(--bg-glass);
+        backdrop-filter: blur(10px);
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--border-1);
+        min-width: 140px;
+        transition: all var(--transition-base);
+    }
+
+    .stat-item:hover {
+        transform: translateY(-5px);
+        border-color: var(--border-glow-purple);
+        box-shadow: var(--shadow-aurora);
+    }
+
+    .stat-value {
+        font-size: 2.5rem;
+        font-weight: 900;
+        background: var(--gradient-gold);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        margin-bottom: var(--space-1);
+    }
+
+    .stat-label {
+        color: var(--text-tertiary);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    /* ============================================================
+       TOOLS SHOWCASE - Aurora Cards
+       ============================================================ */
+    .tools-showcase {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: var(--space-4);
+        margin: var(--space-6) 0;
+    }
+
+    .tool-mini-card {
+        background: var(--bg-glass);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-xl);
+        padding: var(--space-5) var(--space-3);
+        text-align: center;
+        transition: all var(--transition-base);
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .tool-mini-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--gradient-hero);
+        transform: scaleX(0);
+        transition: transform var(--transition-base);
+    }
+
+    .tool-mini-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .tool-mini-card:hover {
+        background: rgba(168, 85, 247, 0.08);
+        border-color: var(--border-glow-purple);
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: var(--shadow-aurora);
+    }
+
+    .tool-mini-icon {
+        font-size: 2.2rem;
+        margin-bottom: var(--space-3);
+        display: block;
+        transition: transform var(--transition-base);
+    }
+
+    .tool-mini-card:hover .tool-mini-icon {
+        transform: scale(1.2) rotate(5deg);
+    }
+
+    .tool-mini-name {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    /* ============================================================
+       ARTICLES SECTION - Aurora Cards
+       ============================================================ */
+    .articles-section {
+        margin: var(--space-12) 0;
+        padding: var(--space-8) 0;
+        position: relative;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: var(--space-8);
+    }
+
+    .section-header h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-3);
+        font-size: 2rem;
+        margin-bottom: var(--space-2);
+    }
+
+    .section-header p {
+        color: var(--text-tertiary);
+        font-size: 1.1rem;
+    }
+
+    .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-6);
+        margin-top: var(--space-6);
+    }
+
+    .article-card {
+        position: relative;
+        background: linear-gradient(145deg, rgba(22, 33, 62, 0.8), rgba(10, 14, 39, 0.9));
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        transition: all var(--transition-base);
+        border: 1px solid var(--border-1);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .article-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-hero);
+        opacity: 0.8;
+    }
+
+    .article-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+        transition: left 0.8s;
+    }
+
+    .article-card:hover::after {
+        left: 100%;
+    }
+
+    .article-card:hover {
+        transform: translateY(-8px);
+        border-color: var(--border-glow-purple);
+        box-shadow: 0 20px 60px rgba(168, 85, 247, 0.2);
+    }
+
+    .article-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid transparent;
+        border-image: var(--gradient-hero) 1;
+    }
+
+    .article-content {
+        padding: var(--space-5);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-category {
+        display: inline-block;
+        padding: var(--space-1) var(--space-3);
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+        color: #e9d5ff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border-radius: var(--radius-md);
+        margin-bottom: var(--space-3);
+        width: fit-content;
+        border: 1px solid var(--border-glow-purple);
+    }
+
+    .article-title {
+        color: var(--text-primary);
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: var(--space-3);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .article-title a {
+        color: inherit;
+        text-decoration: none;
+        transition: color var(--transition-fast);
+    }
+
+    .article-title a:hover {
+        color: var(--aurora-pink);
+    }
+
+    .article-excerpt {
+        color: var(--text-tertiary);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: var(--space-4);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    .article-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: var(--space-4);
+        border-top: 1px solid var(--border-1);
+    }
+
+    .article-meta {
+        display: flex;
+        gap: var(--space-4);
+        font-size: 0.85rem;
+        color: var(--text-quaternary);
+    }
+
+    .article-meta span {
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+    }
+
+    .article-read-more {
+        color: var(--aurora-pink);
+        font-size: 0.9rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+        transition: all var(--transition-fast);
+    }
+
+    .article-card:hover .article-read-more {
+        gap: var(--space-2);
+        text-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+    }
+
+    .article-card:nth-child(3n+2)::before {
+        background: var(--gradient-cyan);
+    }
+
+    .article-card:nth-child(3n+3)::before {
+        background: var(--gradient-gold);
+    }
+
+    .article-card:nth-child(3n+2) .article-category {
+        background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(34, 211, 238, 0.15));
+        border-color: var(--border-glow-cyan);
+        color: #cffafe;
+    }
+
+    .article-card:nth-child(3n+3) .article-category {
+        background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.15));
+        border-color: var(--border-glow-gold);
+        color: #fef3c7;
+    }
+
+    /* ============================================================
+       LIVE DEMO - Aurora Glow - FIXED FOR ACCURACY
+       ============================================================ */
+    .live-demo-section {
+        margin: var(--space-12) 0;
+        padding: var(--space-8);
+        background: linear-gradient(145deg, rgba(22, 33, 62, 0.6), rgba(10, 14, 39, 0.8));
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-xl);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .live-demo-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--gradient-hero);
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+    }
+
+    .demo-header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        margin-bottom: var(--space-6);
+        flex-wrap: wrap;
+    }
+
+    .demo-pulse {
+        width: 12px;
+        height: 12px;
+        background: var(--aurora-pink);
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7);
+        animation: pulse-glow 2s infinite;
+    }
+
+    @keyframes pulse-glow {
+        0% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(236, 72, 153, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0); }
+    }
+
+    .demo-form {
+        display: flex;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .demo-form > * {
+        margin-bottom: var(--space-2);
+    }
+
+    /* ============================================================
+       FEATURES GRID - Aurora Style
+       ============================================================ */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-6);
+        margin: var(--space-12) 0;
+    }
+
+    .feature-card {
+        background: var(--bg-glass);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-xl);
+        padding: var(--space-6);
+        transition: all var(--transition-base);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--gradient-hero);
+        transform: scaleX(0);
+        transition: transform var(--transition-base);
+    }
+
+    .feature-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .feature-card:hover {
+        border-color: var(--border-glow-purple);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-aurora);
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: var(--space-4);
+        display: block;
+        transition: transform var(--transition-base);
+    }
+
+    .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+    }
+
+    .feature-title {
+        color: var(--text-primary);
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin-bottom: var(--space-2);
+    }
+
+    .feature-desc {
+        color: var(--text-tertiary);
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* ============================================================
+       COUNTRIES SECTION - Aurora Style
+       ============================================================ */
+    .countries-section {
+        margin: var(--space-12) 0;
+        padding: var(--space-8);
+        background: linear-gradient(145deg, rgba(22, 33, 62, 0.5), rgba(10, 14, 39, 0.7));
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-xl);
+        position: relative;
+    }
+
+    .countries-section::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 20%;
+        right: 20%;
+        height: 2px;
+        background: var(--gradient-hero);
+    }
+
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+    }
+
+    .country-item {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-3);
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-md);
+        color: var(--text-tertiary);
+        font-size: 0.9rem;
+        transition: all var(--transition-fast);
+        cursor: default;
+    }
+
+    .country-item:hover {
+        background: rgba(168, 85, 247, 0.1);
+        border-color: var(--border-glow-purple);
+        color: var(--text-primary);
+        transform: translateX(5px);
+    }
+
+    /* ============================================================
+       CTA SECTION - Aurora Premium
+       ============================================================ */
+    .cta-section {
+        margin: var(--space-12) 0;
+        text-align: center;
+        padding: var(--space-12) var(--space-8);
+        background:
+            radial-gradient(ellipse at 30% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+            radial-gradient(ellipse at 70% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
+            linear-gradient(145deg, rgba(22, 33, 62, 0.6), rgba(10, 14, 39, 0.8));
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--border-1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: var(--radius-xl);
+        padding: 2px;
+        background: var(--gradient-hero);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0.5;
+    }
+
+    .cta-icon {
+        font-size: 4rem;
+        display: block;
+        margin-bottom: var(--space-4);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+
+    .cta-title {
+        color: var(--text-primary);
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-bottom: var(--space-3);
+        position: relative;
+        z-index: 1;
+    }
+
+    .cta-text {
+        color: var(--text-tertiary);
+        max-width: 600px;
+        margin: 0 auto var(--space-6);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        position: relative;
+        z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+        .hero { padding: var(--space-10) 0 var(--space-8); }
+        .hero-stats { gap: var(--space-3); }
+        .stat-item { min-width: 110px; padding: var(--space-4); }
+        .stat-value { font-size: 2rem; }
+
+        .articles-grid { grid-template-columns: 1fr; }
+        .article-image { height: 180px; }
+
+        .tools-showcase { grid-template-columns: repeat(3, 1fr); }
+        .countries-grid { grid-template-columns: repeat(2, 1fr); }
+
+        .cta-title { font-size: 1.6rem; }
+
+        .demo-form { flex-direction: column; }
+        .demo-form > * { width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+        .tools-showcase { grid-template-columns: repeat(2, 1fr); }
+        .hero h1 { font-size: 1.8rem; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {# HERO #}
+    <section class="hero">
+        <span class="hero-badge">✨ الإصدار ٧.٢ · ١٧ أداة احترافية</span>
+        <h1>منصة الأمن السيبراني<br>العربية الأولى</h1>
+        <p class="hero-subtitle">
+            🧠 ذكاء اصطناعي محلي · 🔒 تحليل في السيرفر · 🌐 بدون APIs خارجية<br>
+            🇸🇦 ٢٢ دولة عربية · 🚀 أداء أقل من ١٠٠ms · 🔐 خصوصية كاملة
+        </p>
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;">
+            <a href="/tools" class="btn-gold" style="padding: var(--space-3) var(--space-8); font-size: 1.1rem;">🔍 استعرض ١٧ أداة</a>
+            <a href="#live-demo" class="btn btn-outline" style="padding: var(--space-3) var(--space-8);">⚡ جرب العرض الحي</a>
+        </div>
+
+        {# STATS - سيتم تعبئتها بواسطة JavaScript #}
+        <div id="hero-stats-container" class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-value" id="stat-tools">١٧</div>
+                <div class="stat-label">أداة أمنية</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-countries">٢٢</div>
+                <div class="stat-label">دولة عربية</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-response">&lt;١٠٠ms</div>
+                <div class="stat-label">وقت الاستجابة</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-privacy">١٠٠٪</div>
+                <div class="stat-label">خصوصية</div>
+            </div>
+        </div>
+    </section>
+
+    {# 17 TOOLS #}
+    <div style="text-align: center; margin: var(--space-8) 0 var(--space-4);">
+        <h2 class="text-aurora" style="font-size: 1.8rem; margin-bottom: var(--space-2);">🛠️ ١٧ أداة أمنية احترافية</h2>
+        <p style="color: var(--text-tertiary); font-size: 1.1rem;">مجموعة متكاملة لفحص وتأمين جميع جوانب الأمن السيبراني</p>
+    </div>
+
+    <div class="tools-showcase">
+        <a href="/phone-check" class="tool-mini-card"><span class="tool-mini-icon">📱</span><span class="tool-mini-name">الهاتف</span></a>
+        <a href="/email-check" class="tool-mini-card"><span class="tool-mini-icon">📧</span><span class="tool-mini-name">البريد</span></a>
+        <a href="/password-check" class="tool-mini-card"><span class="tool-mini-icon">🔐</span><span class="tool-mini-name">كلمة المرور</span></a>
+        <a href="/url-check" class="tool-mini-card"><span class="tool-mini-icon">🌍</span><span class="tool-mini-name">الروابط</span></a>
+        <a href="/domain-check" class="tool-mini-card"><span class="tool-mini-icon">🌐</span><span class="tool-mini-name">النطاقات</span></a>
+        <a href="/ip-check" class="tool-mini-card"><span class="tool-mini-icon">🔌</span><span class="tool-mini-name">IP</span></a>
+        <a href="/username-check" class="tool-mini-card"><span class="tool-mini-icon">👤</span><span class="tool-mini-name">اسم المستخدم</span></a>
+        <a href="/hash-check" class="tool-mini-card"><span class="tool-mini-icon">🔑</span><span class="tool-mini-name">التجزئة</span></a>
+        <a href="/base64-check" class="tool-mini-card"><span class="tool-mini-icon">🔍</span><span class="tool-mini-name">Base64</span></a>
+        <a href="/credit-card-check" class="tool-mini-card"><span class="tool-mini-icon">💳</span><span class="tool-mini-name">البطاقة</span></a>
+        <a href="/port-check" class="tool-mini-card"><span class="tool-mini-icon">🚪</span><span class="tool-mini-name">المنافذ</span></a>
+        <a href="/api-key-check" class="tool-mini-card"><span class="tool-mini-icon">🔐</span><span class="tool-mini-name">API Keys</span></a>
+        <a href="/filename-check" class="tool-mini-card"><span class="tool-mini-icon">📁</span><span class="tool-mini-name">الملفات</span></a>
+        <a href="/jwt-check" class="tool-mini-card"><span class="tool-mini-icon">🔑</span><span class="tool-mini-name">JWT</span></a>
+        <a href="/useragent-check" class="tool-mini-card"><span class="tool-mini-icon">🧑</span><span class="tool-mini-name">User-Agent</span></a>
+        <a href="/file-check" class="tool-mini-card"><span class="tool-mini-icon">📄</span><span class="tool-mini-name">الملفات</span></a>
+        <a href="/dns-check" class="tool-mini-card"><span class="tool-mini-icon">🌐</span><span class="tool-mini-name">DNS</span></a>
+    </div>
+
+    {# ARTICLES #}
+    <section class="articles-section" itemscope itemtype="https://schema.org/ItemList">
+        <div class="section-header">
+            <h2>
+                <span>📰</span>
+                أحدث المقالات الأمنية
+            </h2>
+            <p>تعمق في عالم الأمن السيبراني مع مقالاتنا الاحترافية</p>
+        </div>
+
+        <div class="articles-grid">
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="1">
+                <img src="{{ url_for('static', filename='articles/email-security.jpg') }}" alt="أمان البريد" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/a855f7?text=Email+Security'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">أمان البريد</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/email-security-2024" itemprop="url">الدليل الشامل لأمان البريد الإلكتروني 2024</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        كيف تحمي بريدك من التصيد الاحتيالي والاختراقات؟ دليل عملي يغطي أفضل الممارسات وأحدث التقنيات لحماية بريدك الإلكتروني.
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-15">١٥ يناير</time></span>
+                            <span>⏱️ ٨ دقائق</span>
+                        </div>
+                        <a href="/article/email-security-2024" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="فريق CyberShield">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="2">
+                <img src="{{ url_for('static', filename='articles/password.jpg') }}" alt="كلمات المرور" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/06b6d4?text=Passwords'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">كلمات المرور</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/password-security" itemprop="url">علم كلمات المرور: من الانتروبيا إلى الهجمات الكمومية</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        فهم عميق في فلسفة أمان كلمات المرور. كيف تنشئ كلمات مرور غير قابلة للاختراق حتى مع أقوى الحواسيب؟
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-12">١٢ يناير</time></span>
+                            <span>⏱️ ١٢ دقيقة</span>
+                        </div>
+                        <a href="/article/password-security" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="د. أحمد السيبراني">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="3">
+                <img src="{{ url_for('static', filename='articles/phishing.jpg') }}" alt="التصيد الاحتيالي" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/f59e0b?text=Phishing'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">الحماية من الاحتيال</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/phishing-detection" itemprop="url">كيفية اكتشاف روابط التصيد الاحتيالي قبل الوقوع في الفخ</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        تعلم تقنيات التحقق من الروابط المشبوهة والحماية من هجمات التصيد. دليل عملي مع أمثلة حقيقية.
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-10">١٠ يناير</time></span>
+                            <span>⏱️ ٦ دقائق</span>
+                        </div>
+                        <a href="/article/phishing-detection" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="فريق CyberShield">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="4">
+                <img src="{{ url_for('static', filename='articles/ransomware.jpg') }}" alt="برمجيات الفدية" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/a855f7?text=Ransomware'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">الحماية من البرمجيات</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/ransomware-defense" itemprop="url">الحماية من برمجيات الفدية: استراتيجية الدفاع متعدد الطبقات</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        استراتيجية شاملة للدفاع ضد هجمات برمجيات الفدية. من النسخ الاحتياطي إلى التدريب والتوعية.
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-08">٨ يناير</time></span>
+                            <span>⏱️ ١٥ دقيقة</span>
+                        </div>
+                        <a href="/article/ransomware-defense" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="فريق CyberShield">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="5">
+                <img src="{{ url_for('static', filename='articles/ai-security.jpg') }}" alt="الذكاء الاصطناعي" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/06b6d4?text=AI+Security'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">الذكاء الاصطناعي</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/ai-cybersecurity" itemprop="url">الذكاء الاصطناعي في الأمن السيبراني: الفرص والتهديدات</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        كيف يغير الذكاء الاصطناعي مشهد الأمن السيبراني؟ من الهجمات الآلية إلى الدفاع الذكي.
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-05">٥ يناير</time></span>
+                            <span>⏱️ ١٠ دقائق</span>
+                        </div>
+                        <a href="/article/ai-cybersecurity" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="مهندسة سارة التقنية">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="position" content="6">
+                <img src="{{ url_for('static', filename='articles/mobile-security.jpg') }}" alt="أمان الجوال" class="article-image" itemprop="image" onerror="this.src='https://via.placeholder.com/400x200/1a1a2e/f59e0b?text=Mobile'">
+                <div class="article-content">
+                    <span class="article-category" itemprop="articleSection">أمان الجوال</span>
+                    <h3 class="article-title" itemprop="headline">
+                        <a href="/article/mobile-security" itemprop="url">دليل أمان الهواتف الذكية: ٢٠ نصيحة أساسية</a>
+                    </h3>
+                    <p class="article-excerpt" itemprop="description">
+                        حماية هاتفك من الاختراق والتجسس. نصائح عملية لأمان iOS وAndroid في عالم متصل دائماً.
+                    </p>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span>📅 <time itemprop="datePublished" datetime="2024-01-03">٣ يناير</time></span>
+                            <span>⏱️ ٧ دقائق</span>
+                        </div>
+                        <a href="/article/mobile-security" class="article-read-more" itemprop="url">اقرأ المزيد →</a>
+                    </div>
+                    <meta itemprop="author" content="فريق CyberShield">
+                    <meta itemprop="publisher" content="CyberShield Ultra">
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-8);">
+            <a href="/blog" class="btn btn-outline" style="padding: var(--space-3) var(--space-8);">📚 عرض جميع المقالات</a>
+        </div>
+    </section>
+
+    {# LIVE DEMO - FIXED FOR ACCURACY #}
+    <section id="live-demo" class="live-demo-section">
+        <div class="demo-header">
+            <span class="demo-pulse"></span>
+            <h2 style="color: var(--aurora-pink); margin: 0; font-size: 1.5rem; text-shadow: 0 0 20px rgba(236, 72, 153, 0.3);">🧠 محلل الذكاء الاصطناعي الحي</h2>
+            <span class="badge badge-aurora">متصل بـ API · &lt;١٠٠ms</span>
+        </div>
+
+        <div class="demo-form">
+            <select id="demo-tool" style="flex: 1; min-width: 200px;">
+                <option value="phone">📱 الهاتف (٢٢ دولة)</option>
+                <option value="email">📧 البريد الإلكتروني</option>
+                <option value="password">🔐 كلمة المرور</option>
+                <option value="url">🌍 فحص الروابط</option>
+                <option value="domain">🌐 تحليل النطاقات</option>
+                <option value="ip">🔌 تحليل IP</option>
+                <option value="dns">🌐 فحص DNS</option>
+            </select>
+            <input type="text" id="demo-input" style="flex: 2;" placeholder="+966501234567" dir="ltr">
+            <button id="demo-analyze-btn" class="btn-gold" style="flex: 0.5; min-width: 140px;">
+                <span id="demo-btn-text">🔍 تحليل</span>
+                <span id="demo-spinner" class="spinner hidden"></span>
+            </button>
+        </div>
+
+        <div id="demo-result" class="hidden"></div>
+        <div id="demo-error" class="hidden"></div>
+    </section>
+
+    {# 6 FEATURES #}
+    <div style="text-align: center; margin: var(--space-12) 0 var(--space-6);">
+        <h2 class="text-aurora" style="font-size: 1.8rem; margin-bottom: var(--space-2);">🧠 لماذا CyberShield Ultra؟</h2>
+        <p style="color: var(--text-tertiary); font-size: 1.1rem;">أقوى منصة أمن سيبراني عربية بتقنيات عالمية</p>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3 class="feature-title">ذكاء اصطناعي محلي</h3>
+            <p class="feature-desc">محرك مخاطر هجين يعمل بالكامل في السيرفر. بدون APIs خارجية، بدون مشاركة بيانات.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3 class="feature-title">خصوصية كاملة</h3>
+            <p class="feature-desc">لا تخزين بيانات، لا سجلات، لا تتبع. فحصك يبقى معك. ١٠٠٪ خصوصية مطلقة.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">أداء خارق</h3>
+            <p class="feature-desc">استجابة أقل من ١٠٠ms، ذاكرة تخزين مؤقت LRU، دعم آلاف الطلبات المتزامنة.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3 class="feature-title">دعم ٢٢ دولة</h3>
+            <p class="feature-desc">فحص الهواتف بدقة ١٠٠٪ لجميع الدول العربية مع كشف المشغل ونوع الخط.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title">أمان متقدم</h3>
+            <p class="feature-desc">حماية من SQLi, XSS, Path Traversal. رفض خوارزمية JWT 'none'.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3 class="feature-title">متوافق مع AI</h3>
+            <p class="feature-desc">فهرسة كاملة لـ GPTBot, DeepSeek, Claude. بيانات منظمة JSON-LD.</p>
+        </div>
+    </div>
+
+    {# 22 COUNTRIES #}
+    <div class="countries-section">
+        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6); flex-wrap: wrap;">
+            <span style="font-size: 2rem;">🌍</span>
+            <h2 style="color: var(--text-primary); margin: 0; font-size: 1.5rem;">الدول العربية المدعومة</h2>
+            <span class="badge badge-cyan">٢٢ دولة · دقة ١٠٠٪</span>
+        </div>
+
+        <div class="countries-grid">
+            <div class="country-item"><span>🇸🇦</span> السعودية</div>
+            <div class="country-item"><span>🇦🇪</span> الإمارات</div>
+            <div class="country-item"><span>🇪🇬</span> مصر</div>
+            <div class="country-item"><span>🇶🇦</span> قطر</div>
+            <div class="country-item"><span>🇰🇼</span> الكويت</div>
+            <div class="country-item"><span>🇧🇭</span> البحرين</div>
+            <div class="country-item"><span>🇴🇲</span> عمان</div>
+            <div class="country-item"><span>🇯🇴</span> الأردن</div>
+            <div class="country-item"><span>🇱🇧</span> لبنان</div>
+            <div class="country-item"><span>🇮🇶</span> العراق</div>
+            <div class="country-item"><span>🇸🇾</span> سوريا</div>
+            <div class="country-item"><span>🇵🇸</span> فلسطين</div>
+            <div class="country-item"><span>🇾🇪</span> اليمن</div>
+            <div class="country-item"><span>🇸🇩</span> السودان</div>
+            <div class="country-item"><span>🇱🇾</span> ليبيا</div>
+            <div class="country-item"><span>🇹🇳</span> تونس</div>
+            <div class="country-item"><span>🇩🇿</span> الجزائر</div>
+            <div class="country-item"><span>🇲🇦</span> المغرب</div>
+            <div class="country-item"><span>🇲🇷</span> موريتانيا</div>
+            <div class="country-item"><span>🇸🇴</span> الصومال</div>
+            <div class="country-item"><span>🇩🇯</span> جيبوتي</div>
+            <div class="country-item"><span>🇰🇲</span> جزر القمر</div>
+        </div>
+    </div>
+
+    {# CTA #}
+    <div class="cta-section">
+        <span class="cta-icon">🛡️</span>
+        <h3 class="cta-title">ابدأ الفحص الآن مجاناً</h3>
+        <p class="cta-text">
+            لا تحتاج تسجيل، لا تحتاج دفع. جرب أقوى أدوات الأمن السيبراني العربية فوراً.
+        </p>
+        <a href="/tools" class="btn-gold" style="padding: var(--space-4) var(--space-10); font-size: 1.2rem; position: relative; z-index: 1;">🚀 جرب ١٧ أداة مجاناً</a>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Article",
+                "headline": "الدليل الشامل لأمان البريد الإلكتروني 2024",
+                "description": "كيف تحمي بريدك من التصيد الاحتيالي والاختراقات",
+                "url": "{{ request.url_root }}article/email-security-2024",
+                "image": "{{ request.url_root }}{{ url_for('static', filename='articles/email-security.jpg') }}",
+                "datePublished": "2024-01-15",
+                "author": {"@type": "Organization", "name": "CyberShield Ultra"},
+                "publisher": {"@type": "Organization", "name": "CyberShield Ultra"}
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "Article",
+                "headline": "علم كلمات المرور: من الانتروبيا إلى الهجمات الكمومية",
+                "description": "فهم عميق في فلسفة أمان كلمات المرور",
+                "url": "{{ request.url_root }}article/password-security",
+                "image": "{{ request.url_root }}{{ url_for('static', filename='articles/password.jpg') }}",
+                "datePublished": "2024-01-12",
+                "author": {"@type": "Person", "name": "د. أحمد السيبراني"},
+                "publisher": {"@type": "Organization", "name": "CyberShield Ultra"}
+            }
+        }
+    ]
+}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// ============================================================
+// CYBERSHIELD ULTRA - INDEX PAGE - HYBRID ANALYZER
+// ============================================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    "use strict";
+
+    console.log('🚀 Index page loaded');
+
+    // 1. تحميل الإحصائيات
+    loadStats();
+
+    // 2. إعداد العرض الحي
+    setupLiveDemo();
+});
+
+// ==============================================================
+// تحميل الإحصائيات
+// ==============================================================
+async function loadStats() {
+    console.log('📊 Loading stats...');
+
+    try {
+        if (window.StatsLoader) {
+            await window.StatsLoader.load('hero-stats-container');
+        } else if (window.API && window.API.getStats) {
+            const stats = await window.API.getStats();
+            if (stats) {
+                updateStatsManually(stats);
+            }
+        }
+    } catch (error) {
+        console.error('❌ Stats error:', error);
+    }
+}
+
+function updateStatsManually(stats) {
+    const statTools = document.getElementById('stat-tools');
+    const statCountries = document.getElementById('stat-countries');
+    const statResponse = document.getElementById('stat-response');
+    const statPrivacy = document.getElementById('stat-privacy');
+
+    if (statTools) statTools.textContent = '١٧';
+    if (statCountries) statCountries.textContent = '٢٢';
+    if (statResponse && stats.avg_response_time_ms) {
+        statResponse.textContent = Math.round(stats.avg_response_time_ms) + 'ms';
+    } else if (statResponse) {
+        statResponse.textContent = '<١٠٠ms';
+    }
+    if (statPrivacy) statPrivacy.textContent = '١٠٠٪';
+}
+
+// ==============================================================
+// إعداد العرض الحي
+// ==============================================================
+function setupLiveDemo() {
+    console.log('🔧 Setting up live demo...');
+
+    const analyzeBtn = document.getElementById('demo-analyze-btn');
+    const btnText = document.getElementById('demo-btn-text');
+    const spinner = document.getElementById('demo-spinner');
+    const resultContainer = document.getElementById('demo-result');
+    const errorContainer = document.getElementById('demo-error');
+    const toolSelect = document.getElementById('demo-tool');
+    const inputField = document.getElementById('demo-input');
+
+    if (!analyzeBtn || !inputField || !toolSelect) {
+        console.error('❌ Demo elements not found!');
+        return;
+    }
+
+    // أمثلة للأدوات
+    const examples = {
+        phone: '+966501234567',
+        email: 'user@example.com',
+        password: 'MyP@ssw0rd123!',
+        url: 'https://example.com',
+        domain: 'example.com',
+        ip: '8.8.8.8',
+        dns: 'example.com'
+    };
+
+    toolSelect.addEventListener('change', function() {
+        const tool = this.value;
+        inputField.placeholder = examples[tool] || 'أدخل القيمة';
+        inputField.dir = ['phone', 'ip'].includes(tool) ? 'ltr' : 'rtl';
+        clearResults();
+    });
+
+    toolSelect.dispatchEvent(new Event('change'));
+
+    analyzeBtn.addEventListener('click', performAnalysis);
+
+    inputField.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            performAnalysis();
+        }
+    });
+
+    async function performAnalysis() {
+        const tool = toolSelect.value;
+        const input = inputField.value.trim();
+
+        if (!input) {
+            showError('الرجاء إدخال قيمة للتحليل');
+            return;
+        }
+
+        if (!window.API || !window.API.scan) {
+            showError('محرك التحليل غير متوفر. الرجاء تحديث الصفحة.');
+            return;
+        }
+
+        setLoading(true);
+        clearResults();
+
+        try {
+            console.log('📡 Calling API for:', tool, input);
+            const data = await window.API.scan(tool, input, {
+                timeout: 15000,
+                useCache: true
+            });
+
+            console.log('✅ API Response:', data);
+
+            if (window.ResultRenderer && window.ResultRenderer.render) {
+                window.ResultRenderer.render(data, 'demo-result');
+            } else {
+                resultContainer.innerHTML = `<pre style="color: white;">${JSON.stringify(data, null, 2)}</pre>`;
+            }
+            resultContainer.classList.remove('hidden');
+
+        } catch (error) {
+            console.error('❌ Analysis error:', error);
+            showError(error.message || 'حدث خطأ أثناء التحليل');
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    function setLoading(isLoading) {
+        analyzeBtn.disabled = isLoading;
+        if (isLoading) {
+            btnText.textContent = 'جاري التحليل...';
+            spinner.classList.remove('hidden');
+        } else {
+            btnText.textContent = '🔍 تحليل';
+            spinner.classList.add('hidden');
+        }
+    }
+
+    function clearResults() {
+        resultContainer.classList.add('hidden');
+        errorContainer.classList.add('hidden');
+        resultContainer.innerHTML = '';
+        errorContainer.innerHTML = '';
+    }
+
+    function showError(message) {
+        if (window.ResultRenderer && window.ResultRenderer.renderError) {
+            window.ResultRenderer.renderError(message, 'demo-error');
+        } else {
+            errorContainer.innerHTML = `
+                <div class="error-message">
+                    <span style="font-size: 1.2rem;">⚠️</span>
+                    <span>${window.escapeHTML ? window.escapeHTML(message) : message}</span>
+                </div>
+            `;
+        }
+        errorContainer.classList.remove('hidden');
+        resultContainer.classList.add('hidden');
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <!-- Error Icon -->
+    <div class="mb-4">
+        <i class="fas fa-server fa-7x text-danger"></i>
+    </div>
+
+    <!-- Error Message -->
+    <h1 class="display-1 fw-bold mb-3">500</h1>
+    <h2 class="display-6 mb-4">خطأ في الخادم الداخلي</h2>
+
+    <p class="lead mb-5">عذراً، حدث خطأ غير متوقع في الخادم. نحن نعمل على إصلاحه.</p>
+
+    <!-- Technical Info -->
+    <div class="card mb-5 mx-auto" style="max-width: 700px;">
+        <div class="card-header bg-light">
+            <h5 class="mb-0"><i class="fas fa-cogs"></i> ما حدث؟</h5>
+        </div>
+        <div class="card-body text-start">
+            <p>حدث خطأ تقني غير متوقع في الخادم. هذا ليس خطأً من جانبك، ولكن من جانبنا.</p>
+            <p>فريق الدعم الفني لدينا قد تم إشعاره وسيعمل على حل المشكلة في أسرع وقت ممكن.</p>
+
+            <div class="mt-4">
+                <h6><i class="fas fa-clock text-warning"></i> يمكنك المحاولة:</h6>
+                <ul>
+                    <li class="mb-2">تحديث الصفحة بعد بضع دقائق</li>
+                    <li class="mb-2">مسح ذاكرة التخزين المؤقت للمتصفح</li>
+                    <li class="mb-2">محاولة الوصول من متصفح مختلف</li>
+                    <li>الانتظار قليلاً ثم المحاولة مرة أخرى</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Immediate Actions -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6">
+            <div class="card border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="fas fa-bolt"></i> إجراءات فورية</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button onclick="location.reload()" class="btn btn-warning btn-lg">
+                            <i class="fas fa-redo"></i> تحديث الصفحة
+                        </button>
+                        <a href="/" class="btn btn-primary btn-lg">
+                            <i class="fas fa-home"></i> العودة للرئيسية
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Check -->
+    <div class="card mx-auto mb-4" style="max-width: 600px;">
+        <div class="card-header bg-info text-white">
+            <h5 class="mb-0"><i class="fas fa-heartbeat"></i> حالة النظام</h5>
+        </div>
+        <div class="card-body">
+            <div class="row text-center">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <i class="fas fa-server fa-2x text-success"></i>
+                    </div>
+                    <h6>الخوادم</h6>
+                    <div class="badge bg-success">تعمل</div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <i class="fas fa-database fa-2x text-success"></i>
+                    </div>
+                    <h6>قاعدة البيانات</h6>
+                    <div class="badge bg-success">متاحة</div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <i class="fas fa-shield-alt fa-2x text-warning"></i>
+                    </div>
+                    <h6>الماسحات</h6>
+                    <div class="badge bg-warning">تحت الصيانة</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alternative Services -->
+    <div class="card mx-auto" style="max-width: 800px;">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0"><i class="fas fa-tools"></i> أدوات بديلة أثناء الإصلاح</h5>
+        </div>
+        <div class="card-body">
+            <p class="mb-4">بينما نعمل على إصلاح المشكلة، يمكنك استخدام هذه الأدوات المجانية:</p>
+
+            <div class="row">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                            <h6>Email Checker</h6>
+                            <p class="small">فحص البريد الإلكتروني</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-link fa-2x text-success mb-2"></i>
+                            <h6>URL Scanner</h6>
+                            <p class="small">فحص الروابط</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-lock fa-2x text-warning mb-2"></i>
+                            <h6>Password Test</h6>
+                            <p class="small">فحص كلمات المرور</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-globe fa-2x text-info mb-2"></i>
+                            <h6>Domain Lookup</h6>
+                            <p class="small">فحص النطاقات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Updates -->
+    <div class="mt-5">
+        <p>للحصول على تحديثات حول حالة الإصلاح، يرجى:</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="/contact" class="btn btn-outline-primary">
+                <i class="fas fa-envelope"></i> الاتصال بالدعم
+            </a>
+            <a href="#" class="btn btn-outline-info">
+                <i class="fab fa-twitter"></i> متابعة التحديثات
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Auto-retry after 30 seconds
+    setTimeout(() => {
+        location.reload();
+    }, 30000);
+
+    // Show retry countdown
+    document.addEventListener('DOMContentLoaded', function() {
+        let seconds = 30;
+        const retryMsg = document.createElement('div');
+        retryMsg.className = 'alert alert-warning mt-4';
+        retryMsg.innerHTML = `سيتم محاولة إعادة التحميل تلقائياً خلال <span id="retryCountdown">${seconds}</span> ثانية`;
+        document.querySelector('.container').appendChild(retryMsg);
+
+        const countdownElement = document.getElementById('retryCountdown');
+        const countdownInterval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+    });
+
+    // Check if service is back online
+    function checkServiceStatus() {
+        fetch('/api/v1/system/health')
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/';
+                }
+            })
+            .catch(() => {
+                // Service still down, do nothing
+            });
+    }
+
+    // Check every 10 seconds
+    setInterval(checkServiceStatus, 10000);
+</script>
+{% endblock %}

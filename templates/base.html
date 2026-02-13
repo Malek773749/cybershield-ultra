@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ========== GOOGLE ADSENSE ========== -->
+    <meta name="google-adsense-account" content="ca-pub-6889946983937126">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6889946983937126" crossorigin="anonymous"></script>
+
+    <!-- ========== SECURITY HEADERS ========== -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+
+    <!-- ========== PRECONNECT ========== -->
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- ========== CANONICAL URL ========== -->
+    <link rel="canonical" href="{{ request.url_root.rstrip('/') }}{{ request.path }}">
+
+    <!-- ========== SEO META ========== -->
+    <title>{% block title %}CyberShield Ultra - منصة الأمن السيبراني العربية{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}أقوى منصة أمن سيبراني عربية. ١٧ أداة احترافية، ٢٢ دولة، ذكاء اصطناعي محلي، بدون APIs خارجية، خصوصية كاملة.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}الأمن السيبراني, فحص الهواتف العربية, فحص DNS, أمان JWT, كشف مفاتيح API{% endblock %}">
+    <meta name="author" content="CyberShield Ultra">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- ========== OPEN GRAPH ========== -->
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}CyberShield Ultra{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}١٧ أداة أمنية احترافية للدول العربية. فحص فوري، خصوصية كاملة، بدون APIs خارجية.{% endblock %}">
+    <meta property="og:url" content="{{ request.url_root.rstrip('/') }}{{ request.path }}">
+    <meta property="og:site_name" content="CyberShield Ultra">
+    <meta property="og:image" content="{{ request.url_root }}{{ url_for('static', filename='img/og-default.webp') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- ========== TWITTER CARDS ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CyberShieldUltra">
+    <meta name="twitter:title" content="{% block twitter_title %}CyberShield Ultra{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}منصة الأمن السيبراني العربية — ١٧ أداة احترافية{% endblock %}">
+    <meta name="twitter:image" content="{{ request.url_root }}{{ url_for('static', filename='img/twitter-default.webp') }}">
+
+    <!-- ========== THEME & PWA ========== -->
+    <meta name="theme-color" content="#0f0c29">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+
+    <!-- ========== SCHEMA.ORG ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CyberShield Ultra",
+        "url": "{{ request.url_root.rstrip('/') }}",
+        "description": "منصة الأمن السيبراني العربية الأولى",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "All",
+        "inLanguage": "ar",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <style>
+        /* ============================================================
+           AURORA LUXURY COLOR SYSTEM
+           ============================================================ */
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #16213e;
+            --bg-card: rgba(22, 33, 62, 0.6);
+            --bg-glass: rgba(255, 255, 255, 0.05);
+
+            --aurora-purple: #a855f7;
+            --aurora-pink: #ec4899;
+            --aurora-coral: #f43f5e;
+            --aurora-blue: #3b82f6;
+            --aurora-cyan: #06b6d4;
+            --aurora-teal: #14b8a6;
+            --aurora-gold: #f59e0b;
+            --aurora-rose: #fb7185;
+
+            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            --gradient-cyan: linear-gradient(135deg, #22d3ee 0%, #06b6d4 50%, #0891b2 100%);
+            --gradient-purple: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #7c3aed 100%);
+            --gradient-rose: linear-gradient(135deg, #fda4af 0%, #fb7185 50%, #e11d48 100%);
+
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0;
+            --text-tertiary: #94a3b8;
+            --text-quaternary: #64748b;
+
+            --border-1: rgba(255, 255, 255, 0.08);
+            --border-2: rgba(255, 255, 255, 0.12);
+            --border-glow-purple: rgba(168, 85, 247, 0.4);
+            --border-glow-cyan: rgba(6, 182, 212, 0.4);
+            --border-glow-gold: rgba(245, 158, 11, 0.4);
+            --shadow-aurora: 0 0 40px rgba(168, 85, 247, 0.15);
+            --shadow-gold: 0 0 40px rgba(245, 158, 11, 0.2);
+
+            --space-1: 4px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-5: 20px;
+            --space-6: 24px;
+            --space-8: 32px;
+            --space-10: 40px;
+            --space-12: 48px;
+            --space-16: 64px;
+
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --font-mono: ui-monospace, 'SF Mono', Menlo, Monaco, monospace;
+
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --radius-xl: 20px;
+            --radius-2xl: 28px;
+
+            --transition-fast: 0.15s ease;
+            --transition-base: 0.3s ease;
+            --transition-slow: 0.5s ease;
+
+            --header-height: 72px;
+            --header-height-mobile: 64px;
+            --container-max: 1280px;
+            --ads-height: 280px;
+            --ads-height-mobile: 240px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            background-image:
+                radial-gradient(ellipse at 20% 0%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 0%, rgba(240, 147, 251, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 100%, rgba(79, 172, 254, 0.1) 0%, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: var(--space-4);
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: clamp(2.4rem, 5vw, 3.2rem);
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+        h3 { font-size: clamp(1.3rem, 3vw, 1.6rem); }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-4);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--aurora-cyan);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--aurora-purple);
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--space-5);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-6);
+            font-weight: 700;
+            font-size: 0.95rem;
+            border-radius: var(--radius-lg);
+            border: none;
+            background: var(--gradient-hero);
+            color: white;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--aurora-purple);
+            color: var(--aurora-purple);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background: rgba(168, 85, 247, 0.1);
+            border-color: var(--aurora-pink);
+            color: var(--aurora-pink);
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+        }
+
+        .btn-gold {
+            background: var(--gradient-gold);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-gold:hover {
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5);
+        }
+
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-1);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-hero);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .card:hover {
+            border-color: var(--border-glow-purple);
+            box-shadow: var(--shadow-aurora);
+            transform: translateY(-5px);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: var(--space-3) var(--space-4);
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--border-1);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--aurora-purple);
+            box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+        }
+
+        .adsense-container {
+            width: 100%;
+            min-height: var(--ads-height);
+            aspect-ratio: 4 / 3;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-quaternary);
+            font-size: 0.8rem;
+            margin: var(--space-6) 0;
+            border: 1px solid var(--border-1);
+            content-visibility: auto;
+            contain-intrinsic-size: 300px 225px;
+            overflow: hidden;
+        }
+
+        .adsense-hidden { display: none !important; }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: var(--radius-2xl);
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--gradient-hero);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+        }
+
+        .progress-low { background: var(--gradient-cyan); }
+        .progress-medium { background: var(--gradient-gold); }
+        .progress-high { background: var(--gradient-rose); }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top-color: var(--aurora-purple);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .badge {
+            display: inline-block;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-2xl);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid transparent;
+        }
+
+        .badge-aurora {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+            color: #e9d5ff;
+            border-color: rgba(168, 85, 247, 0.3);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+        }
+
+        .badge-gold {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.2));
+            color: #fef3c7;
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+        }
+
+        .badge-cyan {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(34, 211, 238, 0.2));
+            color: #cffafe;
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .header {
+            height: var(--header-height);
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: 1.5rem;
+            font-weight: 900;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: var(--space-6);
+        }
+
+        .nav a {
+            color: var(--text-tertiary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            padding: var(--space-2) 0;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-hero);
+            transform: scaleX(0);
+            transition: transform var(--transition-fast);
+        }
+
+        .nav a:hover::after,
+        .nav a.active::after {
+            transform: scaleX(1);
+        }
+
+        .nav a.active {
+            color: var(--aurora-pink);
+            text-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: var(--space-12) 0 var(--space-8);
+            background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.8) 100%);
+            border-top: 1px solid var(--border-1);
+            color: var(--text-quaternary);
+            font-size: 0.85rem;
+        }
+
+        /* ============================================================
+           RESULT CARDS - Aurora Analysis
+           ============================================================ */
+        .result-card {
+            background: rgba(22, 33, 62, 0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-1);
+            border-right: 4px solid var(--aurora-purple);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            margin-top: var(--space-6);
+            animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-aurora);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: var(--space-4);
+            gap: var(--space-4);
+        }
+
+        .result-badge {
+            color: var(--aurora-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            font-weight: 800;
+        }
+
+        .result-title {
+            margin: var(--space-2) 0 var(--space-1);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            flex-wrap: wrap;
+        }
+
+        .result-icon {
+            font-size: 2rem;
+        }
+
+        .ai-insight {
+            margin-top: var(--space-5);
+            padding: var(--space-5);
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.05));
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-glow-purple);
+        }
+
+        .ai-label {
+            background: var(--gradient-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: var(--space-3);
+            margin-top: var(--space-5);
+        }
+
+        .analysis-item {
+            background: rgba(168, 85, 247, 0.05);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            border: 1px solid var(--border-1);
+            transition: all var(--transition-fast);
+        }
+
+        .analysis-item:hover {
+            background: rgba(168, 85, 247, 0.1);
+            border-color: var(--border-glow-purple);
+            transform: translateX(-3px);
+        }
+
+        .analysis-key {
+            color: var(--aurora-purple);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: var(--space-1);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .analysis-value {
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .analysis-value.success { color: #34d399; }
+        .analysis-value.danger { color: #fb7185; }
+        .analysis-value.warning { color: #fbbf24; }
+
+        .signals-section {
+            margin-top: var(--space-5);
+        }
+
+        .signals-title {
+            color: var(--aurora-purple);
+            margin-bottom: var(--space-3);
+            font-size: 1rem;
+        }
+
+        .signals-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .signal-tag {
+            display: inline-block;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-2xl);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+        }
+
+        .signal-critical {
+            background: linear-gradient(135deg, rgba(225, 29, 72, 0.2), rgba(251, 113, 133, 0.1));
+            color: #fda4af;
+            border-color: rgba(225, 29, 72, 0.4);
+        }
+
+        .signal-high {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.1));
+            color: #fde68a;
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+
+        .signal-medium {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.1));
+            color: #bfdbfe;
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .signal-low {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.1));
+            color: #a7f3d0;
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        .result-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: var(--space-6);
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--border-1);
+            gap: var(--space-2);
+        }
+
+        .meta-item {
+            font-size: 0.8rem;
+            color: var(--text-quaternary);
+        }
+
+        .hidden { display: none !important; }
+        .text-aurora { background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gold { color: var(--aurora-gold); text-shadow: 0 0 20px rgba(245, 158, 11, 0.4); }
+        .text-cyan { color: var(--aurora-cyan); text-shadow: 0 0 20px rgba(6, 182, 212, 0.4); }
+
+        .error-message {
+            margin-top: var(--space-4);
+            padding: var(--space-4);
+            background: rgba(225, 29, 72, 0.1);
+            border: 1px solid rgba(225, 29, 72, 0.3);
+            border-radius: var(--radius-lg);
+            color: #fda4af;
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: var(--space-5);
+            background: var(--bg-glass);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-1);
+            min-width: 140px;
+            transition: all var(--transition-base);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow-purple);
+            box-shadow: var(--shadow-aurora);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: var(--space-1);
+        }
+
+        .stat-label {
+            color: var(--text-tertiary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --header-height: var(--header-height-mobile);
+                --ads-height: var(--ads-height-mobile);
+            }
+            .header-content { flex-direction: column; padding: var(--space-2) 0; }
+            .nav { margin-top: var(--space-2); flex-wrap: wrap; justify-content: center; gap: var(--space-4); }
+            .card { padding: var(--space-4); }
+            .analysis-grid { grid-template-columns: 1fr; }
+            .result-header { flex-direction: column; }
+            .stats-section { gap: var(--space-3); }
+            .stat-item { min-width: 110px; padding: var(--space-4); }
+            .stat-value { font-size: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            .nav { gap: var(--space-3); }
+            .nav a { font-size: 0.8rem; }
+        }
+    </style>
+
+    {% block styles %}{% endblock %}
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo" aria-label="CyberShield Ultra">
+                <span>🛡️</span>
+                <span>CyberShield Ultra</span>
+            </a>
+            <nav class="nav" aria-label="القائمة الرئيسية">
+                <a href="/" {% if request.path == '/' %}class="active"{% endif %}>الرئيسية</a>
+                <a href="/tools" {% if request.path == '/tools' %}class="active"{% endif %}>الأدوات</a>
+                <a href="/blog" {% if request.path.startswith('/blog') %}class="active"{% endif %}>المدونة</a>
+                <span class="badge badge-aurora">٢٢ دولة</span>
+                <span class="badge badge-cyan">v7.2</span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <div class="container">
+        <div id="adsense-after-title" class="adsense-container" data-position="1">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6889946983937126" data-ad-slot="4823456789" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="adsense-middle" class="adsense-container" data-position="2">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6889946983937126" data-ad-slot="4823456790" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="adsense-footer" class="adsense-container" data-position="3">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6889946983937126" data-ad-slot="4823456791" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-8);">
+                <div>
+                    <div style="display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4);">
+                        <span style="font-size: 2rem;">🛡️</span>
+                        <h4 style="background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; font-size: 1.2rem;">CyberShield Ultra</h4>
+                    </div>
+                    <p style="color: var(--text-tertiary); line-height: 1.6;">
+                        ١٧ أداة · ٢٢ دولة · ذكاء محلي · خصوصية كاملة
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: var(--space-4); font-size: 1rem;">الأدوات</h4>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-2);">
+                        <a href="/phone-check">📱 الهاتف</a>
+                        <a href="/email-check">📧 البريد</a>
+                        <a href="/password-check">🔐 كلمة المرور</a>
+                        <a href="/url-check">🌍 الروابط</a>
+                        <a href="/dns-check">🌐 DNS</a>
+                        <a href="/jwt-check">🔑 JWT</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: var(--space-4); font-size: 1rem;">معلومات</h4>
+                    <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                        <a href="/about">ℹ️ من نحن</a>
+                        <a href="/contact">📞 اتصل بنا</a>
+                        <a href="/privacy">🔒 سياسة الخصوصية</a>
+                        <a href="/terms">📜 شروط الاستخدام</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid var(--border-1); color: var(--text-quaternary);">
+                <span>© ٢٠٢٤ CyberShield Ultra · v7.2</span>
+                <span style="margin: 0 var(--space-2);">·</span>
+                <span class="text-aurora">🧠 ذكاء محلي</span>
+                <span style="margin: 0 var(--space-2);">·</span>
+                <span class="text-cyan">🔒 خصوصية كاملة</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // AdSense Loader
+        (function() {
+            "use strict";
+
+            const path = window.location.pathname;
+            if (path.startsWith('/api') || path.startsWith('/admin') || path === '/tools' || path.includes('/check') || path.includes('/scan')) {
+                document.querySelectorAll('.adsense-container').forEach(el => el.classList.add('adsense-hidden'));
+                return;
+            }
+
+            if ('IntersectionObserver' in window) {
+                const containers = document.querySelectorAll('.adsense-container');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const container = entry.target;
+                            const ad = container.querySelector('ins.adsbygoogle');
+                            if (ad && ad.getAttribute('data-adsbygoogle-status') !== 'done') {
+                                try {
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                } catch (e) {
+                                    container.classList.add('adsense-hidden');
+                                }
+                            }
+                            observer.unobserve(container);
+                        }
+                    });
+                }, { rootMargin: '100px', threshold: 0.01 });
+                containers.forEach(container => observer.observe(container));
+            }
+        })();
+    </script>
+
+    <script>
+        // ============================================================
+        // CYBERSHIELD ULTRA v4.0 - HYBRID AI ANALYZER ENGINE
+        // ============================================================
+        (function() {
+            "use strict";
+
+            // ---------- XSS Protection ----------
+            window.escapeHTML = function(str) {
+                if (!str) return '';
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            };
+
+            // ---------- Cache System ----------
+            const AnalyzerCache = {
+                _c: new Map(),
+                _m: 200,
+                get(k) {
+                    const i = this._c.get(k);
+                    if (!i) return null;
+                    if (Date.now() > i.e) {
+                        this._c.delete(k);
+                        return null;
+                    }
+                    this._c.delete(k);
+                    this._c.set(k, i);
+                    return i.v;
+                },
+                set(k, v, t = 3600000) {
+                    if (this._c.size >= this._m) {
+                        const f = this._c.keys().next().value;
+                        this._c.delete(f);
+                    }
+                    this._c.set(k, { v, e: Date.now() + t });
+                }
+            };
+
+            // ---------- Risk Analyzer ----------
+            window.RiskAnalyzer = {
+                getLevel(s) {
+                    if (s < 20) return { class: 'badge-safe', text: 'آمن جداً', icon: '🟢', color: '#10b981', progress: 'progress-low' };
+                    if (s < 40) return { class: 'badge-low', text: 'منخفض', icon: '🟡', color: '#fbbf24', progress: 'progress-low' };
+                    if (s < 60) return { class: 'badge-medium', text: 'متوسط', icon: '🟠', color: '#f97316', progress: 'progress-medium' };
+                    if (s < 80) return { class: 'badge-high', text: 'مرتفع', icon: '🔴', color: '#ef4444', progress: 'progress-high' };
+                    return { class: 'badge-critical', text: 'حرج جداً', icon: '💀', color: '#7f1d1d', progress: 'progress-high' };
+                },
+
+                renderProgress(id, p, c) {
+                    const el = document.getElementById(id);
+                    if (!el) return;
+                    const bar = document.createElement('div');
+                    bar.className = `progress-bar ${c}`;
+                    bar.style.width = '0%';
+                    el.innerHTML = '';
+                    el.appendChild(bar);
+                    requestAnimationFrame(() => bar.style.width = `${p}%`);
+                },
+
+                analyzeSignals(sigs) {
+                    const r = { critical: [], high: [], medium: [], low: [] };
+                    if (!Array.isArray(sigs)) return r;
+                    sigs.forEach(s => {
+                        const sig = String(s).toUpperCase();
+                        if (sig.includes('CRITICAL') || sig.includes('INJECTION') || sig.includes('NONE')) r.critical.push(s);
+                        else if (sig.includes('SUSPICIOUS') || sig.includes('MALWARE') || sig.includes('DANGEROUS')) r.high.push(s);
+                        else if (sig.includes('WEAK') || sig.includes('DISPOSABLE') || sig.includes('FAKE')) r.medium.push(s);
+                        else r.low.push(s);
+                    });
+                    return r;
+                }
+            };
+
+            // ---------- Tool Data ----------
+            const ToolIcons = {
+                phone: '📱', email: '📧', password: '🔐', url: '🌍', domain: '🌐', ip: '🔌',
+                username: '👤', hash: '🔑', base64: '🔍', credit_card: '💳', port: '🚪',
+                api_key: '🔐', filename: '📁', jwt: '🔑', useragent: '🧑', file: '📄', dns: '🌐'
+            };
+
+            const ToolNames = {
+                phone: 'الهاتف', email: 'البريد', password: 'كلمة المرور', url: 'الرابط',
+                domain: 'النطاق', ip: 'IP', username: 'اسم المستخدم', hash: 'التجزئة',
+                base64: 'Base64', credit_card: 'البطاقة', port: 'المنفذ', api_key: 'مفتاح API',
+                filename: 'الملف', jwt: 'JWT', useragent: 'وكيل المستخدم', file: 'الملف', dns: 'DNS'
+            };
+
+            // ---------- Key Translation ----------
+            const KeyTranslation = {
+                'valid_format': 'صيغة صحيحة', 'country': 'الدولة', 'country_code': 'رمز الدولة',
+                'iso': 'الرمز الدولي', 'carrier': 'المشغل', 'line_type': 'نوع الخط',
+                'is_fake': 'رقم وهمي', 'is_emergency': 'رقم طوارئ', 'entropy': 'الانتروبيا',
+                'local_part': 'الجزء المحلي', 'domain': 'النطاق', 'tld': 'النطاق العلوي',
+                'is_disposable': 'بريد مؤقت', 'is_spoof': 'بريد مزيف', 'is_free_provider': 'مزود مجاني',
+                'length': 'الطول', 'strength': 'القوة', 'crack_time': 'وقت الكسر',
+                'char_types': 'أنواع الحروف', 'score': 'الدرجة', 'has_lower': 'يحتوي أحرف صغيرة',
+                'has_upper': 'يحتوي أحرف كبيرة', 'has_digit': 'يحتوي أرقام', 'has_special': 'يحتوي رموز خاصة',
+                'is_common': 'كلمة شائعة', 'is_sequential': 'نمط تسلسلي', 'is_keyboard': 'نمط لوحة مفاتيح',
+                'has_repeated': 'نمط مكرر', 'normalized': 'الرابط الطبيعي', 'scheme': 'البروتوكول',
+                'host': 'المضيف', 'path': 'المسار', 'is_https': 'اتصال آمن', 'is_ip': 'رابط IP',
+                'is_shortener': 'رابط مختصر', 'has_punycode': 'نطاق Punycode', 'is_phishing': 'رابط تصيد',
+                'path_depth': 'عمق المسار', 'sld': 'النطاق الرئيسي', 'subdomain_count': 'عدد النطاقات الفرعية',
+                'suspicious_tld': 'نطاق علوي مشبوه', 'has_lookalike': 'أحرف مشابهة',
+                'valid': 'صحيح', 'is_valid': 'صحيح', 'version': 'الإصدار', 'is_private': 'IP خاص',
+                'is_loopback': 'IP استرجاع', 'is_reserved': 'IP محجوز', 'is_multicast': 'IP متعدد الإرسال',
+                'is_global': 'IP عام', 'compressed': 'مضغوط', 'exploded': 'مفصل',
+                'username': 'اسم المستخدم', 'is_all_numeric': 'كله أرقام', 'is_all_alpha': 'كله حروف',
+                'is_email_like': 'يشبه البريد', 'bot_pattern_score': 'درجة نمط البوت',
+                'algorithm': 'الخوارزمية', 'is_hash': 'هل هو تجزئة', 'is_weak': 'خوارزمية ضعيفة',
+                'is_base64': 'هل هو Base64', 'has_padding': 'يحتوي حشو', 'decoded': 'المفكوك',
+                'masked': 'مخفي', 'valid_length': 'طول صحيح', 'luhn_valid': 'لوهن صحيح',
+                'issuer': 'المصدر', 'is_test': 'بطاقة اختبار', 'port': 'المنفذ', 'service': 'الخدمة',
+                'is_dangerous': 'منفذ خطير', 'detected': 'المكتشفة', 'extension': 'الامتداد',
+                'is_jwt': 'هل هو JWT', 'parts': 'الأجزاء', 'expired': 'منتهي الصلاحية',
+                'subject': 'الموضوع', 'is_allowed_bot': 'بوت مسموح', 'is_malicious_bot': 'بوت خبيث',
+                'bot_type': 'نوع البوت', 'filename': 'اسم الملف', 'size': 'الحجم',
+                'size_formatted': 'الحجم', 'detected_type': 'النوع المكتشف', 'mime_type': 'نوع MIME',
+                'risk_score': 'درجة الخطر', 'risk_level': 'مستوى الخطر', 'threats': 'التهديدات',
+                'scan_time': 'وقت الفحص', 'record': 'السجل', 'type': 'النوع', 'resolved': 'تم الحل',
+                'dnssec': 'DNSSEC', 'details': 'التفاصيل'
+            };
+
+            // ---------- API Client (مصحح: اسم الدالة scan) ----------
+            window.API = {
+                async scan(tool, input, options = {}) {
+                    const { timeout = 15000, cache = true } = options;
+                    if (!input?.trim()) throw new Error('INPUT_REQUIRED');
+
+                    const trimmedInput = input.trim();
+                    const key = `${tool}:${trimmedInput}`;
+
+                    if (cache) {
+                        const cached = AnalyzerCache.get(key);
+                        if (cached) return cached;
+                    }
+
+                    const controller = new AbortController();
+                    const tid = setTimeout(() => controller.abort(), timeout);
+
+                    try {
+                        const payload = { [tool]: trimmedInput };
+                        const res = await fetch(`/api/v1/scan/${tool}`, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json',
+                                'X-Requested-With': 'XMLHttpRequest',
+                                'X-Request-ID': crypto.randomUUID?.() || Date.now().toString(36)
+                            },
+                            body: JSON.stringify(payload),
+                            signal: controller.signal
+                        });
+
+                        clearTimeout(tid);
+
+                        let data;
+                        const contentType = res.headers.get('content-type');
+                        if (contentType && contentType.includes('application/json')) {
+                            data = await res.json();
+                        } else {
+                            const text = await res.text();
+                            throw new Error('استجابة غير صالحة من الخادم');
+                        }
+
+                        if (!res.ok) {
+                            throw new Error(data.error || data.message || `HTTP ${res.status}`);
+                        }
+
+                        if (data.success === false) {
+                            throw new Error(data.error || 'فشل في التحليل');
+                        }
+
+                        if (cache) AnalyzerCache.set(key, data, 300000);
+                        return data;
+                    } catch (e) {
+                        clearTimeout(tid);
+                        if (e.name === 'AbortError') throw new Error('TIMEOUT');
+                        if (e.message.includes('Failed to fetch') || e.message.includes('NetworkError')) {
+                            throw new Error('NETWORK_ERROR');
+                        }
+                        throw e;
+                    }
+                },
+
+                async getStats() {
+                    try {
+                        const res = await fetch('/api/stats', {
+                            method: 'GET',
+                            headers: {
+                                'Accept': 'application/json',
+                                'X-Requested-With': 'XMLHttpRequest'
+                            }
+                        });
+                        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                        return await res.json();
+                    } catch (e) {
+                        console.error('Stats error:', e);
+                        return null;
+                    }
+                }
+            };
+
+            // ---------- Result Renderer (مصحح) ----------
+            window.ResultRenderer = {
+                render(data, containerId) {
+                    const container = document.getElementById(containerId);
+                    if (!container) return;
+
+                    if (!data || typeof data !== 'object') {
+                        container.innerHTML = '<div class="error-message">⚠️ بيانات غير صالحة</div>';
+                        return;
+                    }
+
+                    const tool = data.tool || 'unknown';
+                    const riskScore = typeof data.risk_score === 'number' ? data.risk_score : 0;
+                    const confidence = typeof data.confidence === 'number' ? data.confidence : 0;
+                    const analysis = data.analysis || {};
+                    const signals = analysis.signals || [];
+                    const aiInsight = data.ai_insight || 'تم التحليل بنجاح';
+                    const input = data.input || '';
+
+                    const risk = window.RiskAnalyzer.getLevel(riskScore);
+                    const categorizedSignals = window.RiskAnalyzer.analyzeSignals(signals);
+
+                    let analysisHtml = '';
+                    const analysisEntries = Object.entries(analysis).filter(([k]) =>
+                        !['signals', '_cache'].includes(k) &&
+                        analysis[k] !== null &&
+                        analysis[k] !== undefined &&
+                        typeof analysis[k] !== 'object'
+                    );
+
+                    if (analysisEntries.length > 0) {
+                        analysisHtml = '<div class="analysis-grid">';
+                        analysisEntries.forEach(([k, v]) => {
+                            const label = KeyTranslation[k] || k.replace(/_/g, ' ');
+                            let val = v;
+                            let valClass = '';
+
+                            if (typeof v === 'boolean') {
+                                val = v ? '✅ نعم' : '❌ لا';
+                                valClass = v ? 'success' : 'danger';
+                            } else if (typeof v === 'number') {
+                                val = v.toLocaleString('ar-SA');
+                            } else {
+                                val = String(v);
+                            }
+
+                            analysisHtml += `
+                                <div class="analysis-item">
+                                    <span class="analysis-key">${window.escapeHTML(label)}</span>
+                                    <span class="analysis-value ${valClass}">${window.escapeHTML(val)}</span>
+                                </div>
+                            `;
+                        });
+                        analysisHtml += '</div>';
+                    }
+
+                    let signalsHtml = '';
+                    const hasSignals = categorizedSignals.critical.length > 0 ||
+                                      categorizedSignals.high.length > 0 ||
+                                      categorizedSignals.medium.length > 0 ||
+                                      categorizedSignals.low.length > 0;
+
+                    if (hasSignals) {
+                        signalsHtml = '<div class="signals-section"><h4 class="signals-title">🔍 الإشارات الأمنية</h4><div class="signals-grid">';
+                        categorizedSignals.critical.forEach(s => signalsHtml += `<span class="signal-tag signal-critical">🚨 ${window.escapeHTML(s)}</span>`);
+                        categorizedSignals.high.forEach(s => signalsHtml += `<span class="signal-tag signal-high">🔴 ${window.escapeHTML(s)}</span>`);
+                        categorizedSignals.medium.forEach(s => signalsHtml += `<span class="signal-tag signal-medium">🟠 ${window.escapeHTML(s)}</span>`);
+                        categorizedSignals.low.forEach(s => signalsHtml += `<span class="signal-tag signal-low">🟡 ${window.escapeHTML(s)}</span>`);
+                        signalsHtml += '</div></div>';
+                    }
+
+                    const progressId = `progress-${Date.now()}`;
+
+                    container.innerHTML = `
+                        <div class="result-card" data-tool="${window.escapeHTML(tool)}">
+                            <div class="result-header">
+                                <div>
+                                    <span class="result-badge">اكتمل التحليل</span>
+                                    <h3 class="result-title">
+                                        <span class="result-icon">${ToolIcons[tool] || '🛡️'}</span>
+                                        تحليل ${ToolNames[tool] || tool}
+                                    </h3>
+                                    <span class="badge" style="background:${risk.color}20; color:${risk.color}; border-color:${risk.color}40; display:inline-flex; align-items:center; gap:4px;">
+                                        ${risk.icon} الخطر: ${risk.text} (${riskScore}/١٠٠)
+                                    </span>
+                                </div>
+                                <span class="result-shield">🛡️</span>
+                            </div>
+
+                            <div style="margin:16px 0;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                                    <span>🧠 ثقة الذكاء الاصطناعي</span>
+                                    <span class="confidence-value">${confidence}%</span>
+                                </div>
+                                <div id="${progressId}" class="progress-container"></div>
+                            </div>
+
+                            <div class="ai-insight">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                                    <span style="font-size:1.2rem;">🧠</span>
+                                    <span class="ai-label">رؤية الذكاء الاصطناعي</span>
+                                </div>
+                                <p style="margin:0; color:var(--text-secondary);">${window.escapeHTML(aiInsight)}</p>
+                            </div>
+
+                            ${analysisHtml}
+                            ${signalsHtml}
+
+                            <div class="result-footer">
+                                <span class="meta-item">📌 الإدخال: <code style="background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:4px;">${window.escapeHTML(input.substring(0, 50))}${input.length > 50 ? '…' : ''}</code></span>
+                                <span class="meta-item">🕒 ${new Date(data.timestamp || Date.now()).toLocaleString('ar-SA')}</span>
+                            </div>
+                        </div>
+                    `;
+
+                    setTimeout(() => {
+                        window.RiskAnalyzer.renderProgress(progressId, confidence, risk.progress);
+                    }, 50);
+                },
+
+                renderError(message, containerId) {
+                    const container = document.getElementById(containerId);
+                    if (!container) return;
+                    container.innerHTML = `<div class="error-message"><span style="font-size:1.2rem;">⚠️</span><span>${window.escapeHTML(message)}</span></div>`;
+                }
+            };
+
+            // ---------- Stats Loader ----------
+            window.StatsLoader = {
+                async load(containerId) {
+                    const container = document.getElementById(containerId);
+                    if (!container) return;
+
+                    const data = await window.API.getStats();
+                    if (!data) {
+                        container.innerHTML = '<p style="color:var(--text-tertiary);">⚠️ تعذر تحميل الإحصائيات</p>';
+                        return;
+                    }
+
+                    container.innerHTML = `
+                        <div class="stats-section">
+                            <div class="stat-item"><div class="stat-value">${(data.total_users || 0).toLocaleString('ar-SA')}</div><div class="stat-label">مستخدم</div></div>
+                            <div class="stat-item"><div class="stat-value">${(data.total_scans || 0).toLocaleString('ar-SA')}</div><div class="stat-label">فحص</div></div>
+                            <div class="stat-item"><div class="stat-value">${data.avg_response_time_ms ? data.avg_response_time_ms.toFixed(0) : '<100'}ms</div><div class="stat-label">متوسط الاستجابة</div></div>
+                            <div class="stat-item"><div class="stat-value">${data.cache_hit_ratio_percent ? data.cache_hit_ratio_percent.toFixed(0) : 0}%</div><div class="stat-label">نسبة الذاكرة المؤقتة</div></div>
+                        </div>
+                    `;
+                }
+            };
+
+            console.log('🚀 CyberShield Ultra Analyzer v4.0 Loaded - 17 Tools Ready');
+        })();
+    </script>
+
+    {% block scripts %}{% endblock %}
+    <script>
+    // اختبار بسيط جداً
+    window.onload = function() {
+        alert('✅ الموقع يعمل! إذا رأيت هذه الرسالة، JavaScript شغال');
+        console.log('Base.html loaded successfully');
+    };
+</script>
+</body>
+</html>

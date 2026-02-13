@@ -1,0 +1,1114 @@
+{% extends "base.html" %}
+
+{% block title %}🛠️ ١٧ أداة أمنية - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}أقوى ١٧ أداة أمن سيبراني عربية. فحص الهواتف، البريد، كلمات المرور، الروابط، الملفات، والمزيد. مجاني تماماً وخصوصية كاملة.{% endblock %}
+
+{% block meta_keywords %}أدوات أمن سيبراني, فحص الهواتف العربية, فحص البريد الإلكتروني, فحص كلمات المرور, فحص الروابط, فحص الملفات, أمن المعلومات{% endblock %}
+
+{% block og_title %}🛠️ ١٧ أداة أمنية احترافية - CyberShield Ultra{% endblock %}
+
+{% block og_description %}مجموعة متكاملة من ١٧ أداة لفحص وتأمين جميع جوانب الأمن السيبراني. مجاني، سريع، وآمن.{% endblock %}
+
+{% block twitter_title %}🛠️ ١٧ أداة أمنية - CyberShield Ultra{% endblock %}
+
+{% block twitter_description %}أقوى أدوات الأمن السيبراني العربية. جربها الآن مجاناً.{% endblock %}
+
+{% block styles %}
+<style>
+    /* ============================================================
+       TOOLS PAGE - ULTRA PREMIUM DESIGN
+       ============================================================ */
+
+    /* Hero Section - متعدد الألوان */
+    .tools-hero {
+        position: relative;
+        padding: var(--space-16) 0 var(--space-12);
+        text-align: center;
+        overflow: hidden;
+        border-radius: var(--radius-2xl);
+        margin-bottom: var(--space-8);
+    }
+
+    .tools-hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+            radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.3) 0%, transparent 40%),
+            radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.25) 0%, transparent 40%),
+            radial-gradient(circle at 40% 80%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+            radial-gradient(circle at 70% 20%, rgba(245, 158, 11, 0.2) 0%, transparent 50%);
+        animation: aurora-spin 25s linear infinite;
+        z-index: 0;
+    }
+
+    @keyframes aurora-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .tools-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .tools-badge {
+        display: inline-block;
+        padding: var(--space-2) var(--space-5);
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2), rgba(6, 182, 212, 0.2));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-2xl);
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: var(--space-4);
+        box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+        letter-spacing: 1px;
+    }
+
+    .tools-hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        margin-bottom: var(--space-4);
+        background: linear-gradient(135deg, #fff, #e2e8f0, #cbd5e1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+    }
+
+    .tools-hero h1 span {
+        background: linear-gradient(135deg, #a855f7, #ec4899, #06b6d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+    }
+
+    .tools-subtitle {
+        color: var(--text-secondary);
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto var(--space-6);
+        line-height: 1.8;
+        position: relative;
+        z-index: 1;
+    }
+
+    .tools-highlight {
+        color: #a855f7;
+        font-weight: 700;
+        text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+    }
+
+    /* Stats Bar */
+    .tools-stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-6);
+        margin: var(--space-8) 0 var(--space-4);
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+    }
+
+    .stat-glow-item {
+        background: rgba(22, 33, 62, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: var(--radius-xl);
+        padding: var(--space-5) var(--space-8);
+        min-width: 160px;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .stat-glow-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #a855f7, #ec4899, #06b6d4, #f59e0b);
+        transform: translateX(-100%);
+        transition: transform 0.6s ease;
+    }
+
+    .stat-glow-item:hover::before {
+        transform: translateX(100%);
+    }
+
+    .stat-glow-item:hover {
+        transform: translateY(-8px) scale(1.02);
+        border-color: rgba(168, 85, 247, 0.3);
+        box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+    }
+
+    .stat-glow-value {
+        font-size: 2.2rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #a855f7, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        margin-bottom: var(--space-1);
+    }
+
+    .stat-glow-label {
+        color: var(--text-tertiary);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    /* Category Filters */
+    .category-filters {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-3);
+        margin: var(--space-10) 0 var(--space-8);
+        flex-wrap: wrap;
+    }
+
+    .category-btn {
+        padding: var(--space-2) var(--space-5);
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-2xl);
+        color: var(--text-tertiary);
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all var(--transition-base);
+        backdrop-filter: blur(5px);
+    }
+
+    .category-btn:hover {
+        background: rgba(168, 85, 247, 0.1);
+        border-color: var(--border-glow-purple);
+        color: #a855f7;
+        transform: translateY(-2px);
+    }
+
+    .category-btn.active {
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.15));
+        border-color: var(--border-glow-purple);
+        color: #fff;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    }
+
+    /* Tools Grid - التصميم الرئيسي */
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: var(--space-6);
+        margin: var(--space-8) 0 var(--space-12);
+    }
+
+    /* ألوان مختلفة لكل أداة - تصميم فريد */
+    .tool-card {
+        position: relative;
+        background: rgba(22, 33, 62, 0.6);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-xl);
+        padding: var(--space-6);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tool-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent 60%, rgba(255, 255, 255, 0.03) 100%);
+        pointer-events: none;
+    }
+
+    .tool-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gradient-color-1, #a855f7), var(--gradient-color-2, #ec4899));
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+    }
+
+    .tool-card:hover::after {
+        transform: scaleX(1);
+    }
+
+    .tool-card:hover {
+        transform: translateY(-10px) scale(1.02);
+        border-color: var(--border-glow-purple);
+        box-shadow: var(--shadow-aurora);
+    }
+
+    /* ألوان متغيرة لكل أداة */
+    .tool-card[data-category="phone"] { --gradient-color-1: #3b82f6; --gradient-color-2: #2563eb; }
+    .tool-card[data-category="email"] { --gradient-color-1: #ef4444; --gradient-color-2: #dc2626; }
+    .tool-card[data-category="password"] { --gradient-color-1: #f59e0b; --gradient-color-2: #d97706; }
+    .tool-card[data-category="url"] { --gradient-color-1: #10b981; --gradient-color-2: #059669; }
+    .tool-card[data-category="domain"] { --gradient-color-1: #8b5cf6; --gradient-color-2: #7c3aed; }
+    .tool-card[data-category="ip"] { --gradient-color-1: #6366f1; --gradient-color-2: #4f46e5; }
+    .tool-card[data-category="username"] { --gradient-color-1: #ec4899; --gradient-color-2: #db2777; }
+    .tool-card[data-category="hash"] { --gradient-color-1: #a855f7; --gradient-color-2: #9333ea; }
+    .tool-card[data-category="base64"] { --gradient-color-1: #fbbf24; --gradient-color-2: #f59e0b; }
+    .tool-card[data-category="credit_card"] { --gradient-color-1: #14b8a6; --gradient-color-2: #0d9488; }
+    .tool-card[data-category="port"] { --gradient-color-1: #f43f5e; --gradient-color-2: #e11d48; }
+    .tool-card[data-category="api_key"] { --gradient-color-1: #d946ef; --gradient-color-2: #c026d3; }
+    .tool-card[data-category="filename"] { --gradient-color-1: #f97316; --gradient-color-2: #ea580c; }
+    .tool-card[data-category="jwt"] { --gradient-color-1: #06b6d4; --gradient-color-2: #0891b2; }
+    .tool-card[data-category="useragent"] { --gradient-color-1: #84cc16; --gradient-color-2: #65a30d; }
+    .tool-card[data-category="file"] { --gradient-color-1: #64748b; --gradient-color-2: #475569; }
+    .tool-card[data-category="dns"] { --gradient-color-1: #818cf8; --gradient-color-2: #6366f1; }
+
+    .tool-icon {
+        font-size: 3.5rem;
+        margin-bottom: var(--space-4);
+        display: block;
+        transition: all 0.4s ease;
+        filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.3));
+    }
+
+    .tool-card:hover .tool-icon {
+        transform: scale(1.15) rotate(5deg);
+        filter: drop-shadow(0 0 25px currentColor);
+    }
+
+    .tool-name {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: var(--space-2);
+        background: linear-gradient(135deg, #fff, #e2e8f0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .tool-description {
+        color: var(--text-tertiary);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: var(--space-4);
+        flex: 1;
+    }
+
+    .tool-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+        margin-bottom: var(--space-4);
+    }
+
+    .tool-feature {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-2xl);
+        padding: var(--space-1) var(--space-3);
+        font-size: 0.7rem;
+        color: var(--text-secondary);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .tool-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: var(--space-4);
+        border-top: 1px solid var(--border-1);
+    }
+
+    .tool-usage {
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+        font-size: 0.8rem;
+        color: var(--text-quaternary);
+    }
+
+    .tool-usage i {
+        color: var(--gradient-color-1, #a855f7);
+    }
+
+    .tool-arrow {
+        font-size: 1.2rem;
+        color: var(--gradient-color-1, #a855f7);
+        transition: transform 0.3s ease;
+    }
+
+    .tool-card:hover .tool-arrow {
+        transform: translateX(-5px);
+    }
+
+    /* Featured Tools Section */
+    .featured-section {
+        margin: var(--space-16) 0;
+        padding: var(--space-8);
+        background: linear-gradient(145deg, rgba(22, 33, 62, 0.7), rgba(10, 14, 39, 0.9));
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-2xl);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .featured-section::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #a855f7, #ec4899, #06b6d4, transparent);
+    }
+
+    .featured-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: var(--space-6);
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
+
+    .featured-title {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+    }
+
+    .featured-title h2 {
+        margin: 0;
+        background: linear-gradient(135deg, #a855f7, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .featured-badge {
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+        border: 1px solid rgba(168, 85, 247, 0.3);
+        padding: var(--space-1) var(--space-4);
+        border-radius: var(--radius-2xl);
+        color: #e9d5ff;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-4);
+    }
+
+    .featured-mini-card {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-lg);
+        padding: var(--space-4);
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        transition: all var(--transition-base);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .featured-mini-card:hover {
+        background: rgba(168, 85, 247, 0.1);
+        border-color: var(--border-glow-purple);
+        transform: translateY(-3px);
+    }
+
+    .featured-mini-icon {
+        font-size: 2rem;
+    }
+
+    .featured-mini-info h4 {
+        margin: 0 0 var(--space-1);
+        font-size: 1rem;
+    }
+
+    .featured-mini-info p {
+        margin: 0;
+        font-size: 0.75rem;
+        color: var(--text-quaternary);
+    }
+
+    /* Search Section */
+    .search-section {
+        margin: var(--space-8) 0;
+    }
+
+    .search-container {
+        display: flex;
+        gap: var(--space-4);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .search-input {
+        flex: 1;
+        padding: var(--space-4) var(--space-6);
+        background: rgba(22, 33, 62, 0.8);
+        border: 2px solid var(--border-1);
+        border-radius: var(--radius-2xl);
+        color: #fff;
+        font-size: 1rem;
+        transition: all var(--transition-base);
+    }
+
+    .search-input:focus {
+        border-color: #a855f7;
+        box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+        outline: none;
+    }
+
+    .search-btn {
+        padding: var(--space-4) var(--space-6);
+        background: linear-gradient(135deg, #a855f7, #ec4899);
+        border: none;
+        border-radius: var(--radius-2xl);
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all var(--transition-base);
+    }
+
+    .search-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+    }
+
+    .no-results {
+        text-align: center;
+        padding: var(--space-12);
+        color: var(--text-tertiary);
+        font-size: 1.2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .tools-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .tools-stats-bar {
+            gap: var(--space-3);
+        }
+
+        .stat-glow-item {
+            min-width: 130px;
+            padding: var(--space-4);
+        }
+
+        .stat-glow-value {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .category-filters {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .category-btn {
+            text-align: center;
+        }
+
+        .search-container {
+            flex-direction: column;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- HERO SECTION -->
+    <section class="tools-hero">
+        <div class="tools-hero-content">
+            <span class="tools-badge">
+                <span style="color: #a855f7;">⚡</span>
+                ١٧ أداة احترافية
+                <span style="color: #06b6d4;">✨</span>
+            </span>
+            <h1>
+                <span>أدوات</span> الأمن السيبراني
+            </h1>
+            <p class="tools-subtitle">
+                مجموعة متكاملة من <span class="tools-highlight">١٧ أداة</span> لفحص وتأمين جميع جوانب الأمن السيبراني<br>
+                <span style="color: #ec4899;">ذكاء اصطناعي محلي</span> ·
+                <span style="color: #06b6d4;">خصوصية كاملة</span> ·
+                <span style="color: #10b981;">بدون تسجيل</span>
+            </p>
+
+            <!-- Stats Bar -->
+            <div class="tools-stats-bar">
+                <div class="stat-glow-item">
+                    <div class="stat-glow-value">١٧</div>
+                    <div class="stat-glow-label">أداة أمنية</div>
+                </div>
+                <div class="stat-glow-item">
+                    <div class="stat-glow-value">٢٢</div>
+                    <div class="stat-glow-label">دولة عربية</div>
+                </div>
+                <div class="stat-glow-item">
+                    <div class="stat-glow-value" id="live-total-scans">١٢٣٬٤٥٦</div>
+                    <div class="stat-glow-label">فحص اليوم</div>
+                </div>
+                <div class="stat-glow-item">
+                    <div class="stat-glow-value"><١٠٠ms</div>
+                    <div class="stat-glow-label">وقت الاستجابة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <div class="search-container">
+            <input type="text" id="tool-search" class="search-input" placeholder="🔍 ابحث عن أداة... (مثال: بريد، هاتف، رابط)" dir="rtl">
+            <button class="search-btn" id="search-btn">بحث</button>
+        </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="category-filters" id="category-filters">
+        <button class="category-btn active" data-category="all">الكل</button>
+        <button class="category-btn" data-category="communication">📱 تواصل</button>
+        <button class="category-btn" data-category="security">🔐 أمن</button>
+        <button class="category-btn" data-category="network">🌐 شبكات</button>
+        <button class="category-btn" data-category="data">📊 بيانات</button>
+        <button class="category-btn" data-category="web">🌍 ويب</button>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="tools-grid" id="tools-grid">
+        <!-- 1. Phone -->
+        <a href="/phone-check" class="tool-card" data-category="communication" data-tool="phone">
+            <span class="tool-icon">📱</span>
+            <h3 class="tool-name">فحص الهواتف</h3>
+            <p class="tool-description">تحليل دقيق لأرقام الهواتف في ٢٢ دولة عربية مع كشف المشغل ونوع الخط.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🇸🇦 السعودية</span>
+                <span class="tool-feature">🇦🇪 الإمارات</span>
+                <span class="tool-feature">🇪🇬 مصر</span>
+                <span class="tool-feature">+١٩</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ١٢٬٤٥٣ فحص اليوم</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 2. Email -->
+        <a href="/email-check" class="tool-card" data-category="communication" data-tool="email">
+            <span class="tool-icon">📧</span>
+            <h3 class="tool-name">فحص البريد</h3>
+            <p class="tool-description">كشف البريد المؤقت، المزيف، وتحليل MX, SPF, DKIM للكشف عن التهديدات.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🚫 مؤقت</span>
+                <span class="tool-feature">🔴 مزيف</span>
+                <span class="tool-feature">📋 MX</span>
+                <span class="tool-feature">✅ SPF</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٨٬٧٦١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 3. Password -->
+        <a href="/password-check" class="tool-card" data-category="security" data-tool="password">
+            <span class="tool-icon">🔐</span>
+            <h3 class="tool-name">كلمة المرور</h3>
+            <p class="tool-description">تحليل القوة، حساب الانتروبيا، تقدير وقت الكسر، وكشف الأنماط الضعيفة.</p>
+            <div class="tool-features">
+                <span class="tool-feature">⚡ انتروبيا</span>
+                <span class="tool-feature">⏱️ وقت الكسر</span>
+                <span class="tool-feature">🔍 أنماط</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ١٥٬٢٣٤ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 4. URL -->
+        <a href="/url-check" class="tool-card" data-category="web" data-tool="url">
+            <span class="tool-icon">🌍</span>
+            <h3 class="tool-name">فحص الروابط</h3>
+            <p class="tool-description">كشف روابط التصيد، الروابط المختصرة، والنطاقات المشبوهة.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🎣 تصيد</span>
+                <span class="tool-feature">🔗 مختصر</span>
+                <span class="tool-feature">🌐 Punycode</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٥٬٨٩٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 5. Domain -->
+        <a href="/domain-check" class="tool-card" data-category="web" data-tool="domain">
+            <span class="tool-icon">🌐</span>
+            <h3 class="tool-name">فحص النطاقات</h3>
+            <p class="tool-description">تحليل النطاقات، كشف Punycode، النطاقات المشبوهة والأحرف المشابهة.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🔤 Punycode</span>
+                <span class="tool-feature">⚠️ TLD مشبوه</span>
+                <span class="tool-feature">👀 تشابه</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٣٬٧٨٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 6. IP -->
+        <a href="/ip-check" class="tool-card" data-category="network" data-tool="ip">
+            <span class="tool-icon">🔌</span>
+            <h3 class="tool-name">فحص IP</h3>
+            <p class="tool-description">تحليل عناوين IPv4 و IPv6، كشف النطاق الخاص، العام، والمحجوز.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🏠 خاص</span>
+                <span class="tool-feature">🌐 عام</span>
+                <span class="tool-feature">🔄 استرجاع</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٦٬٣٢١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 7. Username -->
+        <a href="/username-check" class="tool-card" data-category="security" data-tool="username">
+            <span class="tool-icon">👤</span>
+            <h3 class="tool-name">اسم المستخدم</h3>
+            <p class="tool-description">كشف أنماط البوت، الأسماء الافتراضية، والمخاطر الأمنية في أسماء المستخدمين.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🤖 بوت</span>
+                <span class="tool-feature">🔐 افتراضي</span>
+                <span class="tool-feature">📊 تحليل</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٤٬٢٣١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 8. Hash -->
+        <a href="/hash-check" class="tool-card" data-category="data" data-tool="hash">
+            <span class="tool-icon">🔑</span>
+            <h3 class="tool-name">التجزئة (Hash)</h3>
+            <p class="tool-description">تحديد نوع التجزئة، قوتها، والخوارزمية المستخدمة (MD5, SHA, bcrypt...).</p>
+            <div class="tool-features">
+                <span class="tool-feature">🔐 MD5</span>
+                <span class="tool-feature">🔒 SHA-256</span>
+                <span class="tool-feature">⚠️ ضعيف</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٢٬١٣٤ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 9. Base64 -->
+        <a href="/base64-check" class="tool-card" data-category="data" data-tool="base64">
+            <span class="tool-icon">🔍</span>
+            <h3 class="tool-name">Base64</h3>
+            <p class="tool-description">كشف وفك تشفير Base64، تحليل المحتوى، واكتشاف الأنماط (JSON, HTML, صور).</p>
+            <div class="tool-features">
+                <span class="tool-feature">🔓 فك</span>
+                <span class="tool-feature">📄 JSON</span>
+                <span class="tool-feature">🖼️ صورة</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ١٬٨٩٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 10. Credit Card -->
+        <a href="/credit-card-check" class="tool-card" data-category="security" data-tool="credit_card">
+            <span class="tool-icon">💳</span>
+            <h3 class="tool-name">البطاقة الائتمانية</h3>
+            <p class="tool-description">التحقق من صحة الرقم، خوارزمية Luhn، ونوع البطاقة (Visa, Mastercard, Amex).</p>
+            <div class="tool-features">
+                <span class="tool-feature">💳 فيزا</span>
+                <span class="tool-feature">💳 ماستركارد</span>
+                <span class="tool-feature">✅ Luhn</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٣٬٤٥٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 11. Port -->
+        <a href="/port-check" class="tool-card" data-category="network" data-tool="port">
+            <span class="tool-icon">🚪</span>
+            <h3 class="tool-name">المنافذ</h3>
+            <p class="tool-description">تحليل المنافذ الخطيرة، الخدمات، والتوصيات الأمنية لكل منفذ.</p>
+            <div class="tool-features">
+                <span class="tool-feature">⚠️ 21 FTP</span>
+                <span class="tool-feature">🔴 23 Telnet</span>
+                <span class="tool-feature">🟡 445 SMB</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٥٬٦٧٨ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 12. API Key -->
+        <a href="/api-key-check" class="tool-card" data-category="security" data-tool="api_key">
+            <span class="tool-icon">🔐</span>
+            <h3 class="tool-name">مفاتيح API</h3>
+            <p class="tool-description">كشف مفاتيح AWS، Google، GitHub، Stripe والمزيد في النصوص.</p>
+            <div class="tool-features">
+                <span class="tool-feature">☁️ AWS</span>
+                <span class="tool-feature">🤖 Google</span>
+                <span class="tool-feature">🐙 GitHub</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٢٬٧٦١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 13. Filename -->
+        <a href="/filename-check" class="tool-card" data-category="data" data-tool="filename">
+            <span class="tool-icon">📁</span>
+            <h3 class="tool-name">اسم الملف</h3>
+            <p class="tool-description">كشف الامتدادات الخطيرة، محاولات الاختراق، والأنماط المشبوهة في أسماء الملفات.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🚫 .exe</span>
+                <span class="tool-feature">🔴 .js</span>
+                <span class="tool-feature">⚠️ .bat</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٤٬٩٨٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 14. JWT -->
+        <a href="/jwt-check" class="tool-card" data-category="security" data-tool="jwt">
+            <span class="tool-icon">🔑</span>
+            <h3 class="tool-name">JWT</h3>
+            <p class="tool-description">تحليل رموز JWT، كشف الثغرات (مثل خوارزمية none)، والتحقق من الصلاحية.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🔐 Header</span>
+                <span class="tool-feature">📋 Payload</span>
+                <span class="tool-feature">⚠️ none</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ١٬٥٤٢ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 15. User-Agent -->
+        <a href="/useragent-check" class="tool-card" data-category="web" data-tool="useragent">
+            <span class="tool-icon">🧑</span>
+            <h3 class="tool-name">User-Agent</h3>
+            <p class="tool-description">كشف نوع المتصفح، نظام التشغيل، والبوتات (Googlebot, GPTBot, DeepSeek...).</p>
+            <div class="tool-features">
+                <span class="tool-feature">🌐 متصفح</span>
+                <span class="tool-feature">📱 جوال</span>
+                <span class="tool-feature">🤖 بوت</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٦٬٢٣١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 16. File -->
+        <a href="/file-check" class="tool-card" data-category="data" data-tool="file">
+            <span class="tool-icon">📄</span>
+            <h3 class="tool-name">الملفات</h3>
+            <p class="tool-description">تحليل الملفات، كشف البرمجيات الخبيثة، والتهديدات الأمنية في المحتوى.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🚫 تنفيذي</span>
+                <span class="tool-feature">🔴 ضار</span>
+                <span class="tool-feature">📊 تحليل</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ١٬٢٣٤ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+
+        <!-- 17. DNS -->
+        <a href="/dns-check" class="tool-card" data-category="network" data-tool="dns">
+            <span class="tool-icon">🌐</span>
+            <h3 class="tool-name">DNS</h3>
+            <p class="tool-description">تحليل سجلات DNS (A, MX, TXT, NS, CNAME) والتحقق من DNSSEC.</p>
+            <div class="tool-features">
+                <span class="tool-feature">🌐 A</span>
+                <span class="tool-feature">📧 MX</span>
+                <span class="tool-feature">📝 TXT</span>
+            </div>
+            <div class="tool-stats">
+                <span class="tool-usage"><i>📊</i> ٣٬٨٩١ فحص</span>
+                <span class="tool-arrow">←</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Featured Tools Section -->
+    <div class="featured-section">
+        <div class="featured-header">
+            <div class="featured-title">
+                <span style="font-size: 2rem;">⭐</span>
+                <h2>الأدوات الأكثر استخداماً</h2>
+            </div>
+            <span class="featured-badge">الأكثر طلباً</span>
+        </div>
+
+        <div class="featured-grid">
+            <a href="/phone-check" class="featured-mini-card">
+                <span class="featured-mini-icon">📱</span>
+                <div class="featured-mini-info">
+                    <h4>فحص الهواتف</h4>
+                    <p>٢٢ دولة عربية</p>
+                </div>
+            </a>
+            <a href="/email-check" class="featured-mini-card">
+                <span class="featured-mini-icon">📧</span>
+                <div class="featured-mini-info">
+                    <h4>فحص البريد</h4>
+                    <p>كشف المؤقت والمزيف</p>
+                </div>
+            </a>
+            <a href="/password-check" class="featured-mini-card">
+                <span class="featured-mini-icon">🔐</span>
+                <div class="featured-mini-info">
+                    <h4>كلمة المرور</h4>
+                    <p>تحليل القوة والانتروبيا</p>
+                </div>
+            </a>
+            <a href="/url-check" class="featured-mini-card">
+                <span class="featured-mini-icon">🌍</span>
+                <div class="featured-mini-info">
+                    <h4>فحص الروابط</h4>
+                    <p>كشف التصيد</p>
+                </div>
+            </a>
+            <a href="/ip-check" class="featured-mini-card">
+                <span class="featured-mini-icon">🔌</span>
+                <div class="featured-mini-info">
+                    <h4>فحص IP</h4>
+                    <p>IPv4 و IPv6</p>
+                </div>
+            </a>
+            <a href="/dns-check" class="featured-mini-card">
+                <span class="featured-mini-icon">🌐</span>
+                <div class="featured-mini-info">
+                    <h4>فحص DNS</h4>
+                    <p>جميع السجلات</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- AdSense Container (يفتح تلقائياً من base.html) -->
+    <div class="adsense-container" data-position="tools-middle"></div>
+
+    <!-- SEO Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "أدوات الأمن السيبراني - CyberShield Ultra",
+        "description": "١٧ أداة أمنية احترافية لفحص وتأمين جميع جوانب الأمن السيبراني",
+        "numberOfItems": 17,
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "فحص الهواتف العربية", "url": "{{ request.url_root }}phone-check"},
+            {"@type": "ListItem", "position": 2, "name": "فحص البريد الإلكتروني", "url": "{{ request.url_root }}email-check"},
+            {"@type": "ListItem", "position": 3, "name": "فحص كلمة المرور", "url": "{{ request.url_root }}password-check"},
+            {"@type": "ListItem", "position": 4, "name": "فحص الروابط", "url": "{{ request.url_root }}url-check"},
+            {"@type": "ListItem", "position": 5, "name": "فحص النطاقات", "url": "{{ request.url_root }}domain-check"},
+            {"@type": "ListItem", "position": 6, "name": "فحص IP", "url": "{{ request.url_root }}ip-check"},
+            {"@type": "ListItem", "position": 7, "name": "فحص اسم المستخدم", "url": "{{ request.url_root }}username-check"},
+            {"@type": "ListItem", "position": 8, "name": "فحص التجزئة", "url": "{{ request.url_root }}hash-check"},
+            {"@type": "ListItem", "position": 9, "name": "فحص Base64", "url": "{{ request.url_root }}base64-check"},
+            {"@type": "ListItem", "position": 10, "name": "فحص البطاقة الائتمانية", "url": "{{ request.url_root }}credit-card-check"},
+            {"@type": "ListItem", "position": 11, "name": "فحص المنافذ", "url": "{{ request.url_root }}port-check"},
+            {"@type": "ListItem", "position": 12, "name": "فحص مفاتيح API", "url": "{{ request.url_root }}api-key-check"},
+            {"@type": "ListItem", "position": 13, "name": "فحص اسم الملف", "url": "{{ request.url_root }}filename-check"},
+            {"@type": "ListItem", "position": 14, "name": "فحص JWT", "url": "{{ request.url_root }}jwt-check"},
+            {"@type": "ListItem", "position": 15, "name": "فحص User-Agent", "url": "{{ request.url_root }}useragent-check"},
+            {"@type": "ListItem", "position": 16, "name": "فحص الملفات", "url": "{{ request.url_root }}file-check"},
+            {"@type": "ListItem", "position": 17, "name": "فحص DNS", "url": "{{ request.url_root }}dns-check"}
+        ]
+    }
+    </script>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+    "use strict";
+
+    // ============================================================
+    // أدوات البحث والتصفية - سريعة جداً
+    // ============================================================
+
+    // تحديث إحصائية الفحوصات
+    function updateStats() {
+        const totalScansEl = document.getElementById('live-total-scans');
+        if (totalScansEl) {
+            // محاكاة رقم فحوصات (يتم تحديثه من API لاحقاً)
+            const baseNumber = 123456;
+            const randomIncrease = Math.floor(Math.random() * 1000);
+            totalScansEl.innerText = (baseNumber + randomIncrease).toLocaleString('ar-SA');
+        }
+    }
+
+    // تحديث كل 30 ثانية
+    updateStats();
+    setInterval(updateStats, 30000);
+
+    // ============================================================
+    // البحث المباشر في الأدوات
+    // ============================================================
+    const searchInput = document.getElementById('tool-search');
+    const searchBtn = document.getElementById('search-btn');
+    const toolsGrid = document.getElementById('tools-grid');
+    const toolCards = document.querySelectorAll('.tool-card');
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const noResultsMsg = document.createElement('div');
+    noResultsMsg.className = 'no-results hidden';
+    noResultsMsg.innerHTML = '🔍 لا توجد أدوات تطابق بحثك';
+    toolsGrid.parentNode.insertBefore(noResultsMsg, toolsGrid.nextSibling);
+
+    let activeCategory = 'all';
+    let searchTerm = '';
+
+    // دالة البحث والتصفية
+    function filterTools() {
+        let visibleCount = 0;
+
+        toolCards.forEach(card => {
+            const toolName = card.querySelector('.tool-name')?.textContent || '';
+            const toolDesc = card.querySelector('.tool-description')?.textContent || '';
+            const toolFeatures = Array.from(card.querySelectorAll('.tool-feature')).map(f => f.textContent).join(' ');
+            const cardCategory = card.dataset.category || '';
+
+            const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+            const matchesSearch = searchTerm === '' ||
+                toolName.toLowerCase().includes(searchTerm) ||
+                toolDesc.toLowerCase().includes(searchTerm) ||
+                toolFeatures.toLowerCase().includes(searchTerm);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // إظهار رسالة "لا توجد نتائج" إذا لزم الأمر
+        if (visibleCount === 0) {
+            noResultsMsg.classList.remove('hidden');
+        } else {
+            noResultsMsg.classList.add('hidden');
+        }
+    }
+
+    // حدث البحث عند الكتابة
+    if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+            searchTerm = e.target.value.trim().toLowerCase();
+            filterTools();
+        });
+
+        // حدث زر البحث
+        if (searchBtn) {
+            searchBtn.addEventListener('click', function() {
+                searchTerm = searchInput.value.trim().toLowerCase();
+                filterTools();
+            });
+        }
+
+        // بحث عند الضغط على Enter
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchTerm = searchInput.value.trim().toLowerCase();
+                filterTools();
+            }
+        });
+    }
+
+    // أحداث أزرار التصفية
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // إزالة active من جميع الأزرار
+            categoryBtns.forEach(b => b.classList.remove('active'));
+
+            // إضافة active للزر الحالي
+            this.classList.add('active');
+
+            // تحديث التصنيف النشط
+            activeCategory = this.dataset.category;
+
+            // إعادة التصفية
+            filterTools();
+        });
+    });
+
+    // ============================================================
+    // تحميل إحصائيات حقيقية من API (اختياري)
+    // ============================================================
+    async function loadRealStats() {
+        if (window.API && window.API.getStats) {
+            try {
+                const stats = await window.API.getStats();
+                if (stats && stats.total_scans) {
+                    const totalScansEl = document.getElementById('live-total-scans');
+                    if (totalScansEl) {
+                        totalScansEl.innerText = stats.total_scans.toLocaleString('ar-SA');
+                    }
+                }
+            } catch (e) {
+                console.log('استخدام الإحصائيات المحلية');
+            }
+        }
+    }
+
+    // محاولة تحميل الإحصائيات الحقيقية
+    loadRealStats();
+
+    console.log('🛠️ Tools page loaded - 17 tools ready');
+})();
+</script>
+{% endblock %}
