@@ -37,9 +37,9 @@
             </div>
 
             <div class="ls">
-                <div class="si"><div class="sv" id="stat1">١٢٬٤٥٣</div><div class="sl">فحص اليوم</div></div>
+                <div class="si"><div class="sv" id="stat1">-</div><div class="sl">فحص اليوم</div></div>
                 <div class="si"><div class="sv" id="stat2">٢٢</div><div class="sl">دولة مدعومة</div></div>
-                <div class="si"><div class="sv" id="stat3">٤٧</div><div class="sl">متوسط الوقت (ms)</div></div>
+                <div class="si"><div class="sv" id="stat3">-</div><div class="sl">متوسط الوقت (ms)</div></div>
                 <div class="si"><div class="sv" id="stat4">٩٩٫٩</div><div class="sl">دقة الفحص %</div></div>
             </div>
 
@@ -79,6 +79,10 @@
 <script>
 (function() {
     "use strict";
+    
+    // ============================================================
+    // إعدادات الأداة
+    // ============================================================
     const TOOL = 'phone';
     const input = document.getElementById('tool-input');
     const btn = document.getElementById('analyze-btn');
@@ -86,43 +90,287 @@
     const spinner = document.getElementById('analyze-spinner');
     const resultDiv = document.getElementById('analysis-result');
     const errorDiv = document.getElementById('analysis-error');
-
+    
+    // ============================================================
+    // تحميل الإحصائيات الحقيقية
+    // ============================================================
+    async function loadToolStats() {
+        try {
+            const response = await fetch('/api/stats');
+            if (response.ok) {
+                const stats = await response.json();
+                
+                // تحديث إحصائيات اليوم
+                const stat1 = document.getElementById('stat1');
+                if (stat1 && stats.today_scans !== undefined) {
+                    stat1.textContent = stats.today_scans.toLocaleString('ar-SA');
+                }
+                
+                // تحديث متوسط الوقت
+                const stat3 = document.getElementById('stat3');
+                if (stat3 && stats.avg_response_time_ms !== undefined) {
+                    stat3.textContent = Math.round(stats.avg_response_time_ms);
+                }
+            }
+        } catch (e) {
+            console.log('📊 Stats not available');
+        }
+    }
+    
+    // تحميل الإحصائيات عند بدء الصفحة
+    loadToolStats();
+    
+    // ============================================================
+    // دالة الفحص الرئيسية
+    // ============================================================
     async function analyze() {
         const value = input.value.trim();
+        
+        // التحقق من الإدخال
         if (!value) {
-            errorDiv.innerHTML = '⚠️ الرجاء إدخال رقم الهاتف';
-            errorDiv.classList.remove('hidden');
-            resultDiv.classList.add('hidden');
+            showError('⚠️ الرجاء إدخال رقم الهاتف');
+            return;
+        }
+        
+        // التحقق من صحة الرقم (يبدأ بـ +)
+        if (!value.startsWith('+')) {
+            showError('⚠️ الرجاء إدخال الرقم بالصيغة الدولية (مثال: +966501234567)');
             return;
         }
 
+        // تعطيل الزر وإظهار التحميل
         btn.disabled = true;
         btnText.innerText = 'جاري الفحص...';
         spinner.classList.remove('hidden');
         resultDiv.classList.add('hidden');
         errorDiv.classList.add('hidden');
-
+        
         try {
-            const data = await window.API.scan(TOOL, value, { timeout: 8000 });
-            window.ResultRenderer.render(data, 'analysis-result');
-            resultDiv.classList.remove('hidden');
-        } catch (e) {
-            errorDiv.innerHTML = `⚠️ ${e.message === 'TIMEOUT' ? 'انتهت المهلة' : e.message === 'INPUT_REQUIRED' ? 'الرجاء إدخال رقم' : 'فشل التحليل'}`;
-            errorDiv.classList.remove('hidden');
+            console.log('📡 Sending request to API...');
+            
+            // استدعاء API مباشر
+            const response = await fetch('/api/v1/scan/phone', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: JSON.stringify({ phone: value })
+            });
+            
+            console.log('📥 Response status:', response.status);
+            
+            // التحقق من الاستجابة
+            if (!response.ok) {
+                let errorMsg = 'فشل في الاتصال بالخادم';
+                try {
+                    const errorData = await response.json();
+                    errorMsg = errorData.error || errorData.message || `خطأ HTTP: ${response.status}`;
+                } catch (e) {
+                    errorMsg = `خطأ HTTP: ${response.status}`;
+                }
+                throw new Error(errorMsg);
+            }
+            
+            const data = await response.json();
+            console.log('✅ Data received:', data);
+            
+            // عرض النتائج
+            displayResults(data);
+            
+        } catch (error) {
+            console.error('❌ Error:', error);
+            
+            let errorMessage = error.message;
+            if (error.message === 'Failed to fetch') {
+                errorMessage = '⚠️ لا يمكن الاتصال بالخادم. تأكد من تشغيل التطبيق.';
+            } else if (error.message === 'TIMEOUT') {
+                errorMessage = '⚠️ انتهت مهلة الانتظار. حاول مرة أخرى.';
+            } else if (error.message === 'INPUT_REQUIRED') {
+                errorMessage = '⚠️ الرجاء إدخال رقم الهاتف';
+            }
+            
+            showError(errorMessage);
         } finally {
+            // إعادة تفعيل الزر
             btn.disabled = false;
             btnText.innerText = '🔍 فحص الرقم';
             spinner.classList.add('hidden');
         }
     }
-
+    
+    // ============================================================
+    // عرض النتائج
+    // ============================================================
+    function displayResults(data) {
+        // استخدام ResultRenderer إذا كان متاحاً
+        if (window.ResultRenderer && window.ResultRenderer.render) {
+            window.ResultRenderer.render(data, 'analysis-result');
+            resultDiv.classList.remove('hidden');
+            return;
+        }
+        
+        // عرض مخصص إذا لم يكن ResultRenderer متاحاً
+        let html = `
+            <div class="result-card" style="margin-top: 20px; animation: slideIn 0.4s ease;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <span style="color: #06b6d4; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 800;">اكتمل التحليل</span>
+                        <h3 style="margin: 8px 0; color: #fff; font-size: 1.4rem;">📱 تحليل الهاتف</h3>
+                        <span style="background: ${getRiskColor(data.risk_score)}20; color: ${getRiskColor(data.risk_score)}; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; border: 1px solid ${getRiskColor(data.risk_score)}40;">
+                            ${getRiskIcon(data.risk_score)} الخطر: ${getRiskText(data.risk_score)} (${data.risk_score}/١٠٠)
+                        </span>
+                    </div>
+                    <span style="font-size: 2rem;">🛡️</span>
+                </div>
+        `;
+        
+        // إضافة التحليل
+        if (data.analysis) {
+            html += '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 20px 0;">';
+            
+            for (const [key, value] of Object.entries(data.analysis)) {
+                if (key === 'signals' || key === '_cache') continue;
+                if (value === null || value === undefined) continue;
+                
+                const label = translateKey(key);
+                let displayValue = value;
+                let valueClass = '';
+                
+                if (typeof value === 'boolean') {
+                    displayValue = value ? '✅ نعم' : '❌ لا';
+                    valueClass = value ? 'success' : 'danger';
+                } else if (typeof value === 'number') {
+                    displayValue = value.toLocaleString('ar-SA');
+                } else {
+                    displayValue = String(value);
+                }
+                
+                html += `
+                    <div style="background: rgba(168, 85, 247, 0.05); border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                        <span style="color: #a855f7; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 4px; font-weight: 700;">${label}</span>
+                        <span style="color: #fff; font-weight: 700; font-size: 1rem; ${valueClass === 'success' ? 'color: #34d399;' : valueClass === 'danger' ? 'color: #fb7185;' : ''}">${displayValue}</span>
+                    </div>
+                `;
+            }
+            
+            html += '</div>';
+        }
+        
+        // إضافة رؤية الذكاء الاصطناعي
+        if (data.ai_insight) {
+            html += `
+                <div style="margin-top: 20px; padding: 20px; background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.05)); border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                        <span style="font-size: 1.2rem;">🧠</span>
+                        <span style="background: linear-gradient(135deg, #c084fc, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">رؤية الذكاء الاصطناعي</span>
+                    </div>
+                    <p style="margin: 0; color: #e2e8f0; line-height: 1.6;">${data.ai_insight}</p>
+                </div>
+            `;
+        }
+        
+        // الإشارات الأمنية
+        if (data.analysis && data.analysis.signals && data.analysis.signals.length > 0) {
+            html += `
+                <div style="margin-top: 20px;">
+                    <h4 style="color: #a855f7; margin-bottom: 12px; font-size: 1rem;">🔍 الإشارات الأمنية</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            `;
+            
+            data.analysis.signals.forEach(signal => {
+                const signalClass = getSignalClass(signal);
+                html += `<span style="${signalClass}">${signal}</span>`;
+            });
+            
+            html += '</div></div>';
+        }
+        
+        // تذييل النتيجة
+        html += `
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); gap: 10px;">
+                <span style="font-size: 0.8rem; color: #64748b;">📌 الإدخال: <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">${data.input || input.value}</code></span>
+                <span style="font-size: 0.8rem; color: #64748b;">🕒 ${new Date(data.timestamp || Date.now()).toLocaleString('ar-SA')}</span>
+            </div>
+        </div>
+        `;
+        
+        resultDiv.innerHTML = html;
+        resultDiv.classList.remove('hidden');
+    }
+    
+    // ============================================================
+    // دوال مساعدة
+    // ============================================================
+    function showError(message) {
+        errorDiv.innerHTML = message;
+        errorDiv.classList.remove('hidden');
+        resultDiv.classList.add('hidden');
+    }
+    
+    function getRiskColor(score) {
+        if (score < 20) return '#10b981';
+        if (score < 40) return '#fbbf24';
+        if (score < 60) return '#f97316';
+        if (score < 80) return '#ef4444';
+        return '#7f1d1d';
+    }
+    
+    function getRiskIcon(score) {
+        if (score < 20) return '🟢';
+        if (score < 40) return '🟡';
+        if (score < 60) return '🟠';
+        if (score < 80) return '🔴';
+        return '💀';
+    }
+    
+    function getRiskText(score) {
+        if (score < 20) return 'آمن جداً';
+        if (score < 40) return 'منخفض';
+        if (score < 60) return 'متوسط';
+        if (score < 80) return 'مرتفع';
+        return 'حرج جداً';
+    }
+    
+    function getSignalClass(signal) {
+        const sig = String(signal).toUpperCase();
+        if (sig.includes('CRITICAL') || sig.includes('INJECTION')) {
+            return 'background: linear-gradient(135deg, rgba(225, 29, 72, 0.2), rgba(251, 113, 133, 0.1)); color: #fda4af; border: 1px solid rgba(225, 29, 72, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;';
+        } else if (sig.includes('SUSPICIOUS') || sig.includes('MALWARE')) {
+            return 'background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.1)); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;';
+        } else if (sig.includes('WEAK') || sig.includes('DISPOSABLE')) {
+            return 'background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.1)); color: #bfdbfe; border: 1px solid rgba(59, 130, 246, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;';
+        } else {
+            return 'background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.1)); color: #a7f3d0; border: 1px solid rgba(16, 185, 129, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;';
+        }
+    }
+    
+    function translateKey(key) {
+        const translations = {
+            'valid_format': 'صيغة صحيحة',
+            'country': 'الدولة',
+            'country_code': 'رمز الدولة',
+            'iso': 'الرمز الدولي',
+            'carrier': 'المشغل',
+            'line_type': 'نوع الخط',
+            'is_fake': 'رقم وهمي',
+            'is_emergency': 'رقم طوارئ'
+        };
+        return translations[key] || key.replace(/_/g, ' ');
+    }
+    
+    // ============================================================
+    // ربط الأحداث
+    // ============================================================
     btn.addEventListener('click', analyze);
-    input.addEventListener('keypress', e => e.key === 'Enter' && analyze());
-
-    document.getElementById('stat1').innerText = (Math.floor(Math.random() * 5000) + 10000).toLocaleString('ar-SA');
-    document.getElementById('stat2').innerText = '٢٢';
-    document.getElementById('stat3').innerText = Math.floor(Math.random() * 30) + 30;
-    document.getElementById('stat4').innerText = '٩٩٫٩';
+    input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            analyze();
+        }
+    });
+    
+    console.log('📱 Phone Check Tool Loaded - Ready');
 })();
 </script>
 {% endblock %}
