@@ -644,23 +644,23 @@
             <a href="#live-demo" class="btn btn-outline" style="padding: var(--space-3) var(--space-8);">⚡ جرب العرض الحي</a>
         </div>
 
-        {# STATS - سيتم تعبئتها بواسطة JavaScript #}
+        {# STATS - إحصائيات حقيقية من API #}
         <div id="hero-stats-container" class="hero-stats">
             <div class="stat-item">
-                <div class="stat-value" id="stat-tools">١٧</div>
-                <div class="stat-label">أداة أمنية</div>
+                <div class="stat-value" id="stat-total-visits">-</div>
+                <div class="stat-label">إجمالي الزيارات</div>
             </div>
             <div class="stat-item">
-                <div class="stat-value" id="stat-countries">٢٢</div>
-                <div class="stat-label">دولة عربية</div>
+                <div class="stat-value" id="stat-today-visits">-</div>
+                <div class="stat-label">زيارات اليوم</div>
             </div>
             <div class="stat-item">
-                <div class="stat-value" id="stat-response">&lt;١٠٠ms</div>
-                <div class="stat-label">وقت الاستجابة</div>
+                <div class="stat-value" id="stat-total-scans">-</div>
+                <div class="stat-label">إجمالي الفحوصات</div>
             </div>
             <div class="stat-item">
-                <div class="stat-value" id="stat-privacy">١٠٠٪</div>
-                <div class="stat-label">خصوصية</div>
+                <div class="stat-value" id="stat-blocked-bots">-</div>
+                <div class="stat-label">البوتات المحظورة</div>
             </div>
         </div>
     </section>
@@ -1008,47 +1008,88 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('🚀 Index page loaded');
 
-    // 1. تحميل الإحصائيات
-    loadStats();
+    // 1. تحميل الإحصائيات الحقيقية
+    loadRealStats();
 
     // 2. إعداد العرض الحي
     setupLiveDemo();
 });
 
 // ==============================================================
-// تحميل الإحصائيات
+// تحميل الإحصائيات الحقيقية من API
 // ==============================================================
-async function loadStats() {
-    console.log('📊 Loading stats...');
+async function loadRealStats() {
+    console.log('📊 Loading real stats...');
 
     try {
-        if (window.StatsLoader) {
-            await window.StatsLoader.load('hero-stats-container');
-        } else if (window.API && window.API.getStats) {
-            const stats = await window.API.getStats();
-            if (stats) {
-                updateStatsManually(stats);
+        const response = await fetch('/api/stats', {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
             }
+        });
+
+        if (!response.ok) {
+            throw new Error('فشل في تحميل الإحصائيات');
         }
+
+        const stats = await response.json();
+        console.log('✅ Stats loaded:', stats);
+
+        // تحديث الإحصائيات في الصفحة
+        updateStatsDisplay(stats);
+
     } catch (error) {
         console.error('❌ Stats error:', error);
+        // في حالة الفشل، نعرض القيم الافتراضية
+        showDefaultStats();
     }
 }
 
-function updateStatsManually(stats) {
-    const statTools = document.getElementById('stat-tools');
-    const statCountries = document.getElementById('stat-countries');
-    const statResponse = document.getElementById('stat-response');
-    const statPrivacy = document.getElementById('stat-privacy');
-
-    if (statTools) statTools.textContent = '١٧';
-    if (statCountries) statCountries.textContent = '٢٢';
-    if (statResponse && stats.avg_response_time_ms) {
-        statResponse.textContent = Math.round(stats.avg_response_time_ms) + 'ms';
-    } else if (statResponse) {
-        statResponse.textContent = '<١٠٠ms';
+function updateStatsDisplay(stats) {
+    // إجمالي الزيارات
+    const totalVisitsEl = document.getElementById('stat-total-visits');
+    if (totalVisitsEl && stats.total_visits !== undefined) {
+        totalVisitsEl.textContent = formatNumber(stats.total_visits);
     }
-    if (statPrivacy) statPrivacy.textContent = '١٠٠٪';
+
+    // زيارات اليوم
+    const todayVisitsEl = document.getElementById('stat-today-visits');
+    if (todayVisitsEl && stats.today_visits !== undefined) {
+        todayVisitsEl.textContent = formatNumber(stats.today_visits);
+    }
+
+    // إجمالي الفحوصات
+    const totalScansEl = document.getElementById('stat-total-scans');
+    if (totalScansEl && stats.total_scans !== undefined) {
+        totalScansEl.textContent = formatNumber(stats.total_scans);
+    }
+
+    // البوتات المحظورة
+    const blockedBotsEl = document.getElementById('stat-blocked-bots');
+    if (blockedBotsEl && stats.blocked_bots !== undefined) {
+        blockedBotsEl.textContent = formatNumber(stats.blocked_bots);
+    }
+}
+
+function showDefaultStats() {
+    const defaults = {
+        'stat-total-visits': '١٧',
+        'stat-today-visits': '٢٢',
+        'stat-total-scans': '<١٠٠ms',
+        'stat-blocked-bots': '١٠٠٪'
+    };
+
+    for (const [id, value] of Object.entries(defaults)) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = value;
+    }
+}
+
+function formatNumber(num) {
+    if (num === undefined || num === null) return '-';
+    return num.toLocaleString('ar-SA');
 }
 
 // ==============================================================
@@ -1107,27 +1148,37 @@ function setupLiveDemo() {
             return;
         }
 
-        if (!window.API || !window.API.scan) {
-            showError('محرك التحليل غير متوفر. الرجاء تحديث الصفحة.');
-            return;
-        }
-
         setLoading(true);
         clearResults();
 
         try {
             console.log('📡 Calling API for:', tool, input);
-            const data = await window.API.scan(tool, input, {
-                timeout: 15000,
-                useCache: true
+            
+            // استدعاء API مباشر
+            const response = await fetch(`/api/v1/scan/${tool}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                body: JSON.stringify({ [tool]: input })
             });
 
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.error || `خطأ HTTP: ${response.status}`);
+            }
+
+            const data = await response.json();
             console.log('✅ API Response:', data);
 
+            // عرض النتائج
             if (window.ResultRenderer && window.ResultRenderer.render) {
                 window.ResultRenderer.render(data, 'demo-result');
             } else {
-                resultContainer.innerHTML = `<pre style="color: white;">${JSON.stringify(data, null, 2)}</pre>`;
+                // عرض مباشر إذا لم يكن ResultRenderer متاحاً
+                renderResultsDirectly(data, resultContainer);
             }
             resultContainer.classList.remove('hidden');
 
@@ -1137,6 +1188,17 @@ function setupLiveDemo() {
         } finally {
             setLoading(false);
         }
+    }
+
+    function renderResultsDirectly(data, container) {
+        // عرض مباشر للنتائج إذا فشل ResultRenderer
+        const html = `
+            <div class="result-card" style="margin-top: 20px; padding: 20px; background: rgba(22,33,62,0.9); border-radius: 14px; border-right: 4px solid #a855f7;">
+                <h3 style="color: #fff; margin-bottom: 15px;">🛡️ نتيجة الفحص</h3>
+                <pre style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; overflow-x: auto; color: #e2e8f0; font-size: 14px;">${JSON.stringify(data, null, 2)}</pre>
+            </div>
+        `;
+        container.innerHTML = html;
     }
 
     function setLoading(isLoading) {
@@ -1158,18 +1220,21 @@ function setupLiveDemo() {
     }
 
     function showError(message) {
-        if (window.ResultRenderer && window.ResultRenderer.renderError) {
-            window.ResultRenderer.renderError(message, 'demo-error');
-        } else {
-            errorContainer.innerHTML = `
-                <div class="error-message">
-                    <span style="font-size: 1.2rem;">⚠️</span>
-                    <span>${window.escapeHTML ? window.escapeHTML(message) : message}</span>
-                </div>
-            `;
-        }
+        errorContainer.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 10px; color: #fecaca;">
+                <span style="font-size: 1.2rem;">⚠️</span>
+                <span>${escapeHTML(message)}</span>
+            </div>
+        `;
         errorContainer.classList.remove('hidden');
         resultContainer.classList.add('hidden');
+    }
+
+    function escapeHTML(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
     }
 }
 </script>
