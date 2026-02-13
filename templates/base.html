@@ -980,7 +980,7 @@
                 'dnssec': 'DNSSEC', 'details': 'التفاصيل'
             };
 
-            // ---------- API Client (مصحح: اسم الدالة scan) ----------
+            // ---------- API Client ----------
             window.API = {
                 async scan(tool, input, options = {}) {
                     const { timeout = 15000, cache = true } = options;
@@ -1060,7 +1060,7 @@
                 }
             };
 
-            // ---------- Result Renderer (مصحح) ----------
+            // ---------- Result Renderer ----------
             window.ResultRenderer = {
                 render(data, containerId) {
                     const container = document.getElementById(containerId);
@@ -1215,12 +1215,5 @@
     </script>
 
     {% block scripts %}{% endblock %}
-    <script>
-    // اختبار بسيط جداً
-    window.onload = function() {
-        alert('✅ الموقع يعمل! إذا رأيت هذه الرسالة، JavaScript شغال');
-        console.log('Base.html loaded successfully');
-    };
-</script>
 </body>
 </html>
