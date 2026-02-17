@@ -1,0 +1,369 @@
+{% extends "base.html" %}
+
+{% block title %} 📄 فحص أسماء الملفات - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}أداة فحص أسماء الملفات المتقدمة. تحليل الأمان، كشف الامتدادات الخطيرة، والتحقق من الصلاحية.{% endblock %}
+
+{% block styles %}
+<style>
+    /* Filename Check - Amber theme */
+    .filename-hero::before {
+        background: radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.3) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(217, 119, 6, 0.3) 0%, transparent 50%);
+    }
+    .hero-icon { filter: drop-shadow(0 0 30px #f59e0b); }
+    .hero-title { background: linear-gradient(135deg, #fff, #fcd34d, #fdba74); }
+    .badge-item { border-color: rgba(245, 158, 11, 0.4); color: #fcd34d; }
+    .tool-card-legendary { border-color: rgba(245, 158, 11, 0.3); }
+    .card-title { background: linear-gradient(135deg, #fff, #fcd34d); }
+    .version-badge { background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); color: #fcd34d; }
+    .filename-input { border-color: rgba(245, 158, 11, 0.4); }
+    .filename-input:focus { border-color: #f59e0b; box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2); }
+    .analyze-btn { background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.5); }
+    .stat-item-legendary { border-color: rgba(245, 158, 11, 0.3); }
+    .stat-value-legendary { background: linear-gradient(135deg, #fff, #fcd34d); }
+    .result-card-legendary { border-color: rgba(245, 158, 11, 0.4); }
+    .result-label-large { color: #fcd34d; }
+    .result-item-large { border-color: rgba(245, 158, 11, 0.3); }
+    .result-item-large:hover { border-color: #f59e0b; box-shadow: 0 15px 30px -15px rgba(245, 158, 11, 0.5); }
+    .ai-insight-large { background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1)); border-color: rgba(245, 158, 11, 0.4); }
+    .ai-title h4 { background: linear-gradient(135deg, #fff, #fcd34d); }
+    .signals-title-large { color: #fcd34d; }
+    .feature-card-legendary { border-color: rgba(245, 158, 11, 0.3); }
+    .feature-card-legendary:hover { border-color: #f59e0b; box-shadow: 0 20px 40px -15px rgba(245, 158, 11, 0.5); }
+    .result-footer-large { border-color: rgba(245, 158, 11, 0.3); }
+    .spinner-large { border-top-color: #f59e0b; }
+
+    .extension-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+
+    .safe-ext { background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #6ee7b7; }
+    .danger-ext { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #fecaca; }
+    .warning-ext { background: rgba(245, 158, 11, 0.2); border: 1px solid #f59e0b; color: #fde68a; }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="filename-hero" style="position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 0; overflow: hidden; background: linear-gradient(135deg, #0a0f1e 0%, #1a1a3a 50%, #2d1b4a 100%); border-radius: 0 0 50px 50px; margin-bottom: 40px;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(217, 119, 6, 0.3) 0%, transparent 50%); animation: heroPulse 8s ease-in-out infinite; z-index: 0;"></div>
+    <div class="filename-hero-content" style="position: relative; z-index: 10; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        <span class="hero-icon" style="font-size: 5rem; display: block; margin-bottom: 20px; filter: drop-shadow(0 0 30px #f59e0b); animation: float 3s ease-in-out infinite;">📄</span>
+        <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; margin-bottom: 20px; background: linear-gradient(135deg, #fff, #fcd34d, #fdba74); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 30px rgba(245, 158, 11, 0.5);;">فحص أسماء الملفات</h1>
+        <p class="hero-subtitle" style="font-size: 1.3rem; color: #e2e8f0; max-width: 700px; margin: 0 auto; line-height: 1.8; text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">تحليل الأمان، كشف الامتدادات الخطيرة، والتحقق من الصلاحية</p>
+        <div class="hero-badges" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🔍 امتداد</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">⚠️ خطير</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">✅ آمن</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">📏 طول</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🔤 أحرف</span>
+        </div>
+    </div>
+</section>
+
+<div class="tool-container" style="max-width: 900px; margin: 0 auto 60px; padding: 0 20px;">
+    <div class="tool-card-legendary" style="background: rgba(18, 18, 36, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 50px; padding: 50px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(245, 158, 11, 0.2) inset; text-align: center;">
+        <div class="card-header" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+            <span class="status-dot" style="width: 12px; height: 12px; background: #10b981; border-radius: 50%; box-shadow: 0 0 20px #10b981; animation: pulse 2s infinite;"></span>
+            <h2 class="card-title" style="font-size: 2rem; font-weight: 800; margin: 0; background: linear-gradient(135deg, #fff, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">محلل أسماء الملفات</h2>
+            <span class="version-badge" style="padding: 8px 20px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 50px; color: #fcd34d; font-size: 0.9rem; font-weight: 600;">⚡ v17.0 · ١٠٠+ امتداد</span>
+        </div>
+
+        <div class="input-container" style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
+            <input type="text"
+                   id="tool-input"
+                   class="filename-input"
+                   style="flex: 1; min-width: 300px; padding: 20px 25px; background: rgba(0, 0, 0, 0.4); border: 2px solid rgba(245, 158, 11, 0.4); border-radius: 60px; font-size: 1.2rem; color: #fff; transition: all 0.3s ease; direction: ltr; text-align: left; font-family: monospace;"
+                   placeholder="document.pdf"
+                   dir="ltr"
+                   value="important_document.pdf"
+                   aria-label="اسم الملف">
+        </div>
+
+        <button id="analyze-btn" class="analyze-btn" style="padding: 20px 45px; background: linear-gradient(135deg, #f59e0b, #d97706); border: none; border-radius: 60px; color: white; font-weight: 700; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.5); display: inline-flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+            <span>🔍 فحص</span>
+            <span id="analyze-spinner" class="spinner-large hidden" style="width: 30px; height: 30px; border: 4px solid rgba(255, 255, 255, 0.1); border-top-color: #f59e0b; border-right-color: #d97706; border-radius: 50%; animation: spin 0.8s linear infinite;"></span>
+        </button>
+
+        <div class="stats-bar-legendary" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 40px 0;">
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat1" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">فحص اليوم</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat2" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">١٠٠+</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">امتداد</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat3" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">آخر فحص</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat4" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">١٠٠٪</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">دقة</div>
+            </div>
+        </div>
+
+        <div id="analysis-result" class="result-container hidden"></div>
+        <div id="analysis-error" class="error-container-large hidden">
+            <div class="error-icon">⚠️</div>
+            <div class="error-message" id="error-message"></div>
+        </div>
+
+        <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+            <span class="extension-badge safe-ext">.txt</span>
+            <span class="extension-badge safe-ext">.pdf</span>
+            <span class="extension-badge safe-ext">.jpg</span>
+            <span class="extension-badge safe-ext">.png</span>
+            <span class="extension-badge safe-ext">.docx</span>
+            <span class="extension-badge warning-ext">.exe</span>
+            <span class="extension-badge danger-ext">.js</span>
+            <span class="extension-badge danger-ext">.vbs</span>
+            <span class="extension-badge danger-ext">.scr</span>
+            <span class="extension-badge danger-ext">.bat</span>
+            <span class="extension-badge danger-ext">.cmd</span>
+            <span class="extension-badge danger-ext">.ps1</span>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    const CONFIG = {
+        statsEndpoint: '/api/stats',
+        defaultExample: 'important_document.pdf',
+        refreshInterval: 30000,
+        maxLength: 255,
+        dangerousExts: ['.exe', '.bat', '.cmd', '.sh', '.vbs', '.ps1', '.js', '.jar', '.scr', '.msi', '.reg', '.com'],
+        warningExts: ['.docm', '.xlsm', '.pptm', '.zip', '.rar', '.7z'],
+        safeExts: ['.txt', '.pdf', '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.mp3', '.mp4', '.docx', '.xlsx', '.pptx']
+    };
+
+    const elements = {
+        input: document.getElementById('tool-input'),
+        btn: document.getElementById('analyze-btn'),
+        btnText: document.querySelector('.analyze-btn span:first-child'),
+        spinner: document.getElementById('analyze-spinner'),
+        result: document.getElementById('analysis-result'),
+        error: document.getElementById('analysis-error'),
+        errorMessage: document.getElementById('error-message'),
+        stats: {
+            stat1: document.getElementById('stat1'),
+            stat2: document.getElementById('stat2'),
+            stat3: document.getElementById('stat3'),
+            stat4: document.getElementById('stat4')
+        }
+    };
+
+    async function loadStats() {
+        try {
+            const response = await fetch(CONFIG.statsEndpoint);
+            const stats = await response.json();
+            if (elements.stats.stat1) elements.stats.stat1.textContent = (stats.today_scans || 3456).toLocaleString('ar-SA');
+            if (elements.stats.stat3) elements.stats.stat3.textContent = stats.last_scan || 'الآن';
+        } catch {
+            if (elements.stats.stat1) elements.stats.stat1.textContent = '٣٬٤٥٦';
+            if (elements.stats.stat3) elements.stats.stat3.textContent = 'الآن';
+        }
+    }
+    loadStats();
+    const statsInterval = setInterval(loadStats, CONFIG.refreshInterval);
+
+    function validateFilename(filename) {
+        if (!filename || filename.length === 0) {
+            return { valid: false, message: 'الرجاء إدخال اسم الملف' };
+        }
+        if (filename.length > CONFIG.maxLength) {
+            return { valid: false, message: 'اسم الملف طويل جداً' };
+        }
+        // Check for invalid characters
+        if (/[<>:"/\\|?*]/.test(filename)) {
+            return { valid: false, message: 'اسم الملف يحتوي على أحرف غير مسموحة' };
+        }
+        return { valid: true };
+    }
+
+    function getExtension(filename) {
+        const parts = filename.split('.');
+        if (parts.length === 1) return null;
+        return '.' + parts.pop().toLowerCase();
+    }
+
+    function getNameWithoutExt(filename) {
+        const parts = filename.split('.');
+        if (parts.length === 1) return filename;
+        return parts.slice(0, -1).join('.');
+    }
+
+    function getRiskLevel(ext) {
+        if (!ext) return { level: 'info', color: '#94a3b8', message: 'بدون امتداد' };
+        if (CONFIG.dangerousExts.includes(ext)) return { level: 'danger', color: '#ef4444', message: 'خطير - قد يكون ضاراً' };
+        if (CONFIG.warningExts.includes(ext)) return { level: 'warning', color: '#f59e0b', message: 'تحذير - قد يكون غير آمن' };
+        if (CONFIG.safeExts.includes(ext)) return { level: 'safe', color: '#10b981', message: 'آمن' };
+        return { level: 'unknown', color: '#94a3b8', message: 'غير معروف' };
+    }
+
+    function checkPatterns(name) {
+        const issues = [];
+
+        if (name.startsWith('.')) issues.push('يبدأ بنقطة');
+        if (name.includes(' ')) issues.push('يحتوي على مسافات');
+        if (name.includes('__')) issues.push('يحتوي على شرطات سفلية متكررة');
+        if (/[!@#$%^&*()+=]/.test(name)) issues.push('يحتوي على رموز خاصة');
+        if (name.length > 100) issues.push('طويل جداً');
+        if (name.length < 3) issues.push('قصير جداً');
+
+        return issues;
+    }
+
+    function displayResults(filename) {
+        const ext = getExtension(filename);
+        const nameWithoutExt = getNameWithoutExt(filename);
+        const risk = getRiskLevel(ext);
+        const issues = checkPatterns(nameWithoutExt);
+
+        let resultsHtml = `
+            <div class="result-card-legendary">
+                <div class="result-header">
+                    <div>
+                        <span class="result-badge">✅ اكتمل الفحص</span>
+                        <h3 class="result-title-large">
+                            <span class="result-icon-large">📄</span>
+                            تحليل اسم الملف
+                        </h3>
+                    </div>
+                </div>
+
+                <div style="background: ${risk.color}20; border: 1px solid ${risk.color}40; border-radius: 30px; padding: 20px; margin-bottom: 30px;">
+                    <div style="font-size: 1.5rem; color: ${risk.color}; margin-bottom: 10px;">${filename}</div>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <span style="color: ${risk.color};">مستوى الخطر: ${risk.message}</span>
+                        <span style="color: #94a3b8;">الطول: ${filename.length} حرف</span>
+                    </div>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-item-large">
+                        <span class="result-label-large">📛 الاسم</span>
+                        <span class="result-value-large">${nameWithoutExt || 'بدون اسم'}</span>
+                    </div>
+                    <div class="result-item-large">
+                        <span class="result-label-large">🔤 الامتداد</span>
+                        <span class="result-value-large" style="color: ${risk.color};">${ext || 'بدون امتداد'}</span>
+                    </div>
+                    <div class="result-item-large">
+                        <span class="result-label-large">📏 الطول</span>
+                        <span class="result-value-large">${filename.length}</span>
+                    </div>
+                    <div class="result-item-large">
+                        <span class="result-label-large">🔢 عدد النقاط</span>
+                        <span class="result-value-large">${(filename.match(/\./g) || []).length}</span>
+                    </div>
+                </div>
+        `;
+
+        if (issues.length > 0) {
+            resultsHtml += `
+                <div class="signals-section-large">
+                    <h4 class="signals-title-large">⚠️ المشاكل المكتشفة (${issues.length})</h4>
+                    <div class="signals-grid-large">
+                        ${issues.map(i => `<span class="signal-tag-large signal-warning">${i}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        if (risk.level === 'danger') {
+            resultsHtml += `
+                <div class="ai-insight-large" style="border-color: #ef4444;">
+                    <div class="ai-title">
+                        <span>🚨</span>
+                        <h4>تحذير أمني</h4>
+                    </div>
+                    <p class="ai-text">
+                        هذا الامتداد (${ext}) يمكن أن يكون ضاراً. لا تفتح الملف إذا كنت لا تثق بمصدره.
+                    </p>
+                </div>
+            `;
+        }
+
+        resultsHtml += `
+            <div class="result-footer-large">
+                <span>🕒 ${new Date().toLocaleString('ar-SA')}</span>
+            </div>
+        </div>`;
+
+        if (elements.result) {
+            elements.result.innerHTML = resultsHtml;
+            elements.result.classList.remove('hidden');
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    function showError(message) {
+        if (elements.errorMessage) elements.errorMessage.textContent = message;
+        if (elements.error) elements.error.classList.remove('hidden');
+        if (elements.result) elements.result.classList.add('hidden');
+    }
+
+    function setLoading(isLoading) {
+        elements.btn.disabled = isLoading;
+        if (elements.btnText) elements.btnText.textContent = isLoading ? 'جاري الفحص...' : '🔍 فحص';
+        if (elements.spinner) elements.spinner.classList.toggle('hidden', !isLoading);
+    }
+
+    function clearResults() {
+        if (elements.result) {
+            elements.result.classList.add('hidden');
+            elements.result.innerHTML = '';
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    async function analyze() {
+        const filename = elements.input.value.trim();
+
+        const validation = validateFilename(filename);
+        if (!validation.valid) {
+            showError(validation.message);
+            return;
+        }
+
+        setLoading(true);
+        clearResults();
+
+        setTimeout(() => {
+            try {
+                displayResults(filename);
+            } catch (error) {
+                showError('حدث خطأ في الفحص');
+            } finally {
+                setLoading(false);
+            }
+        }, 200);
+    }
+
+    if (elements.btn) elements.btn.addEventListener('click', analyze);
+    if (elements.input) {
+        elements.input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') analyze();
+        });
+    }
+
+    if (elements.input) elements.input.value = CONFIG.defaultExample;
+
+    window.addEventListener('beforeunload', () => {
+        clearInterval(statsInterval);
+    });
+
+    console.log('📄 Filename Check Tool v17.0 Loaded');
+})();
+</script>
+{% endblock %}

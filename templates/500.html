@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center py-5">
+    <div class="display-1 text-danger mb-4">500</div>
+    <h1 class="display-4 mb-4">خطأ في الخادم</h1>
+    <p class="lead mb-5">حدث خطأ داخلي في الخادم. يرجى المحاولة مرة أخرى لاحقاً.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> ماذا حدث؟</h5>
+                    <p class="card-text">
+                        حدث خطأ غير متوقع في الخادم. فريقنا التقني تم إشعاره وسيعمل على حل المشكلة في أقرب وقت.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-lightning-charge"></i> إجراءات سريعة</h5>
+                    <div class="d-flex justify-content-center gap-2">
+                        <button class="btn btn-primary" onclick="location.reload()">
+                            <i class="bi bi-arrow-clockwise"></i> إعادة تحميل
+                        </button>
+                        <button class="btn btn-outline-primary" onclick="history.back()">
+                            <i class="bi bi-arrow-left"></i> العودة للخلف
+                        </button>
+                        <a href="{{ url_for('email_check') }}" class="btn btn-outline-success">
+                            <i class="bi bi-house"></i> الرئيسية
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i>
+                <strong>ملاحظة:</strong> إذا استمر الخطأ، يرجى التواصل معنا عبر صفحة الاتصال.
+                <a href="{{ url_for('contact') }}" class="alert-link">اتصل بنا</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

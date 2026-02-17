@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <!-- Error Icon -->
+    <div class="mb-4">
+        <i class="fas fa-exclamation-triangle fa-7x text-warning"></i>
+    </div>
+
+    <!-- Error Message -->
+    <h1 class="display-1 fw-bold mb-3">404</h1>
+    <h2 class="display-6 mb-4">الصفحة غير موجودة</h2>
+
+    <p class="lead mb-5">عذراً، لم نتمكن من العثور على الصفحة التي تبحث عنها.</p>
+
+    <!-- Possible Reasons -->
+    <div class="card mb-5 mx-auto" style="max-width: 600px;">
+        <div class="card-header bg-light">
+            <h5 class="mb-0"><i class="fas fa-search"></i> الأسباب المحتملة</h5>
+        </div>
+        <div class="card-body text-start">
+            <ul>
+                <li class="mb-2">قد تكون كتبت العنوان بشكل غير صحيح</li>
+                <li class="mb-2">الصفحة قد تم نقلها أو حذفها</li>
+                <li class="mb-2">الرابط الذي اتبعته قد يكون معطلاً</li>
+                <li>قد تكون الصفحة متاحة في قسم آخر من الموقع</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+        <a href="/" class="btn btn-primary btn-lg">
+            <i class="fas fa-home"></i> العودة إلى الرئيسية
+        </a>
+        <a href="/tools" class="btn btn-success btn-lg">
+            <i class="fas fa-tools"></i> استعراض الأدوات
+        </a>
+        <button onclick="window.history.back()" class="btn btn-secondary btn-lg">
+            <i class="fas fa-arrow-right"></i> العودة للصفحة السابقة
+        </button>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="card mx-auto" style="max-width: 800px;">
+        <div class="card-header bg-info text-white">
+            <h5 class="mb-0"><i class="fas fa-link"></i> روابط سريعة قد تهمك</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a href="/tools/email-check" class="text-decoration-none">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                                <h6>فحص البريد الإلكتروني</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="/tools/url-check" class="text-decoration-none">
+                        <div class="card h-100 border-success">
+                            <div class="card-body text-center">
+                                <i class="fas fa-link fa-2x text-success mb-2"></i>
+                                <h6>فحص الروابط</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="/tools/password-check" class="text-decoration-none">
+                        <div class="card h-100 border-warning">
+                            <div class="card-body text-center">
+                                <i class="fas fa-lock fa-2x text-warning mb-2"></i>
+                                <h6>فحص كلمات المرور</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Support -->
+    <div class="mt-5">
+        <p>إذا كنت تعتقد أن هذا خطأ من جانبنا، يرجى <a href="/contact" class="text-primary">الاتصال بنا</a>.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Auto-redirect after 30 seconds
+    setTimeout(() => {
+        window.location.href = '/';
+    }, 30000);
+
+    // Show countdown
+    document.addEventListener('DOMContentLoaded', function() {
+        let seconds = 30;
+        const redirectMsg = document.createElement('div');
+        redirectMsg.className = 'alert alert-info mt-4';
+        redirectMsg.innerHTML = `سيتم توجيهك تلقائياً إلى الصفحة الرئيسية خلال <span id="countdown">${seconds}</span> ثانية`;
+        document.querySelector('.container').appendChild(redirectMsg);
+
+        const countdownElement = document.getElementById('countdown');
+        const countdownInterval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+
+            if (seconds <= 0) {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+    });
+</script>
+{% endblock %}

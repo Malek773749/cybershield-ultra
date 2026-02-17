@@ -1,0 +1,399 @@
+{"timestamp": "2026-02-15 21:52:39", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99% accuracy"}
+{"timestamp": "2026-02-15 21:52:39", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-15 21:52:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 87.85ms"}
+{"timestamp": "2026-02-15 21:52:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 1.69ms"}
+{"timestamp": "2026-02-15 21:52:43", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:52:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 30.09ms"}
+{"timestamp": "2026-02-15 21:52:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/email-security.jpg - 404 - 5.48ms"}
+{"timestamp": "2026-02-15 21:52:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/password.jpg - 404 - 0.89ms"}
+{"timestamp": "2026-02-15 21:52:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/phishing.jpg - 404 - 3.42ms"}
+{"timestamp": "2026-02-15 21:52:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 3.82ms"}
+{"timestamp": "2026-02-15 21:52:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 83.42ms"}
+{"timestamp": "2026-02-15 21:53:00", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:53:00", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 11.74ms"}
+{"timestamp": "2026-02-15 21:53:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.46ms"}
+{"timestamp": "2026-02-15 21:53:16", "level": "INFO", "module": "cybershield", "message": "📱 Phone Analysis - +967773749784 - Yemen - 38.85ms"}
+{"timestamp": "2026-02-15 21:53:16", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 53.66ms"}
+{"timestamp": "2026-02-15 21:53:33", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:53:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 18.64ms"}
+{"timestamp": "2026-02-15 21:54:01", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:54:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 18.24ms"}
+{"timestamp": "2026-02-15 21:54:31", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:54:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 32.34ms"}
+{"timestamp": "2026-02-15 21:55:01", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:55:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 50.14ms"}
+{"timestamp": "2026-02-15 21:55:31", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:55:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 22.55ms"}
+{"timestamp": "2026-02-15 21:58:04", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:58:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 61.52ms"}
+{"timestamp": "2026-02-15 21:58:12", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:58:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 22.76ms"}
+{"timestamp": "2026-02-15 21:58:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 3.85ms"}
+{"timestamp": "2026-02-15 21:58:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 404 - 0.65ms"}
+{"timestamp": "2026-02-15 21:58:16", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:58:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 9.41ms"}
+{"timestamp": "2026-02-15 21:58:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 404 - 5.57ms"}
+{"timestamp": "2026-02-15 21:58:19", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:58:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 22.36ms"}
+{"timestamp": "2026-02-15 21:58:20", "level": "INFO", "module": "cybershield", "message": "API Request - GET /useragent-check - 404 - 2.04ms"}
+{"timestamp": "2026-02-15 21:58:22", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-15 21:58:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 25.27ms"}
+{"timestamp": "2026-02-15 21:58:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /useragent-check - 404 - 2.06ms"}
+{"timestamp": "2026-02-15 21:58:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /useragent-check - 404 - 3.60ms"}
+{"timestamp": "2026-02-15 21:58:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /useragent-check - 404 - 3.27ms"}
+{"timestamp": "2026-02-15 21:58:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /credit-card-check - 200 - 26.92ms"}
+{"timestamp": "2026-02-15 21:58:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 3.12ms"}
+{"timestamp": "2026-02-15 21:58:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 6.26ms"}
+{"timestamp": "2026-02-15 21:58:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 8.21ms"}
+{"timestamp": "2026-02-15 21:58:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /file-check - 200 - 29.90ms"}
+{"timestamp": "2026-02-15 21:58:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 5.65ms"}
+{"timestamp": "2026-02-15 21:58:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 4.68ms"}
+{"timestamp": "2026-02-15 21:58:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 8.86ms"}
+{"timestamp": "2026-02-15 21:58:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.87ms"}
+{"timestamp": "2026-02-15 21:58:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /blog - 404 - 1.00ms"}
+{"timestamp": "2026-02-15 21:58:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /blog - 404 - 1.74ms"}
+{"timestamp": "2026-02-15 21:58:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /about - 200 - 36.86ms"}
+{"timestamp": "2026-02-15 21:59:00", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.83ms"}
+{"timestamp": "2026-02-16 07:07:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /robots.txt - 404 - 88.12ms"}
+{"timestamp": "2026-02-16 07:07:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /robots.txt - 404 - 5.43ms"}
+{"timestamp": "2026-02-16 08:43:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 47.46ms"}
+{"timestamp": "2026-02-16 08:43:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/email-security.jpg - 404 - 14.33ms"}
+{"timestamp": "2026-02-16 08:43:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/password.jpg - 404 - 0.70ms"}
+{"timestamp": "2026-02-16 08:43:15", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 51.43ms"}
+{"timestamp": "2026-02-16 08:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/phishing.jpg - 404 - 3.11ms"}
+{"timestamp": "2026-02-16 08:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.49ms"}
+{"timestamp": "2026-02-16 08:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/favicon-32x32.png - 404 - 1.54ms"}
+{"timestamp": "2026-02-16 08:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/apple-touch-icon.png - 404 - 1.30ms"}
+{"timestamp": "2026-02-16 08:43:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/favicon-16x16.png - 404 - 8.98ms"}
+{"timestamp": "2026-02-16 08:43:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 7.78ms"}
+{"timestamp": "2026-02-16 08:43:30", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:43:30", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 5.62ms"}
+{"timestamp": "2026-02-16 08:43:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 404 - 0.74ms"}
+{"timestamp": "2026-02-16 08:43:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /favicon.ico - 404 - 0.87ms"}
+{"timestamp": "2026-02-16 08:43:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 404 - 0.55ms"}
+{"timestamp": "2026-02-16 08:43:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /useragent-check - 404 - 0.60ms"}
+{"timestamp": "2026-02-16 08:43:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /file-check - 200 - 9.91ms"}
+{"timestamp": "2026-02-16 08:43:40", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:43:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 18.49ms"}
+{"timestamp": "2026-02-16 08:43:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.83ms"}
+{"timestamp": "2026-02-16 08:43:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 62.26ms"}
+{"timestamp": "2026-02-16 08:43:43", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:43:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 6.88ms"}
+{"timestamp": "2026-02-16 08:43:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.05ms"}
+{"timestamp": "2026-02-16 08:43:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 404 - 0.66ms"}
+{"timestamp": "2026-02-16 08:43:47", "level": "INFO", "module": "cybershield", "message": "API Request - GET /port-check - 200 - 12.66ms"}
+{"timestamp": "2026-02-16 08:43:48", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:43:48", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 6.52ms"}
+{"timestamp": "2026-02-16 08:43:48", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 2.04ms"}
+{"timestamp": "2026-02-16 08:43:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /credit-card-check - 200 - 1.43ms"}
+{"timestamp": "2026-02-16 08:43:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 2.43ms"}
+{"timestamp": "2026-02-16 08:43:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /base64-check - 200 - 29.24ms"}
+{"timestamp": "2026-02-16 08:43:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 5.43ms"}
+{"timestamp": "2026-02-16 08:43:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.88ms"}
+{"timestamp": "2026-02-16 08:43:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /hash-check - 200 - 21.84ms"}
+{"timestamp": "2026-02-16 08:43:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 9.01ms"}
+{"timestamp": "2026-02-16 08:43:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.98ms"}
+{"timestamp": "2026-02-16 08:43:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /username-check - 200 - 26.61ms"}
+{"timestamp": "2026-02-16 08:43:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 5.30ms"}
+{"timestamp": "2026-02-16 08:43:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.85ms"}
+{"timestamp": "2026-02-16 08:44:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 44.17ms"}
+{"timestamp": "2026-02-16 08:44:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 1.37ms"}
+{"timestamp": "2026-02-16 08:44:05", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:44:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 5.24ms"}
+{"timestamp": "2026-02-16 08:44:06", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.76ms"}
+{"timestamp": "2026-02-16 08:44:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 1.33ms"}
+{"timestamp": "2026-02-16 08:44:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 5.47ms"}
+{"timestamp": "2026-02-16 08:44:07", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 08:44:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 31.24ms"}
+{"timestamp": "2026-02-16 09:00:46", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99% accuracy"}
+{"timestamp": "2026-02-16 09:00:46", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 09:00:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 87.10ms"}
+{"timestamp": "2026-02-16 09:00:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 2.74ms"}
+{"timestamp": "2026-02-16 09:00:49", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+{"timestamp": "2026-02-16 09:00:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 500 - 23.14ms"}
+{"timestamp": "2026-02-16 09:00:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/email-security.jpg - 404 - 5.20ms"}
+{"timestamp": "2026-02-16 09:00:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/password.jpg - 404 - 3.90ms"}
+{"timestamp": "2026-02-16 09:00:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/phishing.jpg - 404 - 0.86ms"}
+{"timestamp": "2026-02-16 09:00:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 3.79ms"}
+{"timestamp": "2026-02-16 09:01:00", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 404 - 3.46ms"}

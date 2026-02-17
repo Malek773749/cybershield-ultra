@@ -1,0 +1,465 @@
+{% extends "base.html" %}
+
+{% block title %}📞 اتصل بنا - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}تواصل مع فريق CyberShield Ultra. استفسارات، اقتراحات، بلاغات، ودعم فني.{% endblock %}
+
+{% block meta_keywords %}اتصال, دعم فني, تواصل, استفسار{% endblock %}
+
+{% block og_title %}📞 اتصل بنا - CyberShield Ultra{% endblock %}
+
+{% block og_description %}تواصل مع فريق الدعم والاستفسارات.{% endblock %}
+
+{% block styles %}
+<style>
+    /* Contact Page Specific Styles */
+    .contact-hero {
+        background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+        padding: var(--space-16) 0;
+        text-align: center;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-8);
+        margin: var(--space-12) 0;
+    }
+
+    .contact-info-card {
+        background: linear-gradient(145deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        border-radius: var(--radius-xl);
+        padding: var(--space-8);
+    }
+
+    .contact-method {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        padding: var(--space-4);
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--space-4);
+        transition: all var(--transition-base);
+    }
+
+    .contact-method:hover {
+        transform: translateX(-5px);
+        background: rgba(16, 185, 129, 0.1);
+        border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+        min-width: 60px;
+        text-align: center;
+    }
+
+    .contact-detail h4 {
+        margin-bottom: var(--space-1);
+        color: var(--aurora-teal);
+    }
+
+    .contact-detail p {
+        margin: 0;
+        color: var(--text-tertiary);
+    }
+
+    .contact-form {
+        background: var(--bg-card);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--border-2);
+        border-radius: var(--radius-xl);
+        padding: var(--space-8);
+    }
+
+    .form-group {
+        margin-bottom: var(--space-5);
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: var(--space-2);
+        color: var(--text-tertiary);
+        font-weight: 600;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: var(--space-3) var(--space-4);
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--border-2);
+        border-radius: var(--radius-lg);
+        color: var(--text-primary);
+        font-size: 1rem;
+        transition: all var(--transition-fast);
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: var(--aurora-teal);
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+    }
+
+    .form-control.error {
+        border-color: var(--aurora-coral);
+    }
+
+    textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .faq-section {
+        margin: var(--space-16) 0;
+    }
+
+    .faq-item {
+        background: var(--bg-glass);
+        border: 1px solid var(--border-2);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--space-4);
+        overflow: hidden;
+    }
+
+    .faq-question {
+        padding: var(--space-4) var(--space-6);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        color: var(--aurora-gold);
+        transition: all var(--transition-fast);
+    }
+
+    .faq-question:hover {
+        background: rgba(245, 158, 11, 0.1);
+    }
+
+    .faq-answer {
+        padding: 0 var(--space-6) var(--space-4) var(--space-6);
+        color: var(--text-tertiary);
+        display: none;
+    }
+
+    .faq-item.open .faq-answer {
+        display: block;
+    }
+
+    .faq-item.open .faq-question {
+        border-bottom: 1px solid var(--border-2);
+    }
+
+    .faq-toggle {
+        font-size: 1.5rem;
+        transition: transform var(--transition-fast);
+    }
+
+    .faq-item.open .faq-toggle {
+        transform: rotate(45deg);
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-4);
+        margin: var(--space-8) 0;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-3) var(--space-6);
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border-2);
+        border-radius: var(--radius-lg);
+        color: var(--text-secondary);
+        transition: all var(--transition-base);
+    }
+
+    .social-link:hover {
+        transform: translateY(-5px);
+        background: rgba(59, 130, 246, 0.1);
+        border-color: var(--aurora-blue);
+        color: #fff;
+    }
+
+    .alert-success {
+        background: rgba(16, 185, 129, 0.15);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        color: #a7f3d0;
+        padding: var(--space-4);
+        border-radius: var(--radius-lg);
+        margin-top: var(--space-4);
+        display: none;
+    }
+
+    .alert-error {
+        background: rgba(239, 68, 68, 0.15);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+        color: #fecaca;
+        padding: var(--space-4);
+        border-radius: var(--radius-lg);
+        margin-top: var(--space-4);
+        display: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="contact-hero">
+        <span class="hero-icon">📞</span>
+        <h1 class="hero-title">اتصل بنا</h1>
+        <p class="hero-subtitle">
+            نحن هنا لمساعدتك ٢٤/٧<br>
+            <span style="color: var(--text-tertiary);">استفسارات، اقتراحات، أو بلاغات</span>
+        </p>
+    </div>
+
+    <!-- Contact Grid -->
+    <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+            <h2 style="color: var(--aurora-teal); margin-bottom: var(--space-6);">معلومات الاتصال</h2>
+
+            <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <div class="contact-detail">
+                    <h4>البريد الإلكتروني</h4>
+                    <p>support@cybershield.pro</p>
+                    <p style="font-size: 0.85rem;">info@cybershield.pro</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-icon">💬</div>
+                <div class="contact-detail">
+                    <h4>الدردشة المباشرة</h4>
+                    <p>متوفرة ٢٤/٧</p>
+                    <p style="color: var(--aurora-teal);">اضغط هنا للدردشة</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-icon">🐦</div>
+                <div class="contact-detail">
+                    <h4>تويتر</h4>
+                    <p>@CyberShieldUltra</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-icon">📱</div>
+                <div class="contact-detail">
+                    <h4>واتساب</h4>
+                    <p>+967 777 777 777</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-detail">
+                    <h4>الموقع</h4>
+                    <p>cybershield.pro</p>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="contact-icon">⏰</div>
+                <div class="contact-detail">
+                    <h4>ساعات العمل</div>
+                    <p>٢٤ ساعة، ٧ أيام</p>
+                    <p style="font-size: 0.85rem;">نرد خلال ساعة</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2 style="color: var(--aurora-teal); margin-bottom: var(--space-6);">أرسل لنا رسالة</h2>
+
+            <div id="success-alert" class="alert-success">
+                ✅ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.
+            </div>
+
+            <div id="error-alert" class="alert-error">
+                ❌ حدث خطأ في الإرسال. حاول مرة أخرى.
+            </div>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label class="form-label">الاسم الكامل</label>
+                    <input type="text" class="form-control" id="name" placeholder="أدخل اسمك" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">رقم الهاتف (اختياري)</label>
+                    <input type="text" class="form-control" id="phone" placeholder="+967XXXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">نوع الرسالة</label>
+                    <select class="form-control" id="subject">
+                        <option value="general">📋 استفسار عام</option>
+                        <option value="support">🛠️ دعم فني</option>
+                        <option value="report">🚨 بلاغ أمني</option>
+                        <option value="suggest">💡 اقتراح</option>
+                        <option value="business">🤝 تعاون تجاري</option>
+                        <option value="media">📰 إعلام</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">الرسالة</label>
+                    <textarea class="form-control" id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <input type="checkbox" id="consent" required>
+                        أوافق على <a href="/privacy" style="color: var(--aurora-teal);">سياسة الخصوصية</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-block" style="background: linear-gradient(145deg, #10b981, #059669);">
+                    <span>📤 إرسال الرسالة</span>
+                    <span id="form-spinner" class="spinner hidden"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2 style="text-align: center; margin-bottom: var(--space-8);">الأسئلة الشائعة</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>❓ كيف يمكنني الإبلاغ عن ثغرة أمنية؟</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                يمكنك الإبلاغ عن الثغرات الأمنية عبر نموذج الاتصال واختيار "بلاغ أمني". نحن نقدر مساهماتك ونسرع في معالجتها.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>❓ هل أدواتكم مجانية تماماً؟</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                نعم! جميع أدواتنا مجانية ١٠٠٪ وستبقى مجانية. نحن نؤمن بأن الأمن السيبراني حق للجميع.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>❓ كم من الوقت يستغرق الرد على الرسائل؟</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                عادة ما نرد خلال ٢٤ ساعة، وفي الحالات العاجلة خلال ساعة.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>❓ هل يمكنني اقتراح أداة جديدة؟</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                بالتأكيد! نحن نرحب بجميع الاقتراحات. اختر "اقتراح" في نموذج الاتصال وشاركنا فكرتك.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>❓ كيف أبلغ عن رقم احتيالي؟</span>
+                <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+                استخدم أداة فحص الهاتف ثم اضغط على "بلاغ". يمكنك أيضاً التواصل معنا مباشرة عبر نموذج الاتصال.
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" class="social-link" target="_blank">
+            <span>🐦</span> تويتر
+        </a>
+        <a href="#" class="social-link" target="_blank">
+            <span>📘</span> فيسبوك
+        </a>
+        <a href="#" class="social-link" target="_blank">
+            <span>📷</span> انستغرام
+        </a>
+        <a href="#" class="social-link" target="_blank">
+            <span>💼</span> لينكد إن
+        </a>
+        <a href="#" class="social-link" target="_blank">
+            <span>📱</span> تيليجرام
+        </a>
+        <a href="#" class="social-link" target="_blank">
+            <span>🐙</span> جيت هاب
+        </a>
+    </div>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const spinner = document.getElementById('form-spinner');
+    const btnText = submitBtn.querySelector('span:first-child');
+    const successAlert = document.getElementById('success-alert');
+    const errorAlert = document.getElementById('error-alert');
+
+    // Hide previous alerts
+    successAlert.style.display = 'none';
+    errorAlert.style.display = 'none';
+
+    // Show loading
+    submitBtn.disabled = true;
+    spinner.classList.remove('hidden');
+    btnText.textContent = 'جاري الإرسال...';
+
+    // Simulate API call
+    setTimeout(() => {
+        submitBtn.disabled = false;
+        spinner.classList.add('hidden');
+        btnText.textContent = '📤 إرسال الرسالة';
+
+        // Show success (in real app, check response)
+        successAlert.style.display = 'block';
+        this.reset();
+
+        // Hide success after 5 seconds
+        setTimeout(() => {
+            successAlert.style.display = 'none';
+        }, 5000);
+    }, 1500);
+});
+
+// FAQ Toggle
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        item.classList.toggle('open');
+    });
+});
+</script>
+{% endblock %}

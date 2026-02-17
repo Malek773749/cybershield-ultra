@@ -1,0 +1,639 @@
+2026-02-15 20:11:58 - cybershield - ERROR - [app.py:190] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2270, in before_request
+    for bot in CONFIG.MALICIOUS_BOTS:
+AttributeError: 'Config' object has no attribute 'MALICIOUS_BOTS'
+2026-02-15 20:12:03 - cybershield - ERROR - [app.py:190] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2270, in before_request
+    for bot in CONFIG.MALICIOUS_BOTS:
+AttributeError: 'Config' object has no attribute 'MALICIOUS_BOTS'
+2026-02-15 20:52:33 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 20:52:38 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 20:52:46 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 21:52:43 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:53:00 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:53:33 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:54:01 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:54:31 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:55:01 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:55:31 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:04 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:12 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:16 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:19 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:22 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:15 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:30 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:40 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:43 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:48 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:44:05 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:44:07 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 09:00:49 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 11:28:16 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:32 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:34 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 14:02:43 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2184, in jwt_check
+    return render_template('jwt_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/jwt_check.html", line 3, in template
+    {% block title } 🔐 فحص JWT - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 14:02:58 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2192, in filename_check
+    return render_template('filename_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/filename_check.html", line 3, in template
+    {% block title } 📄 فحص أسماء الملفات - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 16:11:47 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:55 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:56 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:50:42 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:01:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:40:44 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 21:15:14 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 18:56:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:01:11 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:05:26 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:09:43 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:37 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:48 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:05:18 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:12:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:13:38 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:15:06 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 21:06:47 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Rate Limiter enabled

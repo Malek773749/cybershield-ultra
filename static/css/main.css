@@ -1,0 +1,982 @@
+/* CSS الرئيسي لتطبيق CyberSecurityPro - إصدار محسن SEO وAdSense */
+
+/* ===== متغيرات الألوان ===== */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --text-color: #333;
+  --text-light: #6c757d;
+  --bg-color: #ffffff;
+  --bg-light: #f8f9fa;
+  --border-color: #dee2e6;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+  
+  /* ألوان مخصصة لـ AdSense */
+  --adsense-bg: #f8f9fa;
+  --adsense-border: #dee2e6;
+  --adsense-text: #6c757d;
+}
+
+/* ===== الوضع الداكن ===== */
+[data-theme="dark"] {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #212529;
+  --dark-color: #f8f9fa;
+  --text-color: #e9ecef;
+  --text-light: #adb5bd;
+  --bg-color: #121416;
+  --bg-light: #212529;
+  --border-color: #495057;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  
+  /* ألوان AdSense في الوضع الداكن */
+  --adsense-bg: #212529;
+  --adsense-border: #495057;
+  --adsense-text: #adb5bd;
+}
+
+/* ===== الأساسيات ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: var(--transition);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== الشعار ===== */
+.navbar-brand .text-gradient {
+  background: linear-gradient(45deg, var(--primary-color), var(--info-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* ===== الروابط ===== */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--info-color);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ===== الأزرار ===== */
+.btn-gradient {
+  background: linear-gradient(45deg, var(--primary-color), var(--info-color));
+  border: none;
+  color: white;
+  transition: var(--transition);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  color: white;
+}
+
+.btn-gradient:active {
+  transform: translateY(0);
+}
+
+/* ===== البطاقات ===== */
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--bg-light);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.card-hover .card-body {
+  padding: 1.5rem;
+}
+
+/* ===== الأيقونات ===== */
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(45deg, var(--primary-color), var(--info-color));
+}
+
+.bg-success-gradient {
+  background: linear-gradient(45deg, var(--success-color), var(--info-color));
+}
+
+.bg-warning-gradient {
+  background: linear-gradient(45deg, var(--warning-color), var(--danger-color));
+}
+
+.bg-danger-gradient {
+  background: linear-gradient(45deg, var(--danger-color), var(--warning-color));
+}
+
+.bg-info-gradient {
+  background: linear-gradient(45deg, var(--info-color), var(--primary-color));
+}
+
+.bg-secondary-gradient {
+  background: linear-gradient(45deg, var(--secondary-color), var(--dark-color));
+}
+
+/* ===== أدوات ===== */
+.tool-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tool-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* ===== إحصائيات ===== */
+.stat-card {
+  background-color: var(--bg-light);
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+.stat-icon {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.counter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+/* ===== ميزات ===== */
+.feature-box {
+  background-color: var(--bg-light);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  height: 100%;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Flip Card ===== */
+.flip-card {
+  perspective: 1000px;
+  height: 250px;
+  width: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+}
+
+.flip-card-back {
+  background-color: var(--primary-color);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-light) 100%);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content .text-gradient {
+  background: linear-gradient(45deg, var(--primary-color), var(--info-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* ===== Floating Cards ===== */
+.floating-card {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.floating-card.card-1 {
+  top: 10%;
+  right: 5%;
+  animation-delay: 0s;
+}
+
+.floating-card.card-2 {
+  top: 50%;
+  left: 5%;
+  animation-delay: 1s;
+}
+
+.floating-card.card-3 {
+  bottom: 10%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* ===== النماذج ===== */
+.form-control,
+.form-select {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--bg-color);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* ===== Progress Bar ===== */
+.progress {
+  height: 10px;
+  background-color: var(--bg-light);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+  background-color: var(--primary-color);
+  height: 100%;
+}
+
+/* ===== التنبيهات ===== */
+.alert {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.alert::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.alert-success {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: var(--success-color);
+  border-left: 4px solid var(--success-color);
+}
+
+.alert-success::before {
+  content: "\f058";
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger-color);
+  border-left: 4px solid var(--danger-color);
+}
+
+.alert-danger::before {
+  content: "\f06a";
+}
+
+.alert-warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: var(--warning-color);
+  border-left: 4px solid var(--warning-color);
+}
+
+.alert-warning::before {
+  content: "\f071";
+}
+
+.alert-info {
+  background-color: rgba(13, 202, 240, 0.1);
+  color: var(--info-color);
+  border-left: 4px solid var(--info-color);
+}
+
+.alert-info::before {
+  content: "\f05a";
+}
+
+/* ===== شريط التنقل ===== */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  background-color: var(--bg-color) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.375rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* ===== التذييل ===== */
+footer {
+  margin-top: auto;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 3rem 0;
+}
+
+.footer-brand .text-gradient {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--light-color);
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+  padding-right: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+/* ===== زر العودة للأعلى ===== */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.25rem;
+}
+
+#backToTop:hover,
+#backToTop:focus {
+  transform: translateY(-5px);
+  background-color: var(--info-color);
+}
+
+#backToTop:active {
+  transform: translateY(0);
+}
+
+/* ===== Spinner ===== */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  display: none;
+}
+
+.spinner-container {
+  text-align: center;
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Toast ===== */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1050;
+  max-width: 350px;
+}
+
+.toast {
+  background-color: var(--bg-light);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.toast-success {
+  border-left: 4px solid var(--success-color);
+}
+
+.toast-error {
+  border-left: 4px solid var(--danger-color);
+}
+
+.toast-warning {
+  border-left: 4px solid var(--warning-color);
+}
+
+.toast-info {
+  border-left: 4px solid var(--info-color);
+}
+
+/* ===== Google AdSense Optimizations ===== */
+.adsense-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.adsense-responsive {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.adsense-placeholder {
+  background-color: var(--adsense-bg);
+  border: 2px dashed var(--adsense-border);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--adsense-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  transition: var(--transition);
+}
+
+.adsense-placeholder:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+.adsense-placeholder i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.adsense-placeholder p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.adsense-placeholder small {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* ===== SEO Optimizations ===== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.schema-rich-snippet {
+  display: none;
+}
+
+/* تحسين الأداء - صور بطيئة التحميل */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img.lazy.loaded {
+  opacity: 1;
+}
+
+/* ===== طباعة ===== */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .hero-section,
+  .floating-card,
+  .social-icons,
+  #backToTop,
+  .adsense-container {
+    display: none !important;
+  }
+  
+  .card {
+    break-inside: avoid;
+    border: 1px solid #ddd;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .counter {
+    font-size: 2rem;
+  }
+  
+  .floating-card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .floating-card {
+    display: none;
+  }
+  
+  .counter {
+    font-size: 1.75rem;
+  }
+  
+  .feature-box,
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .toast-container {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .btn-gradient {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .card-hover .card-body {
+    padding: 1rem;
+  }
+}
+
+/* ===== High Contrast Mode Support ===== */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0056b3;
+    --text-color: #000;
+    --border-color: #000;
+  }
+  
+  .btn-gradient {
+    border: 2px solid #000;
+  }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .flip-card-inner,
+  .floating-card,
+  .btn-gradient:hover {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ===== RTL Support ===== */
+[dir="rtl"] .floating-card.card-1 {
+  right: auto;
+  left: 5%;
+}
+
+[dir="rtl"] .floating-card.card-2 {
+  left: auto;
+  right: 5%;
+}
+
+[dir="rtl"] .floating-card.card-3 {
+  right: auto;
+  left: 15%;
+}
+
+[dir="rtl"] #backToTop {
+  left: auto;
+  right: 20px;
+}
+
+[dir="rtl"] .toast-container {
+  left: auto;
+  right: 20px;
+}
+
+[dir="rtl"] .me-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+[dir="rtl"] .me-1 {
+  margin-right: 0 !important;
+  margin-left: 0.25rem !important;
+}
+
+[dir="rtl"] .me-2 {
+  margin-right: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+[dir="rtl"] .me-3 {
+  margin-right: 0 !important;
+  margin-left: 1rem !important;
+}
+
+[dir="rtl"] .ms-2 {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+[dir="rtl"] .alert::before {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+[dir="rtl"] .alert-success,
+[dir="rtl"] .alert-danger,
+[dir="rtl"] .alert-warning,
+[dir="rtl"] .alert-info {
+  border-left: none;
+  border-right: 4px solid;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+/* ===== تحسينات إضافية لـ AdSense ===== */
+/* منع التداخل مع إعلانات AdSense */
+ins.adsbygoogle {
+  display: block !important;
+  margin: 1rem auto;
+}
+
+/* تحسين عرض الإعلانات على الهواتف */
+@media (max-width: 480px) {
+  ins.adsbygoogle {
+    width: 320px;
+    height: 100px;
+  }
+}
+
+/* ===== تحسينات سرعة التحميل ===== */
+/* تحسين الأولوية للعناصر المرئية */
+.lcp-priority {
+  content-visibility: auto;
+}
+
+/* ===== تحسينات إمكانية الوصول ===== */
+/* تحسين التباين للوضع الداكن */
+[data-theme="dark"] a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* تحسين قراءة النصوص */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ===== تحسينات SEO ===== */
+/* تحسين عرض Structured Data */
+.schema-organization,
+.schema-webpage,
+.schema-article {
+  display: none;
+}
+
+/* ===== أداء التمرير ===== */
+/* تحسين أداء التمرير على الهواتف */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}

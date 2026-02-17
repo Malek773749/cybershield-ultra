@@ -1,0 +1,984 @@
+{"timestamp": "2026-02-16 09:58:35", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99% accuracy"}
+{"timestamp": "2026-02-16 09:58:35", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 09:58:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 162.58ms"}
+{"timestamp": "2026-02-16 09:58:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 5.68ms"}
+{"timestamp": "2026-02-16 09:58:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.99ms"}
+{"timestamp": "2026-02-16 09:58:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/email-security.jpg - 404 - 12.86ms"}
+{"timestamp": "2026-02-16 09:58:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/password.jpg - 404 - 1.36ms"}
+{"timestamp": "2026-02-16 09:58:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/articles/phishing.jpg - 404 - 1.44ms"}
+{"timestamp": "2026-02-16 09:58:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.85ms"}
+{"timestamp": "2026-02-16 09:58:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 200 - 11.07ms"}
+{"timestamp": "2026-02-16 09:58:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.31ms"}
+{"timestamp": "2026-02-16 09:58:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 0.96ms"}
+{"timestamp": "2026-02-16 09:58:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 200 - 19.38ms"}
+{"timestamp": "2026-02-16 09:58:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 2.54ms"}
+{"timestamp": "2026-02-16 09:58:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.46ms"}
+{"timestamp": "2026-02-16 10:08:23", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99% accuracy"}
+{"timestamp": "2026-02-16 10:08:23", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 10:08:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 125.02ms"}
+{"timestamp": "2026-02-16 10:08:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 1.49ms"}
+{"timestamp": "2026-02-16 10:08:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.47ms"}
+{"timestamp": "2026-02-16 10:08:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 8.37ms"}
+{"timestamp": "2026-02-16 10:08:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 6.56ms"}
+{"timestamp": "2026-02-16 10:09:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.48ms"}
+{"timestamp": "2026-02-16 10:10:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 5.73ms"}
+{"timestamp": "2026-02-16 10:11:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 9.43ms"}
+{"timestamp": "2026-02-16 10:11:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 10.20ms"}
+{"timestamp": "2026-02-16 10:11:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /blog - 200 - 36.99ms"}
+{"timestamp": "2026-02-16 10:12:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 8.64ms"}
+{"timestamp": "2026-02-16 10:12:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /about - 200 - 48.79ms"}
+{"timestamp": "2026-02-16 10:12:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 2.88ms"}
+{"timestamp": "2026-02-16 10:12:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /contact - 200 - 25.74ms"}
+{"timestamp": "2026-02-16 10:12:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 1.39ms"}
+{"timestamp": "2026-02-16 10:12:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /contact - 200 - 3.64ms"}
+{"timestamp": "2026-02-16 10:12:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /contact - 200 - 3.82ms"}
+{"timestamp": "2026-02-16 10:12:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /contact - 200 - 1.19ms"}
+{"timestamp": "2026-02-16 10:13:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 2.06ms"}
+{"timestamp": "2026-02-16 10:13:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.74ms"}
+{"timestamp": "2026-02-16 10:13:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 28.08ms"}
+{"timestamp": "2026-02-16 10:13:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 6.63ms"}
+{"timestamp": "2026-02-16 10:13:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 2.92ms"}
+{"timestamp": "2026-02-16 10:13:45", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 22.51ms"}
+{"timestamp": "2026-02-16 10:14:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 4.45ms"}
+{"timestamp": "2026-02-16 10:14:25", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 61.98ms"}
+{"timestamp": "2026-02-16 10:14:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.32ms"}
+{"timestamp": "2026-02-16 10:15:06", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 25.36ms"}
+{"timestamp": "2026-02-16 10:15:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 11.03ms"}
+{"timestamp": "2026-02-16 10:15:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 4.99ms"}
+{"timestamp": "2026-02-16 10:16:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 4.25ms"}
+{"timestamp": "2026-02-16 10:20:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 10.44ms"}
+{"timestamp": "2026-02-16 10:20:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 7.26ms"}
+{"timestamp": "2026-02-16 10:21:04", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99% accuracy"}
+{"timestamp": "2026-02-16 10:21:04", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 10:21:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 490.28ms"}
+{"timestamp": "2026-02-16 10:21:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 3.28ms"}
+{"timestamp": "2026-02-16 10:21:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 3.30ms"}
+{"timestamp": "2026-02-16 10:21:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 22.25ms"}
+{"timestamp": "2026-02-16 10:21:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 7.39ms"}
+{"timestamp": "2026-02-16 10:21:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 14.43ms"}
+{"timestamp": "2026-02-16 10:21:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.27ms"}
+{"timestamp": "2026-02-16 10:21:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 1.65ms"}
+{"timestamp": "2026-02-16 10:21:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.36ms"}
+{"timestamp": "2026-02-16 10:21:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 2.18ms"}
+{"timestamp": "2026-02-16 10:21:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 3.24ms"}
+{"timestamp": "2026-02-16 10:22:02", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 8.03ms"}
+{"timestamp": "2026-02-16 10:22:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 11.46ms"}
+{"timestamp": "2026-02-16 10:22:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 5.93ms"}
+{"timestamp": "2026-02-16 10:22:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.42ms"}
+{"timestamp": "2026-02-16 10:22:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 3.46ms"}
+{"timestamp": "2026-02-16 10:22:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.78ms"}
+{"timestamp": "2026-02-16 10:22:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.38ms"}
+{"timestamp": "2026-02-16 10:22:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.24ms"}
+{"timestamp": "2026-02-16 10:22:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 6.97ms"}
+{"timestamp": "2026-02-16 10:23:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 1.88ms"}
+{"timestamp": "2026-02-16 10:23:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 3.36ms"}
+{"timestamp": "2026-02-16 10:23:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 5.44ms"}
+{"timestamp": "2026-02-16 10:29:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.69ms"}
+{"timestamp": "2026-02-16 10:29:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.37ms"}
+{"timestamp": "2026-02-16 10:29:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 10.33ms"}
+{"timestamp": "2026-02-16 10:29:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.32ms"}
+{"timestamp": "2026-02-16 10:29:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.18ms"}
+{"timestamp": "2026-02-16 10:29:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 2.26ms"}
+{"timestamp": "2026-02-16 10:30:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 10.97ms"}
+{"timestamp": "2026-02-16 10:30:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 11.91ms"}
+{"timestamp": "2026-02-16 10:30:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.43ms"}
+{"timestamp": "2026-02-16 10:30:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 2.71ms"}
+{"timestamp": "2026-02-16 10:30:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.35ms"}
+{"timestamp": "2026-02-16 10:30:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 5.72ms"}
+{"timestamp": "2026-02-16 10:31:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 23.90ms"}
+{"timestamp": "2026-02-16 10:31:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 6.79ms"}
+{"timestamp": "2026-02-16 10:31:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 2.21ms"}
+{"timestamp": "2026-02-16 10:31:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 6.40ms"}
+{"timestamp": "2026-02-16 10:31:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 1.69ms"}
+{"timestamp": "2026-02-16 10:37:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /robots.txt - 404 - 2.06ms"}
+{"timestamp": "2026-02-16 10:37:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /password-check - 200 - 52.48ms"}
+{"timestamp": "2026-02-16 10:37:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 1.58ms"}
+{"timestamp": "2026-02-16 10:37:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/img/og-default.webp - 404 - 2.41ms"}
+{"timestamp": "2026-02-16 10:37:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/img/og-default.webp - 404 - 1.55ms"}
+{"timestamp": "2026-02-16 10:44:20", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 8.02ms"}
+{"timestamp": "2026-02-16 10:45:40", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 10:45:40", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 10:45:40", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 10:45:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 197.00ms"}
+{"timestamp": "2026-02-16 10:45:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 21.29ms"}
+{"timestamp": "2026-02-16 10:45:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.00ms"}
+{"timestamp": "2026-02-16 10:45:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 47.77ms"}
+{"timestamp": "2026-02-16 10:45:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.85ms"}
+{"timestamp": "2026-02-16 10:46:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.78ms"}
+{"timestamp": "2026-02-16 10:46:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 197.66ms"}
+{"timestamp": "2026-02-16 10:46:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.84ms"}
+{"timestamp": "2026-02-16 10:46:10", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 24.76ms"}
+{"timestamp": "2026-02-16 10:46:14", "level": "INFO", "module": "cybershield", "message": "📱 Phone Analysis - +966501234567 - Saudi Arabia - 31.63ms"}
+{"timestamp": "2026-02-16 10:46:14", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 89.60ms"}
+{"timestamp": "2026-02-16 10:46:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 45.88ms"}
+{"timestamp": "2026-02-16 10:47:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.75ms"}
+{"timestamp": "2026-02-16 10:47:20", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.90ms"}
+{"timestamp": "2026-02-16 10:47:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.69ms"}
+{"timestamp": "2026-02-16 10:47:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /tools - 200 - 98.86ms"}
+{"timestamp": "2026-02-16 10:47:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 60.84ms"}
+{"timestamp": "2026-02-16 10:47:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 31.00ms"}
+{"timestamp": "2026-02-16 10:49:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 19.14ms"}
+{"timestamp": "2026-02-16 10:49:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.83ms"}
+{"timestamp": "2026-02-16 10:49:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 15.72ms"}
+{"timestamp": "2026-02-16 10:49:47", "level": "INFO", "module": "cybershield", "message": "📱 Phone Analysis - +966123456789 - Saudi Arabia - 0.82ms"}
+{"timestamp": "2026-02-16 10:49:47", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 33.89ms"}
+{"timestamp": "2026-02-16 10:50:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.66ms"}
+{"timestamp": "2026-02-16 10:50:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 108.68ms"}
+{"timestamp": "2026-02-16 10:50:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.55ms"}
+{"timestamp": "2026-02-16 10:50:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 17.45ms"}
+{"timestamp": "2026-02-16 10:50:46", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/email - 200 - 54.91ms"}
+{"timestamp": "2026-02-16 10:51:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.48ms"}
+{"timestamp": "2026-02-16 10:51:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /password-check - 200 - 33.32ms"}
+{"timestamp": "2026-02-16 10:51:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.33ms"}
+{"timestamp": "2026-02-16 10:51:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 15.77ms"}
+{"timestamp": "2026-02-16 10:51:59", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/password - 200 - 29.75ms"}
+{"timestamp": "2026-02-16 10:52:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 15.51ms"}
+{"timestamp": "2026-02-16 10:52:23", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/password - 200 - 40.60ms"}
+{"timestamp": "2026-02-16 10:52:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 15.65ms"}
+{"timestamp": "2026-02-16 10:53:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.44ms"}
+{"timestamp": "2026-02-16 10:56:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.18ms"}
+{"timestamp": "2026-02-16 10:56:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 53.79ms"}
+{"timestamp": "2026-02-16 10:56:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.35ms"}
+{"timestamp": "2026-02-16 10:56:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 16.39ms"}
+{"timestamp": "2026-02-16 10:56:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 17.20ms"}
+{"timestamp": "2026-02-16 10:56:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 17.58ms"}
+{"timestamp": "2026-02-16 10:56:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 16.71ms"}
+{"timestamp": "2026-02-16 10:56:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.82ms"}
+{"timestamp": "2026-02-16 10:56:45", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/url - 200 - 35.00ms"}
+{"timestamp": "2026-02-16 10:57:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 17.17ms"}
+{"timestamp": "2026-02-16 10:57:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.69ms"}
+{"timestamp": "2026-02-16 10:57:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 13.62ms"}
+{"timestamp": "2026-02-16 10:57:19", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/url - 200 - 39.92ms"}
+{"timestamp": "2026-02-16 10:59:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET /domain-check - 200 - 62.22ms"}
+{"timestamp": "2026-02-16 10:59:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.37ms"}
+{"timestamp": "2026-02-16 10:59:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 24.33ms"}
+{"timestamp": "2026-02-16 10:59:22", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/domain - 200 - 44.58ms"}
+{"timestamp": "2026-02-16 10:59:43", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/domain - 200 - 30.19ms"}
+{"timestamp": "2026-02-16 10:59:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.68ms"}
+{"timestamp": "2026-02-16 11:00:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.90ms"}
+{"timestamp": "2026-02-16 11:00:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 64.28ms"}
+{"timestamp": "2026-02-16 11:00:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.08ms"}
+{"timestamp": "2026-02-16 11:00:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 32.91ms"}
+{"timestamp": "2026-02-16 11:00:27", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/ip - 200 - 42.94ms"}
+{"timestamp": "2026-02-16 11:00:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.60ms"}
+{"timestamp": "2026-02-16 11:01:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /hash-check - 200 - 53.01ms"}
+{"timestamp": "2026-02-16 11:01:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.81ms"}
+{"timestamp": "2026-02-16 11:01:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 19.47ms"}
+{"timestamp": "2026-02-16 11:01:29", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/hash - 200 - 33.19ms"}
+{"timestamp": "2026-02-16 11:01:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 14.80ms"}
+{"timestamp": "2026-02-16 11:02:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /base64-check - 200 - 83.40ms"}
+{"timestamp": "2026-02-16 11:02:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 40.58ms"}
+{"timestamp": "2026-02-16 11:02:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 26.32ms"}
+{"timestamp": "2026-02-16 11:02:10", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/base64 - 200 - 41.51ms"}
+{"timestamp": "2026-02-16 11:02:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.63ms"}
+{"timestamp": "2026-02-16 11:03:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.45ms"}
+{"timestamp": "2026-02-16 11:03:30", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/base64 - 200 - 30.62ms"}
+{"timestamp": "2026-02-16 11:03:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 14.32ms"}
+{"timestamp": "2026-02-16 11:03:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /credit-card-check - 200 - 51.77ms"}
+{"timestamp": "2026-02-16 11:03:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.70ms"}
+{"timestamp": "2026-02-16 11:03:57", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/credit_card - 200 - 49.59ms"}
+{"timestamp": "2026-02-16 11:03:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 18.25ms"}
+{"timestamp": "2026-02-16 11:04:07", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/credit_card - 200 - 35.56ms"}
+{"timestamp": "2026-02-16 11:04:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.80ms"}
+{"timestamp": "2026-02-16 11:04:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.60ms"}
+{"timestamp": "2026-02-16 11:05:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /port-check - 200 - 27.36ms"}
+{"timestamp": "2026-02-16 11:05:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.98ms"}
+{"timestamp": "2026-02-16 11:05:02", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 25.36ms"}
+{"timestamp": "2026-02-16 11:05:06", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/port - 200 - 53.26ms"}
+{"timestamp": "2026-02-16 11:05:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.60ms"}
+{"timestamp": "2026-02-16 11:06:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.24ms"}
+{"timestamp": "2026-02-16 11:06:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 32.29ms"}
+{"timestamp": "2026-02-16 11:06:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 38.80ms"}
+{"timestamp": "2026-02-16 11:06:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.08ms"}
+{"timestamp": "2026-02-16 11:06:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 16.25ms"}
+{"timestamp": "2026-02-16 11:06:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 18.44ms"}
+{"timestamp": "2026-02-16 11:06:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 23.44ms"}
+{"timestamp": "2026-02-16 11:06:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 17.46ms"}
+{"timestamp": "2026-02-16 11:06:29", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/dns - 200 - 62.56ms"}
+{"timestamp": "2026-02-16 11:06:43", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/dns - 200 - 30.70ms"}
+{"timestamp": "2026-02-16 11:06:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.62ms"}
+{"timestamp": "2026-02-16 11:07:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 200 - 42.97ms"}
+{"timestamp": "2026-02-16 11:07:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.45ms"}
+{"timestamp": "2026-02-16 11:07:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 28.03ms"}
+{"timestamp": "2026-02-16 11:07:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 200 - 20.31ms"}
+{"timestamp": "2026-02-16 11:07:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 200 - 20.78ms"}
+{"timestamp": "2026-02-16 11:07:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 200 - 16.19ms"}
+{"timestamp": "2026-02-16 11:08:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 24.15ms"}
+{"timestamp": "2026-02-16 11:08:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.26ms"}
+{"timestamp": "2026-02-16 11:08:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 18.55ms"}
+{"timestamp": "2026-02-16 11:08:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.54ms"}
+{"timestamp": "2026-02-16 11:08:57", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/email - 200 - 36.03ms"}
+{"timestamp": "2026-02-16 11:09:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.69ms"}
+{"timestamp": "2026-02-16 11:09:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.49ms"}
+{"timestamp": "2026-02-16 11:22:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 42.28ms"}
+{"timestamp": "2026-02-16 11:22:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.39ms"}
+{"timestamp": "2026-02-16 11:23:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.13ms"}
+{"timestamp": "2026-02-16 11:23:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.49ms"}
+{"timestamp": "2026-02-16 11:24:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 36.36ms"}
+{"timestamp": "2026-02-16 11:26:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.45ms"}
+{"timestamp": "2026-02-16 11:26:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 20.14ms"}
+{"timestamp": "2026-02-16 11:26:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 19.73ms"}
+{"timestamp": "2026-02-16 11:28:16", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 11:28:16", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 11:28:16", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 11:28:16", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+{"timestamp": "2026-02-16 11:28:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 500 - 19.64ms"}
+{"timestamp": "2026-02-16 11:28:32", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 11:28:32", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 11:28:32", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 11:28:32", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+{"timestamp": "2026-02-16 11:28:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 500 - 58.67ms"}
+{"timestamp": "2026-02-16 11:28:34", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+{"timestamp": "2026-02-16 11:28:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 500 - 4.85ms"}
+{"timestamp": "2026-02-16 11:49:18", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 11:49:18", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 11:49:18", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 11:49:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 238.52ms"}
+{"timestamp": "2026-02-16 11:49:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 18.81ms"}
+{"timestamp": "2026-02-16 11:49:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.49ms"}
+{"timestamp": "2026-02-16 11:49:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 89.84ms"}
+{"timestamp": "2026-02-16 11:49:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.20ms"}
+{"timestamp": "2026-02-16 11:49:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.05ms"}
+{"timestamp": "2026-02-16 11:49:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 45.36ms"}
+{"timestamp": "2026-02-16 11:49:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.61ms"}
+{"timestamp": "2026-02-16 11:49:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 21.10ms"}
+{"timestamp": "2026-02-16 11:49:59", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/email - 200 - 62.53ms"}
+{"timestamp": "2026-02-16 11:50:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 44.79ms"}
+{"timestamp": "2026-02-16 11:50:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.38ms"}
+{"timestamp": "2026-02-16 12:07:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 32.18ms"}
+{"timestamp": "2026-02-16 12:07:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 45.13ms"}
+{"timestamp": "2026-02-16 12:07:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.69ms"}
+{"timestamp": "2026-02-16 12:08:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.78ms"}
+{"timestamp": "2026-02-16 12:08:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.42ms"}
+{"timestamp": "2026-02-16 12:09:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.29ms"}
+{"timestamp": "2026-02-16 12:09:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.90ms"}
+{"timestamp": "2026-02-16 12:10:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.95ms"}
+{"timestamp": "2026-02-16 12:11:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 32.91ms"}
+{"timestamp": "2026-02-16 12:11:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.58ms"}
+{"timestamp": "2026-02-16 12:12:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.98ms"}
+{"timestamp": "2026-02-16 12:12:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.61ms"}
+{"timestamp": "2026-02-16 12:13:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.01ms"}
+{"timestamp": "2026-02-16 12:13:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.78ms"}
+{"timestamp": "2026-02-16 12:15:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.67ms"}
+{"timestamp": "2026-02-16 12:15:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.56ms"}
+{"timestamp": "2026-02-16 12:16:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.77ms"}
+{"timestamp": "2026-02-16 12:16:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 46.99ms"}
+{"timestamp": "2026-02-16 12:17:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.49ms"}
+{"timestamp": "2026-02-16 12:17:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.59ms"}
+{"timestamp": "2026-02-16 12:18:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.96ms"}
+{"timestamp": "2026-02-16 12:18:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.74ms"}
+{"timestamp": "2026-02-16 12:19:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.02ms"}
+{"timestamp": "2026-02-16 12:19:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.30ms"}
+{"timestamp": "2026-02-16 12:20:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.97ms"}
+{"timestamp": "2026-02-16 12:20:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 34.60ms"}
+{"timestamp": "2026-02-16 12:21:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 53.22ms"}
+{"timestamp": "2026-02-16 12:21:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.68ms"}
+{"timestamp": "2026-02-16 12:22:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.68ms"}
+{"timestamp": "2026-02-16 12:22:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.38ms"}
+{"timestamp": "2026-02-16 12:23:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 38.58ms"}
+{"timestamp": "2026-02-16 12:23:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.65ms"}
+{"timestamp": "2026-02-16 12:24:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.92ms"}
+{"timestamp": "2026-02-16 12:24:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.31ms"}
+{"timestamp": "2026-02-16 12:25:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 43.79ms"}
+{"timestamp": "2026-02-16 12:25:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.42ms"}
+{"timestamp": "2026-02-16 12:26:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 40.27ms"}
+{"timestamp": "2026-02-16 12:26:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.13ms"}
+{"timestamp": "2026-02-16 12:27:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.34ms"}
+{"timestamp": "2026-02-16 12:27:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.01ms"}
+{"timestamp": "2026-02-16 12:28:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.86ms"}
+{"timestamp": "2026-02-16 12:28:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.17ms"}
+{"timestamp": "2026-02-16 12:29:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.70ms"}
+{"timestamp": "2026-02-16 12:42:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /robots.txt - 404 - 26.02ms"}
+{"timestamp": "2026-02-16 13:15:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.87ms"}
+{"timestamp": "2026-02-16 13:15:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 32.39ms"}
+{"timestamp": "2026-02-16 13:15:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.72ms"}
+{"timestamp": "2026-02-16 13:15:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.81ms"}
+{"timestamp": "2026-02-16 13:16:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.39ms"}
+{"timestamp": "2026-02-16 13:16:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.49ms"}
+{"timestamp": "2026-02-16 13:16:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 57.54ms"}
+{"timestamp": "2026-02-16 13:16:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.83ms"}
+{"timestamp": "2026-02-16 13:16:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.88ms"}
+{"timestamp": "2026-02-16 13:16:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.95ms"}
+{"timestamp": "2026-02-16 13:17:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.29ms"}
+{"timestamp": "2026-02-16 13:17:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.38ms"}
+{"timestamp": "2026-02-16 13:17:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 21.01ms"}
+{"timestamp": "2026-02-16 13:17:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.14ms"}
+{"timestamp": "2026-02-16 13:17:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.90ms"}
+{"timestamp": "2026-02-16 13:17:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.28ms"}
+{"timestamp": "2026-02-16 13:18:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.89ms"}
+{"timestamp": "2026-02-16 13:18:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.06ms"}
+{"timestamp": "2026-02-16 13:18:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 18.53ms"}
+{"timestamp": "2026-02-16 13:18:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 13.73ms"}
+{"timestamp": "2026-02-16 13:18:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.60ms"}
+{"timestamp": "2026-02-16 13:19:03", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 48.08ms"}
+{"timestamp": "2026-02-16 13:19:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.40ms"}
+{"timestamp": "2026-02-16 13:19:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.43ms"}
+{"timestamp": "2026-02-16 13:19:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 76.41ms"}
+{"timestamp": "2026-02-16 13:19:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 22.57ms"}
+{"timestamp": "2026-02-16 13:19:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 22.40ms"}
+{"timestamp": "2026-02-16 13:19:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.69ms"}
+{"timestamp": "2026-02-16 13:19:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.23ms"}
+{"timestamp": "2026-02-16 13:19:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.40ms"}
+{"timestamp": "2026-02-16 13:20:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 34.93ms"}
+{"timestamp": "2026-02-16 13:20:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.61ms"}
+{"timestamp": "2026-02-16 13:20:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 30.89ms"}
+{"timestamp": "2026-02-16 13:20:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 19.05ms"}
+{"timestamp": "2026-02-16 13:20:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.94ms"}
+{"timestamp": "2026-02-16 13:20:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.65ms"}
+{"timestamp": "2026-02-16 13:21:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 37.13ms"}
+{"timestamp": "2026-02-16 13:21:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.00ms"}
+{"timestamp": "2026-02-16 13:21:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.60ms"}
+{"timestamp": "2026-02-16 13:21:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 30.47ms"}
+{"timestamp": "2026-02-16 13:21:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 42.66ms"}
+{"timestamp": "2026-02-16 13:21:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 45.89ms"}
+{"timestamp": "2026-02-16 13:22:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 34.65ms"}
+{"timestamp": "2026-02-16 13:22:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 65.67ms"}
+{"timestamp": "2026-02-16 13:22:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.51ms"}
+{"timestamp": "2026-02-16 13:22:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 18.63ms"}
+{"timestamp": "2026-02-16 13:22:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.18ms"}
+{"timestamp": "2026-02-16 13:23:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.41ms"}
+{"timestamp": "2026-02-16 13:23:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 35.43ms"}
+{"timestamp": "2026-02-16 13:27:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 39.39ms"}
+{"timestamp": "2026-02-16 13:27:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 14.42ms"}
+{"timestamp": "2026-02-16 13:27:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.29ms"}
+{"timestamp": "2026-02-16 13:27:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.81ms"}
+{"timestamp": "2026-02-16 13:28:33", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.74ms"}
+{"timestamp": "2026-02-16 13:28:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.71ms"}
+{"timestamp": "2026-02-16 13:28:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.50ms"}
+{"timestamp": "2026-02-16 13:28:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.84ms"}
+{"timestamp": "2026-02-16 13:29:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.81ms"}
+{"timestamp": "2026-02-16 13:29:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 24.82ms"}
+{"timestamp": "2026-02-16 13:29:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 20.74ms"}
+{"timestamp": "2026-02-16 13:29:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.85ms"}
+{"timestamp": "2026-02-16 13:29:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.06ms"}
+{"timestamp": "2026-02-16 13:29:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.72ms"}
+{"timestamp": "2026-02-16 13:30:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.48ms"}
+{"timestamp": "2026-02-16 13:30:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 39.33ms"}
+{"timestamp": "2026-02-16 13:30:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 24.40ms"}
+{"timestamp": "2026-02-16 13:30:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 14.71ms"}
+{"timestamp": "2026-02-16 13:30:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.19ms"}
+{"timestamp": "2026-02-16 13:31:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.17ms"}
+{"timestamp": "2026-02-16 13:31:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.08ms"}
+{"timestamp": "2026-02-16 13:31:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.74ms"}
+{"timestamp": "2026-02-16 13:31:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 18.67ms"}
+{"timestamp": "2026-02-16 13:31:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.30ms"}
+{"timestamp": "2026-02-16 13:31:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.72ms"}
+{"timestamp": "2026-02-16 13:31:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 49.52ms"}
+{"timestamp": "2026-02-16 13:32:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.56ms"}
+{"timestamp": "2026-02-16 13:32:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 47.21ms"}
+{"timestamp": "2026-02-16 13:32:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 20.02ms"}
+{"timestamp": "2026-02-16 13:32:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 31.54ms"}
+{"timestamp": "2026-02-16 13:33:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.90ms"}
+{"timestamp": "2026-02-16 13:33:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.50ms"}
+{"timestamp": "2026-02-16 13:33:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.72ms"}
+{"timestamp": "2026-02-16 13:34:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.63ms"}
+{"timestamp": "2026-02-16 13:34:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 18.15ms"}
+{"timestamp": "2026-02-16 13:34:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 21.54ms"}
+{"timestamp": "2026-02-16 13:34:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 20.21ms"}
+{"timestamp": "2026-02-16 13:34:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.06ms"}
+{"timestamp": "2026-02-16 13:34:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.16ms"}
+{"timestamp": "2026-02-16 13:35:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.03ms"}
+{"timestamp": "2026-02-16 13:35:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.66ms"}
+{"timestamp": "2026-02-16 13:35:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.48ms"}
+{"timestamp": "2026-02-16 13:35:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 26.67ms"}
+{"timestamp": "2026-02-16 13:35:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.40ms"}
+{"timestamp": "2026-02-16 13:35:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.73ms"}
+{"timestamp": "2026-02-16 13:36:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.90ms"}
+{"timestamp": "2026-02-16 13:36:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.02ms"}
+{"timestamp": "2026-02-16 13:37:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.56ms"}
+{"timestamp": "2026-02-16 13:59:00", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 13:59:00", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 13:59:00", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 13:59:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 167.87ms"}
+{"timestamp": "2026-02-16 13:59:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 42.30ms"}
+{"timestamp": "2026-02-16 13:59:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 17.63ms"}
+{"timestamp": "2026-02-16 13:59:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 53.26ms"}
+{"timestamp": "2026-02-16 13:59:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /password-check - 200 - 80.67ms"}
+{"timestamp": "2026-02-16 13:59:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.61ms"}
+{"timestamp": "2026-02-16 13:59:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.22ms"}
+{"timestamp": "2026-02-16 13:59:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 21.72ms"}
+{"timestamp": "2026-02-16 13:59:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.05ms"}
+{"timestamp": "2026-02-16 13:59:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 23.94ms"}
+{"timestamp": "2026-02-16 13:59:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.51ms"}
+{"timestamp": "2026-02-16 13:59:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 22.76ms"}
+{"timestamp": "2026-02-16 14:00:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 28.85ms"}
+{"timestamp": "2026-02-16 14:00:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /ip-check - 200 - 75.50ms"}
+{"timestamp": "2026-02-16 14:00:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 26.85ms"}
+{"timestamp": "2026-02-16 14:00:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 28.82ms"}
+{"timestamp": "2026-02-16 14:00:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.87ms"}
+{"timestamp": "2026-02-16 14:01:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 40.77ms"}
+{"timestamp": "2026-02-16 14:01:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.29ms"}
+{"timestamp": "2026-02-16 14:02:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 33.40ms"}
+{"timestamp": "2026-02-16 14:02:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /base64-check - 200 - 68.85ms"}
+{"timestamp": "2026-02-16 14:02:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.24ms"}
+{"timestamp": "2026-02-16 14:02:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 24.04ms"}
+{"timestamp": "2026-02-16 14:02:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.00ms"}
+{"timestamp": "2026-02-16 14:02:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.35ms"}
+{"timestamp": "2026-02-16 14:02:43", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2184, in jwt_check
+    return render_template('jwt_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/jwt_check.html", line 3, in template
+    {% block title } 🔐 فحص JWT - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+{"timestamp": "2026-02-16 14:02:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 500 - 48.21ms"}
+{"timestamp": "2026-02-16 14:02:47", "level": "INFO", "module": "cybershield", "message": "API Request - GET /user-agent-check - 200 - 49.97ms"}
+{"timestamp": "2026-02-16 14:02:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.71ms"}
+{"timestamp": "2026-02-16 14:02:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 19.91ms"}
+{"timestamp": "2026-02-16 14:02:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.66ms"}
+{"timestamp": "2026-02-16 14:02:58", "level": "ERROR", "module": "cybershield", "message": "Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application."}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2192, in filename_check
+    return render_template('filename_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/filename_check.html", line 3, in template
+    {% block title } 📄 فحص أسماء الملفات - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+{"timestamp": "2026-02-16 14:02:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 500 - 36.36ms"}
+{"timestamp": "2026-02-16 14:03:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /dns-check - 200 - 34.50ms"}
+{"timestamp": "2026-02-16 14:03:02", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.51ms"}
+{"timestamp": "2026-02-16 14:03:02", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.93ms"}
+{"timestamp": "2026-02-16 14:03:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api-key-check - 200 - 47.14ms"}
+{"timestamp": "2026-02-16 14:03:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 36.52ms"}
+{"timestamp": "2026-02-16 14:03:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 18.56ms"}
+{"timestamp": "2026-02-16 14:03:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /file-check - 200 - 42.20ms"}
+{"timestamp": "2026-02-16 14:03:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 19.96ms"}
+{"timestamp": "2026-02-16 14:03:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 34.73ms"}
+{"timestamp": "2026-02-16 14:03:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 41.97ms"}
+{"timestamp": "2026-02-16 14:03:13", "level": "INFO", "module": "cybershield", "message": "API Request - GET /port-check - 200 - 83.32ms"}
+{"timestamp": "2026-02-16 14:03:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 26.29ms"}
+{"timestamp": "2026-02-16 14:03:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 23.40ms"}
+{"timestamp": "2026-02-16 14:03:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET /credit-card-check - 200 - 40.40ms"}
+{"timestamp": "2026-02-16 14:03:20", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 16.53ms"}
+{"timestamp": "2026-02-16 14:03:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 31.80ms"}
+{"timestamp": "2026-02-16 14:03:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /username-check - 200 - 110.99ms"}
+{"timestamp": "2026-02-16 14:03:27", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 59.72ms"}
+{"timestamp": "2026-02-16 14:03:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 24.65ms"}
+{"timestamp": "2026-02-16 14:03:30", "level": "INFO", "module": "cybershield", "message": "API Request - GET /hash-check - 200 - 47.02ms"}
+{"timestamp": "2026-02-16 14:03:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 23.00ms"}
+{"timestamp": "2026-02-16 14:03:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 31.59ms"}
+{"timestamp": "2026-02-16 14:03:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /domain-check - 200 - 37.72ms"}
+{"timestamp": "2026-02-16 14:03:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 15.11ms"}
+{"timestamp": "2026-02-16 14:03:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 91.36ms"}
+{"timestamp": "2026-02-16 14:03:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 24.17ms"}
+{"timestamp": "2026-02-16 14:03:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 32.58ms"}
+{"timestamp": "2026-02-16 14:03:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 83.72ms"}
+{"timestamp": "2026-02-16 14:03:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 39.39ms"}
+{"timestamp": "2026-02-16 14:03:45", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 24.24ms"}
+{"timestamp": "2026-02-16 14:03:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 22.97ms"}
+{"timestamp": "2026-02-16 14:12:32", "level": "INFO", "module": "cybershield", "message": "✅ RealStatsTracker initialized - REAL DATA ONLY"}
+{"timestamp": "2026-02-16 14:12:32", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 14:12:32", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 14:12:32", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 84.96ms"}
+{"timestamp": "2026-02-16 14:12:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 16.57ms"}
+{"timestamp": "2026-02-16 14:12:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.92ms"}
+{"timestamp": "2026-02-16 14:12:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 26.56ms"}
+{"timestamp": "2026-02-16 14:12:47", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 16.29ms"}
+{"timestamp": "2026-02-16 14:12:50", "level": "INFO", "module": "cybershield", "message": "API Request - GET /jwt-check - 200 - 34.73ms"}
+{"timestamp": "2026-02-16 14:12:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 19.81ms"}
+{"timestamp": "2026-02-16 14:12:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 18.67ms"}
+{"timestamp": "2026-02-16 14:13:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.47ms"}
+{"timestamp": "2026-02-16 14:13:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 200 - 53.53ms"}
+{"timestamp": "2026-02-16 14:13:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.85ms"}
+{"timestamp": "2026-02-16 14:13:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 21.73ms"}
+{"timestamp": "2026-02-16 14:13:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 20.03ms"}
+{"timestamp": "2026-02-16 14:13:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /file-check - 200 - 48.30ms"}
+{"timestamp": "2026-02-16 14:13:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.05ms"}
+{"timestamp": "2026-02-16 14:13:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 30.10ms"}
+{"timestamp": "2026-02-16 14:13:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.72ms"}
+{"timestamp": "2026-02-16 14:13:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 23.05ms"}
+{"timestamp": "2026-02-16 14:13:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.30ms"}
+{"timestamp": "2026-02-16 14:13:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 20.09ms"}
+{"timestamp": "2026-02-16 14:14:07", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.29ms"}
+{"timestamp": "2026-02-16 14:14:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 41.13ms"}
+{"timestamp": "2026-02-16 14:36:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /robots.txt - 404 - 29.41ms"}
+{"timestamp": "2026-02-16 14:36:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /article/password-security-science - 404 - 17.58ms"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 15:43:34", "request_id": "system", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 16:11:47", "level": "ERROR", "module": "cybershield", "message": "Unhandled exception: name 'blacklist' is not defined"}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+{"timestamp": "2026-02-16 16:11:47", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 500 - 8.41ms"}
+{"timestamp": "2026-02-16 16:11:55", "level": "ERROR", "module": "cybershield", "message": "Unhandled exception: name 'blacklist' is not defined"}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+{"timestamp": "2026-02-16 16:11:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 500 - 2.96ms"}
+{"timestamp": "2026-02-16 16:11:56", "level": "ERROR", "module": "cybershield", "message": "Unhandled exception: name 'blacklist' is not defined"}
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+{"timestamp": "2026-02-16 16:11:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /favicon.ico - 500 - 13.43ms"}
+{"timestamp": "2026-02-16 16:41:27", "level": "INFO", "module": "cybershield", "message": "🛑 Graceful shutdown initiated..."}
+{"timestamp": "2026-02-16 16:41:27", "level": "INFO", "module": "cybershield", "message": "Saving statistics..."}
+{"timestamp": "2026-02-16 16:41:27", "level": "INFO", "module": "cybershield", "message": "Saving blacklist..."}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 16:41:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 111.28ms"}
+{"timestamp": "2026-02-16 16:41:40", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 26.29ms"}
+{"timestamp": "2026-02-16 16:41:41", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:41:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.14ms"}
+{"timestamp": "2026-02-16 16:41:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 30.26ms"}
+{"timestamp": "2026-02-16 16:41:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/favicon-32x32.png - 404 - 23.15ms"}
+{"timestamp": "2026-02-16 16:41:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/apple-touch-icon.png - 404 - 25.10ms"}
+{"timestamp": "2026-02-16 16:41:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/favicon-16x16.png - 404 - 27.17ms"}
+{"timestamp": "2026-02-16 16:41:51", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:41:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 14.31ms"}
+{"timestamp": "2026-02-16 16:42:01", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.94ms"}
+{"timestamp": "2026-02-16 16:42:11", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.91ms"}
+{"timestamp": "2026-02-16 16:42:21", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.85ms"}
+{"timestamp": "2026-02-16 16:42:31", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.79ms"}
+{"timestamp": "2026-02-16 16:42:41", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 3.34ms"}
+{"timestamp": "2026-02-16 16:42:51", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:42:51", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.95ms"}
+{"timestamp": "2026-02-16 16:43:01", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:43:01", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.88ms"}
+{"timestamp": "2026-02-16 16:43:11", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:43:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.10ms"}
+{"timestamp": "2026-02-16 16:43:21", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:43:21", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.81ms"}
+{"timestamp": "2026-02-16 16:43:31", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:43:31", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.70ms"}
+{"timestamp": "2026-02-16 16:43:41", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:43:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.86ms"}
+{"timestamp": "2026-02-16 16:46:11", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 16:46:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 12.29ms"}
+{"timestamp": "2026-02-16 17:04:10", "level": "INFO", "module": "cybershield", "message": "🛑 Graceful shutdown initiated..."}
+{"timestamp": "2026-02-16 17:04:10", "level": "INFO", "module": "cybershield", "message": "Saving statistics..."}
+{"timestamp": "2026-02-16 17:04:10", "level": "INFO", "module": "cybershield", "message": "Saving blacklist..."}
+{"timestamp": "2026-02-16 17:04:11", "level": "INFO", "module": "cybershield", "message": "Saving phone history..."}
+{"timestamp": "2026-02-16 17:04:11", "level": "INFO", "module": "cybershield", "message": "✅ All data saved. Goodbye!"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 17:04:22", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 17:04:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 287.42ms"}
+{"timestamp": "2026-02-16 17:04:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 35.25ms"}
+{"timestamp": "2026-02-16 17:04:26", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 6.99ms"}
+{"timestamp": "2026-02-16 17:04:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 50.80ms"}
+{"timestamp": "2026-02-16 17:04:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 153.43ms"}
+{"timestamp": "2026-02-16 17:04:37", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:37", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 3.85ms"}
+{"timestamp": "2026-02-16 17:04:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 29.73ms"}
+{"timestamp": "2026-02-16 17:04:38", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.108.116 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 3.16ms"}
+{"timestamp": "2026-02-16 17:04:38", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.80ms"}
+{"timestamp": "2026-02-16 17:04:39", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/v1/scan/phone'}"}
+{"timestamp": "2026-02-16 17:04:39", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 401 - 0.95ms"}
+{"timestamp": "2026-02-16 17:04:47", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:47", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.77ms"}
+{"timestamp": "2026-02-16 17:04:52", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 3.21ms"}
+{"timestamp": "2026-02-16 17:04:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 65.13ms"}
+{"timestamp": "2026-02-16 17:04:54", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.89ms"}
+{"timestamp": "2026-02-16 17:04:54", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:04:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.91ms"}
+{"timestamp": "2026-02-16 17:04:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 31.20ms"}
+{"timestamp": "2026-02-16 17:04:56", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/v1/scan/email'}"}
+{"timestamp": "2026-02-16 17:04:56", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/email - 401 - 1.02ms"}
+{"timestamp": "2026-02-16 17:05:04", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.78ms"}
+{"timestamp": "2026-02-16 17:05:14", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.80ms"}
+{"timestamp": "2026-02-16 17:05:24", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 2.75ms"}
+{"timestamp": "2026-02-16 17:05:24", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 9.11ms"}
+{"timestamp": "2026-02-16 17:05:34", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 6.02ms"}
+{"timestamp": "2026-02-16 17:05:44", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.84ms"}
+{"timestamp": "2026-02-16 17:05:54", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.97ms"}
+{"timestamp": "2026-02-16 17:05:54", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:05:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.80ms"}
+{"timestamp": "2026-02-16 17:12:54", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:12:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 6.06ms"}
+{"timestamp": "2026-02-16 17:12:55", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:12:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.23ms"}
+{"timestamp": "2026-02-16 17:12:55", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:12:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 2.40ms"}
+{"timestamp": "2026-02-16 17:12:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 28.60ms"}
+{"timestamp": "2026-02-16 17:13:30", "level": "INFO", "module": "cybershield", "message": "🛑 Graceful shutdown initiated..."}
+{"timestamp": "2026-02-16 17:13:30", "level": "INFO", "module": "cybershield", "message": "Saving statistics..."}
+{"timestamp": "2026-02-16 17:13:30", "level": "INFO", "module": "cybershield", "message": "Saving blacklist..."}
+{"timestamp": "2026-02-16 17:13:30", "level": "INFO", "module": "cybershield", "message": "Saving phone history..."}
+{"timestamp": "2026-02-16 17:13:30", "level": "INFO", "module": "cybershield", "message": "✅ All data saved. Goodbye!"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 17:31:13", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 17:31:14", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 452.06ms"}
+{"timestamp": "2026-02-16 17:31:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 80.09ms"}
+{"timestamp": "2026-02-16 17:31:17", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:17", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.09ms"}
+{"timestamp": "2026-02-16 17:31:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 59.75ms"}
+{"timestamp": "2026-02-16 17:31:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 129.35ms"}
+{"timestamp": "2026-02-16 17:31:25", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.99ms"}
+{"timestamp": "2026-02-16 17:31:25", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.85ms"}
+{"timestamp": "2026-02-16 17:31:27", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/v1/scan/phone'}"}
+{"timestamp": "2026-02-16 17:31:27", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 401 - 0.82ms"}
+{"timestamp": "2026-02-16 17:31:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 28.18ms"}
+{"timestamp": "2026-02-16 17:31:36", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:36", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.80ms"}
+{"timestamp": "2026-02-16 17:31:46", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:46", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.92ms"}
+{"timestamp": "2026-02-16 17:31:56", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 2.68ms"}
+{"timestamp": "2026-02-16 17:31:56", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:31:56", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.56ms"}
+{"timestamp": "2026-02-16 17:32:06", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:32:06", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 1.16ms"}
+{"timestamp": "2026-02-16 17:32:16", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:32:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 6.86ms"}
+{"timestamp": "2026-02-16 17:32:26", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:32:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.82ms"}
+{"timestamp": "2026-02-16 17:32:26", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:32:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 4.73ms"}
+{"timestamp": "2026-02-16 17:38:35", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:38:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 2.66ms"}
+{"timestamp": "2026-02-16 17:38:35", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:38:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.90ms"}
+{"timestamp": "2026-02-16 17:38:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 31.28ms"}
+{"timestamp": "2026-02-16 17:38:35", "level": "WARNING", "module": "cybershield", "message": "Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}"}
+{"timestamp": "2026-02-16 17:38:35", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 401 - 0.69ms"}
+{"timestamp": "2026-02-16 17:39:06", "level": "INFO", "module": "cybershield", "message": "🛑 Graceful shutdown initiated..."}
+{"timestamp": "2026-02-16 17:39:06", "level": "INFO", "module": "cybershield", "message": "Saving statistics..."}
+{"timestamp": "2026-02-16 17:39:06", "level": "INFO", "module": "cybershield", "message": "Saving blacklist..."}
+{"timestamp": "2026-02-16 17:39:06", "level": "INFO", "module": "cybershield", "message": "Saving phone history..."}
+{"timestamp": "2026-02-16 17:39:06", "level": "INFO", "module": "cybershield", "message": "✅ All data saved. Goodbye!"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 0 cached scans"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 17:39:16", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 202.22ms"}
+{"timestamp": "2026-02-16 17:39:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 23.45ms"}
+{"timestamp": "2026-02-16 17:39:19", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.32ms"}
+{"timestamp": "2026-02-16 17:39:23", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 67.00ms"}
+{"timestamp": "2026-02-16 17:39:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /phone-check - 200 - 105.01ms"}
+{"timestamp": "2026-02-16 17:39:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 26.70ms"}
+{"timestamp": "2026-02-16 17:39:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.43ms"}
+{"timestamp": "2026-02-16 17:39:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 35.60ms"}
+{"timestamp": "2026-02-16 17:39:31", "level": "INFO", "module": "cybershield", "message": "📱 Phone Analysis - +966501234567 - Saudi Arabia - 79.74ms"}
+{"timestamp": "2026-02-16 17:39:31", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/phone - 200 - 149.08ms"}
+{"timestamp": "2026-02-16 17:39:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 27.97ms"}
+{"timestamp": "2026-02-16 17:39:48", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 34.15ms"}
+{"timestamp": "2026-02-16 17:39:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 32.25ms"}
+{"timestamp": "2026-02-16 17:39:58", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 48.65ms"}
+{"timestamp": "2026-02-16 17:40:06", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 40.89ms"}
+{"timestamp": "2026-02-16 17:40:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 35.91ms"}
+{"timestamp": "2026-02-16 17:40:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /email-check - 200 - 86.67ms"}
+{"timestamp": "2026-02-16 17:40:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 42.17ms"}
+{"timestamp": "2026-02-16 17:40:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 30.15ms"}
+{"timestamp": "2026-02-16 17:40:12", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 36.35ms"}
+{"timestamp": "2026-02-16 17:40:13", "level": "INFO", "module": "cybershield", "message": "API Request - POST /api/v1/scan/email - 200 - 108.31ms"}
+{"timestamp": "2026-02-16 17:40:22", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 36.81ms"}
+{"timestamp": "2026-02-16 17:40:25", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 48.93ms"}
+{"timestamp": "2026-02-16 17:40:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 36.25ms"}
+{"timestamp": "2026-02-16 17:40:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 37.57ms"}
+{"timestamp": "2026-02-16 17:40:41", "level": "INFO", "module": "cybershield", "message": "API Request - GET /tools - 200 - 68.87ms"}
+{"timestamp": "2026-02-16 17:40:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 30.75ms"}
+{"timestamp": "2026-02-16 17:40:42", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 29.97ms"}
+{"timestamp": "2026-02-16 17:40:43", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 26.31ms"}
+{"timestamp": "2026-02-16 17:40:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 39.06ms"}
+{"timestamp": "2026-02-16 17:40:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /filename-check - 200 - 50.99ms"}
+{"timestamp": "2026-02-16 17:40:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 23.99ms"}
+{"timestamp": "2026-02-16 17:40:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 32.76ms"}
+{"timestamp": "2026-02-16 17:40:57", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 25.23ms"}
+{"timestamp": "2026-02-16 17:41:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 51.51ms"}
+{"timestamp": "2026-02-16 17:41:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /file-check - 200 - 61.78ms"}
+{"timestamp": "2026-02-16 17:41:08", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 33.38ms"}
+{"timestamp": "2026-02-16 17:41:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 29.41ms"}
+{"timestamp": "2026-02-16 17:41:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 29.62ms"}
+{"timestamp": "2026-02-16 17:41:18", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.86ms"}
+{"timestamp": "2026-02-16 17:41:28", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 28.56ms"}
+{"timestamp": "2026-02-16 17:41:38", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 42.31ms"}
+{"timestamp": "2026-02-16 17:41:48", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 27.58ms"}
+{"timestamp": "2026-02-16 17:41:52", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 26.62ms"}
+{"timestamp": "2026-02-16 17:41:59", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 24.03ms"}
+{"timestamp": "2026-02-16 17:42:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 40.28ms"}
+{"timestamp": "2026-02-16 17:42:09", "level": "INFO", "module": "cybershield", "message": "API Request - GET /url-check - 200 - 29.16ms"}
+{"timestamp": "2026-02-16 17:42:10", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 25.92ms"}
+{"timestamp": "2026-02-16 17:42:10", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 23.68ms"}
+{"timestamp": "2026-02-16 17:42:11", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 28.60ms"}
+{"timestamp": "2026-02-16 17:42:20", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 21.11ms"}
+{"timestamp": "2026-02-16 17:42:26", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 37.06ms"}
+{"timestamp": "2026-02-16 17:42:29", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 37.56ms"}
+{"timestamp": "2026-02-16 17:42:39", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 28.38ms"}
+{"timestamp": "2026-02-16 17:42:49", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 48.04ms"}
+{"timestamp": "2026-02-16 17:42:53", "level": "INFO", "module": "cybershield", "message": "API Request - GET / - 200 - 28.03ms"}
+{"timestamp": "2026-02-16 17:42:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 26.62ms"}
+{"timestamp": "2026-02-16 17:42:55", "level": "INFO", "module": "cybershield", "message": "API Request - GET /static/sw.js - 404 - 50.33ms"}
+{"timestamp": "2026-02-16 17:43:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 32.51ms"}
+{"timestamp": "2026-02-16 17:43:15", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 35.34ms"}
+{"timestamp": "2026-02-16 17:43:24", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.43ms"}
+{"timestamp": "2026-02-16 17:43:34", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 31.38ms"}
+{"timestamp": "2026-02-16 17:43:44", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 24.77ms"}
+{"timestamp": "2026-02-16 17:43:54", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 39.82ms"}
+{"timestamp": "2026-02-16 17:44:04", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 429 - 34.76ms"}
+{"timestamp": "2026-02-16 17:48:05", "level": "INFO", "module": "cybershield", "message": "API Request - GET /api/stats - 200 - 37.99ms"}
+{"timestamp": "2026-02-16 17:50:32", "level": "INFO", "module": "cybershield", "message": "🛑 Graceful shutdown initiated..."}
+{"timestamp": "2026-02-16 17:50:32", "level": "INFO", "module": "cybershield", "message": "Saving statistics..."}
+{"timestamp": "2026-02-16 17:50:32", "level": "INFO", "module": "cybershield", "message": "Saving blacklist..."}
+{"timestamp": "2026-02-16 17:50:32", "level": "INFO", "module": "cybershield", "message": "Saving phone history..."}
+{"timestamp": "2026-02-16 17:50:32", "level": "INFO", "module": "cybershield", "message": "✅ All data saved. Goodbye!"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 17:50:42", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 18:01:27", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 18:40:44", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-16 21:15:14", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 18:56:27", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 19:01:11", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 19:05:26", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 19:09:43", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 19:30:37", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 19:30:48", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 20:05:18", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 20:12:27", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 20:13:38", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 20:15:06", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseStatsTracker initialized - 100% REAL DATA"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ PersistentBlacklist initialized - 0 IPs blocked"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseRateLimiter initialized - 120 requests/minute"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ APIKeyManager initialized"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ PhoneScanHistory initialized - 1 cached scans"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy"}
+{"timestamp": "2026-02-17 21:06:47", "level": "INFO", "module": "cybershield", "message": "✅ Rate Limiter enabled"}

@@ -1,0 +1,1653 @@
+2026-02-15 20:11:57 - cybershield - INFO - [app.py:184] - ✅ Rate Limiter enabled - 100 requests per hour
+2026-02-15 20:11:58 - cybershield - INFO - [app.py:184] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 20:11:58 - cybershield - ERROR - [app.py:190] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2270, in before_request
+    for bot in CONFIG.MALICIOUS_BOTS:
+AttributeError: 'Config' object has no attribute 'MALICIOUS_BOTS'
+2026-02-15 20:12:03 - cybershield - ERROR - [app.py:190] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2270, in before_request
+    for bot in CONFIG.MALICIOUS_BOTS:
+AttributeError: 'Config' object has no attribute 'MALICIOUS_BOTS'
+2026-02-15 20:27:37 - cybershield - INFO - [app.py:184] - ✅ Rate Limiter enabled - 100 requests per hour
+2026-02-15 20:28:20 - cybershield - INFO - [app.py:184] - ✅ Rate Limiter enabled - 100 requests per hour
+2026-02-15 20:50:27 - cybershield - INFO - [app.py:190] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 20:50:27 - cybershield - INFO - [app.py:190] - ✅ Rate Limiter enabled
+2026-02-15 20:50:28 - cybershield - INFO - [app.py:190] - API Request - GET / - 200 - 326.36ms
+2026-02-15 20:50:32 - cybershield - INFO - [app.py:190] - API Request - GET / - 200 - 1.65ms
+2026-02-15 20:50:34 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/email-security.jpg - 404 - 7.62ms
+2026-02-15 20:50:34 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/password.jpg - 404 - 0.71ms
+2026-02-15 20:50:34 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/phishing.jpg - 404 - 0.81ms
+2026-02-15 20:50:45 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.81ms
+2026-02-15 20:50:45 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.89ms
+2026-02-15 20:51:16 - cybershield - INFO - [app.py:190] - API Request - GET /jwt-check - 404 - 0.72ms
+2026-02-15 20:51:26 - cybershield - INFO - [app.py:190] - API Request - GET /email-check - 200 - 79.40ms
+2026-02-15 20:51:31 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.74ms
+2026-02-15 20:51:32 - cybershield - INFO - [app.py:190] - API Request - GET /email-check - 200 - 11.73ms
+2026-02-15 20:51:32 - cybershield - INFO - [app.py:190] - API Request - GET /email-check - 200 - 1.50ms
+2026-02-15 20:51:33 - cybershield - INFO - [app.py:190] - API Request - GET /email-check - 200 - 5.38ms
+2026-02-15 20:51:33 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.74ms
+2026-02-15 20:51:33 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.78ms
+2026-02-15 20:51:51 - cybershield - INFO - [app.py:190] - API Request - POST /api/v1/scan/email - 200 - 31.67ms
+2026-02-15 20:52:01 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.97ms
+2026-02-15 20:52:14 - cybershield - INFO - [app.py:190] - API Request - GET /phone-check - 200 - 184.44ms
+2026-02-15 20:52:15 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 3.57ms
+2026-02-15 20:52:16 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 3.46ms
+2026-02-15 20:52:33 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 20:52:33 - cybershield - INFO - [app.py:190] - API Request - POST /api/v1/scan/phone - 500 - 134.02ms
+2026-02-15 20:52:38 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 20:52:38 - cybershield - INFO - [app.py:190] - API Request - POST /api/v1/scan/phone - 500 - 23.58ms
+2026-02-15 20:52:45 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 20:52:46 - cybershield - ERROR - [app.py:196] - Error in phone scan: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1222, in api_scan
+    response_data = run_with_timeout(perform_analysis, timeout=CONFIG.SCAN_TIMEOUT)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1076, in run_with_timeout
+    return future.result(timeout=timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1207, in perform_analysis
+    analysis = TOOLS[tool](input_data)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 687, in phone_analyze
+    return legendary_phone_analyzer.analyze(phone)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 333, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 670, in analyze
+    logger.log_phone_analysis(phone, result, (time.time() - start_time) * 1000)
+AttributeError: 'EnterpriseLogger' object has no attribute 'log_phone_analysis'
+2026-02-15 20:52:46 - cybershield - INFO - [app.py:190] - API Request - POST /api/v1/scan/phone - 500 - 27.11ms
+2026-02-15 20:52:54 - cybershield - INFO - [app.py:190] - API Request - GET /password-check - 200 - 26.29ms
+2026-02-15 20:52:55 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 2.72ms
+2026-02-15 20:52:56 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.82ms
+2026-02-15 20:53:14 - cybershield - INFO - [app.py:190] - API Request - POST /api/v1/scan/password - 200 - 11.32ms
+2026-02-15 20:53:25 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.83ms
+2026-02-15 20:53:42 - cybershield - INFO - [app.py:190] - API Request - GET /filename-check - 404 - 0.71ms
+2026-02-15 20:53:46 - cybershield - INFO - [app.py:190] - API Request - GET /useragent-check - 404 - 0.76ms
+2026-02-15 20:53:50 - cybershield - INFO - [app.py:190] - API Request - GET /dns-check - 200 - 24.95ms
+2026-02-15 20:53:53 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.85ms
+2026-02-15 20:53:53 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 3.12ms
+2026-02-15 20:55:58 - cybershield - INFO - [app.py:190] - API Request - GET / - 200 - 3.48ms
+2026-02-15 20:55:59 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 2.96ms
+2026-02-15 20:55:59 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/email-security.jpg - 404 - 1.97ms
+2026-02-15 20:56:00 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/password.jpg - 404 - 0.79ms
+2026-02-15 20:56:00 - cybershield - INFO - [app.py:190] - API Request - GET /static/articles/phishing.jpg - 404 - 4.28ms
+2026-02-15 20:56:00 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 1.93ms
+2026-02-15 20:56:01 - cybershield - INFO - [app.py:190] - API Request - GET /filename-check - 404 - 3.10ms
+2026-02-15 20:56:03 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 14.39ms
+2026-02-15 20:56:03 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 3.51ms
+2026-02-15 20:56:05 - cybershield - INFO - [app.py:190] - API Request - GET /file-check - 200 - 29.87ms
+2026-02-15 20:56:07 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 2.20ms
+2026-02-15 20:56:08 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.79ms
+2026-02-15 20:56:38 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.73ms
+2026-02-15 20:57:08 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 6.12ms
+2026-02-15 21:02:04 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 4.04ms
+2026-02-15 21:02:07 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.86ms
+2026-02-15 21:02:37 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.90ms
+2026-02-15 21:03:07 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 1.36ms
+2026-02-15 21:03:17 - cybershield - INFO - [app.py:190] - API Request - GET /blog - 404 - 0.74ms
+2026-02-15 21:03:26 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.82ms
+2026-02-15 21:03:28 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 6.94ms
+2026-02-15 21:03:35 - cybershield - INFO - [app.py:190] - API Request - GET /password-check - 200 - 1.48ms
+2026-02-15 21:03:40 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 21:03:40 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.79ms
+2026-02-15 21:04:10 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 21:04:18 - cybershield - INFO - [app.py:190] - API Request - GET /useragent-check - 404 - 0.75ms
+2026-02-15 21:04:22 - cybershield - INFO - [app.py:190] - API Request - GET /jwt-check - 404 - 0.82ms
+2026-02-15 21:04:25 - cybershield - INFO - [app.py:190] - API Request - GET /filename-check - 404 - 0.81ms
+2026-02-15 21:04:29 - cybershield - INFO - [app.py:190] - API Request - GET /api-key-check - 404 - 0.76ms
+2026-02-15 21:04:31 - cybershield - INFO - [app.py:190] - API Request - GET /port-check - 200 - 56.07ms
+2026-02-15 21:04:33 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 21:04:34 - cybershield - INFO - [app.py:190] - API Request - GET /port-check - 200 - 1.35ms
+2026-02-15 21:04:34 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 3.65ms
+2026-02-15 21:04:34 - cybershield - INFO - [app.py:190] - API Request - GET /port-check - 200 - 1.35ms
+2026-02-15 21:04:34 - cybershield - INFO - [app.py:190] - API Request - GET /port-check - 200 - 2.81ms
+2026-02-15 21:04:34 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 21:04:36 - cybershield - INFO - [app.py:190] - API Request - GET /base64-check - 200 - 48.24ms
+2026-02-15 21:04:41 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.73ms
+2026-02-15 21:04:41 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 0.79ms
+2026-02-15 21:04:42 - cybershield - INFO - [app.py:190] - API Request - GET /base64-check - 200 - 1.59ms
+2026-02-15 21:04:43 - cybershield - INFO - [app.py:190] - API Request - GET /base64-check - 200 - 2.96ms
+2026-02-15 21:04:43 - cybershield - INFO - [app.py:190] - API Request - GET /base64-check - 200 - 1.30ms
+2026-02-15 21:04:45 - cybershield - INFO - [app.py:190] - API Request - GET /dns-check - 200 - 1.27ms
+2026-02-15 21:04:48 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 0.77ms
+2026-02-15 21:04:48 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 2.25ms
+2026-02-15 21:04:50 - cybershield - INFO - [app.py:190] - API Request - GET /file-check - 200 - 1.88ms
+2026-02-15 21:04:54 - cybershield - INFO - [app.py:190] - API Request - GET /api/stats - 200 - 2.64ms
+2026-02-15 21:04:54 - cybershield - INFO - [app.py:190] - API Request - GET /static/sw.js - 404 - 2.48ms
+2026-02-15 21:09:23 - cybershield - INFO - [app.py:187] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 21:09:23 - cybershield - INFO - [app.py:187] - ✅ Rate Limiter enabled
+2026-02-15 21:09:25 - cybershield - INFO - [app.py:187] - API Request - GET / - 200 - 56.59ms
+2026-02-15 21:09:29 - cybershield - INFO - [app.py:187] - API Request - GET / - 200 - 1.51ms
+2026-02-15 21:09:30 - cybershield - INFO - [app.py:187] - API Request - GET /static/articles/email-security.jpg - 404 - 1.49ms
+2026-02-15 21:09:30 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.81ms
+2026-02-15 21:09:30 - cybershield - INFO - [app.py:187] - API Request - GET /static/articles/password.jpg - 404 - 0.91ms
+2026-02-15 21:09:30 - cybershield - INFO - [app.py:187] - API Request - GET /static/articles/phishing.jpg - 404 - 0.81ms
+2026-02-15 21:09:37 - cybershield - INFO - [app.py:187] - API Request - GET /static/sw.js - 404 - 0.90ms
+2026-02-15 21:09:39 - cybershield - INFO - [app.py:187] - API Request - GET /phone-check - 200 - 24.14ms
+2026-02-15 21:09:40 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.79ms
+2026-02-15 21:09:41 - cybershield - INFO - [app.py:187] - API Request - GET /static/sw.js - 404 - 1.16ms
+2026-02-15 21:09:57 - cybershield - INFO - [app.py:187] - 📱 Phone Analysis - +967773749784 - Yemen - 9.67ms
+2026-02-15 21:09:57 - cybershield - INFO - [app.py:187] - API Request - POST /api/v1/scan/phone - 200 - 13.98ms
+2026-02-15 21:10:10 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.97ms
+2026-02-15 21:10:40 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.71ms
+2026-02-15 21:11:10 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.80ms
+2026-02-15 21:11:40 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.75ms
+2026-02-15 21:15:45 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 10.46ms
+2026-02-15 21:15:54 - cybershield - INFO - [app.py:187] - API Request - GET /phone-check - 200 - 11.35ms
+2026-02-15 21:15:55 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.74ms
+2026-02-15 21:15:56 - cybershield - INFO - [app.py:187] - API Request - GET /static/sw.js - 404 - 7.39ms
+2026-02-15 21:15:57 - cybershield - INFO - [app.py:187] - API Request - GET /phone-check - 200 - 4.25ms
+2026-02-15 21:15:57 - cybershield - INFO - [app.py:187] - API Request - GET /phone-check - 200 - 4.86ms
+2026-02-15 21:15:57 - cybershield - INFO - [app.py:187] - API Request - GET /phone-check - 200 - 3.70ms
+2026-02-15 21:15:57 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 2.40ms
+2026-02-15 21:16:10 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 2.72ms
+2026-02-15 21:16:13 - cybershield - INFO - [app.py:187] - API Request - GET /api/stats - 200 - 0.69ms
+2026-02-15 21:16:14 - cybershield - INFO - [app.py:187] - API Request - GET /static/sw.js - 404 - 1.02ms
+2026-02-15 21:22:28 - cybershield - INFO - [app.py:173] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 21:22:28 - cybershield - INFO - [app.py:173] - ✅ Rate Limiter enabled
+2026-02-15 21:22:28 - cybershield - INFO - [app.py:173] - API Request - GET / - 200 - 254.43ms
+2026-02-15 21:22:35 - cybershield - INFO - [app.py:173] - API Request - GET / - 200 - 4.54ms
+2026-02-15 21:22:37 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/email-security.jpg - 404 - 26.22ms
+2026-02-15 21:22:37 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/password.jpg - 404 - 2.81ms
+2026-02-15 21:22:38 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/phishing.jpg - 404 - 2.25ms
+2026-02-15 21:22:39 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.31ms
+2026-02-15 21:22:39 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 2.55ms
+2026-02-15 21:22:44 - cybershield - INFO - [app.py:173] - API Request - GET /phone-check - 200 - 44.15ms
+2026-02-15 21:22:47 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.24ms
+2026-02-15 21:22:47 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 1.93ms
+2026-02-15 21:22:50 - cybershield - INFO - [app.py:173] - 📱 Phone Analysis - +966501234567 - Saudi Arabia - 48.75ms
+2026-02-15 21:22:50 - cybershield - INFO - [app.py:173] - API Request - POST /api/v1/scan/phone - 200 - 62.85ms
+2026-02-15 21:23:17 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 1.56ms
+2026-02-15 21:23:47 - cybershield - INFO - [app.py:173] - 📱 Phone Analysis - +967773749784 - Yemen - 16.45ms
+2026-02-15 21:23:47 - cybershield - INFO - [app.py:173] - API Request - POST /api/v1/scan/phone - 200 - 21.08ms
+2026-02-15 21:23:47 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.27ms
+2026-02-15 21:24:17 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 2.04ms
+2026-02-15 21:24:49 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.32ms
+2026-02-15 21:25:17 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.27ms
+2026-02-15 21:25:49 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 3.64ms
+2026-02-15 21:26:18 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.27ms
+2026-02-15 21:26:47 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 3.74ms
+2026-02-15 21:27:18 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 1.51ms
+2026-02-15 21:27:48 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.26ms
+2026-02-15 21:28:18 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.24ms
+2026-02-15 21:28:48 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.30ms
+2026-02-15 21:29:17 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.32ms
+2026-02-15 21:29:48 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.25ms
+2026-02-15 21:30:18 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.31ms
+2026-02-15 21:31:39 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.26ms
+2026-02-15 21:31:47 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.42ms
+2026-02-15 21:32:18 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.31ms
+2026-02-15 21:32:48 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.25ms
+2026-02-15 21:35:50 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.25ms
+2026-02-15 21:35:51 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/email-security.jpg - 404 - 5.52ms
+2026-02-15 21:35:51 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.27ms
+2026-02-15 21:35:51 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/phishing.jpg - 404 - 1.65ms
+2026-02-15 21:35:54 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 2.92ms
+2026-02-15 21:46:13 - cybershield - INFO - [app.py:173] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 21:46:13 - cybershield - INFO - [app.py:173] - ✅ Rate Limiter enabled
+2026-02-15 21:46:14 - cybershield - INFO - [app.py:173] - API Request - GET / - 200 - 367.65ms
+2026-02-15 21:46:23 - cybershield - INFO - [app.py:173] - API Request - GET / - 200 - 1.33ms
+2026-02-15 21:46:25 - cybershield - INFO - [app.py:173] - API Request - GET /api/stats - 200 - 0.27ms
+2026-02-15 21:46:25 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/email-security.jpg - 404 - 50.95ms
+2026-02-15 21:46:25 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/password.jpg - 404 - 0.91ms
+2026-02-15 21:46:25 - cybershield - INFO - [app.py:173] - API Request - GET /static/articles/phishing.jpg - 404 - 0.89ms
+2026-02-15 21:46:28 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 3.18ms
+2026-02-15 21:46:33 - cybershield - INFO - [app.py:173] - API Request - GET /jwt-check - 200 - 27.86ms
+2026-02-15 21:46:39 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 0.82ms
+2026-02-15 21:47:09 - cybershield - INFO - [app.py:173] - API Request - GET /filename-check - 200 - 39.35ms
+2026-02-15 21:47:13 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 0.90ms
+2026-02-15 21:47:15 - cybershield - INFO - [app.py:173] - API Request - GET /file-check - 404 - 0.79ms
+2026-02-15 21:47:34 - cybershield - INFO - [app.py:173] - API Request - GET /base64-check - 404 - 2.92ms
+2026-02-15 21:47:40 - cybershield - INFO - [app.py:173] - API Request - GET /hash-check - 404 - 2.59ms
+2026-02-15 21:47:41 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 5.19ms
+2026-02-15 21:47:42 - cybershield - INFO - [app.py:173] - API Request - GET /hash-check - 404 - 4.13ms
+2026-02-15 21:47:43 - cybershield - INFO - [app.py:173] - API Request - GET /hash-check - 404 - 0.79ms
+2026-02-15 21:47:43 - cybershield - INFO - [app.py:173] - API Request - GET /hash-check - 404 - 0.91ms
+2026-02-15 21:47:44 - cybershield - INFO - [app.py:173] - API Request - GET /domain-check - 404 - 0.84ms
+2026-02-15 21:47:47 - cybershield - INFO - [app.py:173] - API Request - GET /static/sw.js - 404 - 2.54ms
+2026-02-15 21:47:48 - cybershield - INFO - [app.py:173] - API Request - GET /domain-check - 404 - 0.85ms
+2026-02-15 21:47:48 - cybershield - INFO - [app.py:173] - API Request - GET /domain-check - 404 - 1.13ms
+2026-02-15 21:52:39 - cybershield - INFO - [app.py:197] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-15 21:52:39 - cybershield - INFO - [app.py:197] - ✅ Rate Limiter enabled
+2026-02-15 21:52:39 - cybershield - INFO - [app.py:197] - API Request - GET / - 200 - 87.85ms
+2026-02-15 21:52:42 - cybershield - INFO - [app.py:197] - API Request - GET / - 200 - 1.69ms
+2026-02-15 21:52:43 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:52:43 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 30.09ms
+2026-02-15 21:52:43 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/email-security.jpg - 404 - 5.48ms
+2026-02-15 21:52:44 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/password.jpg - 404 - 0.89ms
+2026-02-15 21:52:44 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/phishing.jpg - 404 - 3.42ms
+2026-02-15 21:52:44 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 3.82ms
+2026-02-15 21:52:57 - cybershield - INFO - [app.py:197] - API Request - GET /phone-check - 200 - 83.42ms
+2026-02-15 21:53:00 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:53:00 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 11.74ms
+2026-02-15 21:53:01 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 1.46ms
+2026-02-15 21:53:16 - cybershield - INFO - [app.py:197] - 📱 Phone Analysis - +967773749784 - Yemen - 38.85ms
+2026-02-15 21:53:16 - cybershield - INFO - [app.py:197] - API Request - POST /api/v1/scan/phone - 200 - 53.66ms
+2026-02-15 21:53:33 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:53:33 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 18.64ms
+2026-02-15 21:54:01 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:54:01 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 18.24ms
+2026-02-15 21:54:31 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:54:31 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 32.34ms
+2026-02-15 21:55:01 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:55:01 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 50.14ms
+2026-02-15 21:55:31 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:55:31 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 22.55ms
+2026-02-15 21:58:04 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:04 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 61.52ms
+2026-02-15 21:58:12 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:12 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 22.76ms
+2026-02-15 21:58:14 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 3.85ms
+2026-02-15 21:58:15 - cybershield - INFO - [app.py:197] - API Request - GET /jwt-check - 404 - 0.65ms
+2026-02-15 21:58:16 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:16 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 9.41ms
+2026-02-15 21:58:17 - cybershield - INFO - [app.py:197] - API Request - GET /filename-check - 404 - 5.57ms
+2026-02-15 21:58:19 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:19 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 22.36ms
+2026-02-15 21:58:20 - cybershield - INFO - [app.py:197] - API Request - GET /useragent-check - 404 - 2.04ms
+2026-02-15 21:58:22 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-15 21:58:22 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 25.27ms
+2026-02-15 21:58:22 - cybershield - INFO - [app.py:197] - API Request - GET /useragent-check - 404 - 2.06ms
+2026-02-15 21:58:22 - cybershield - INFO - [app.py:197] - API Request - GET /useragent-check - 404 - 3.60ms
+2026-02-15 21:58:22 - cybershield - INFO - [app.py:197] - API Request - GET /useragent-check - 404 - 3.27ms
+2026-02-15 21:58:24 - cybershield - INFO - [app.py:197] - API Request - GET /credit-card-check - 200 - 26.92ms
+2026-02-15 21:58:25 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 3.12ms
+2026-02-15 21:58:29 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 6.26ms
+2026-02-15 21:58:35 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 8.21ms
+2026-02-15 21:58:38 - cybershield - INFO - [app.py:197] - API Request - GET /file-check - 200 - 29.90ms
+2026-02-15 21:58:39 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 5.65ms
+2026-02-15 21:58:40 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 4.68ms
+2026-02-15 21:58:41 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 8.86ms
+2026-02-15 21:58:45 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.87ms
+2026-02-15 21:58:50 - cybershield - INFO - [app.py:197] - API Request - GET /blog - 404 - 1.00ms
+2026-02-15 21:58:56 - cybershield - INFO - [app.py:197] - API Request - GET /blog - 404 - 1.74ms
+2026-02-15 21:58:59 - cybershield - INFO - [app.py:197] - API Request - GET /about - 200 - 36.86ms
+2026-02-15 21:59:00 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.83ms
+2026-02-16 07:07:15 - cybershield - INFO - [app.py:197] - API Request - GET /robots.txt - 404 - 88.12ms
+2026-02-16 07:07:15 - cybershield - INFO - [app.py:197] - API Request - GET /robots.txt - 404 - 5.43ms
+2026-02-16 08:43:14 - cybershield - INFO - [app.py:197] - API Request - GET / - 200 - 47.46ms
+2026-02-16 08:43:14 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/email-security.jpg - 404 - 14.33ms
+2026-02-16 08:43:14 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/password.jpg - 404 - 0.70ms
+2026-02-16 08:43:15 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:15 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 51.43ms
+2026-02-16 08:43:15 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/phishing.jpg - 404 - 3.11ms
+2026-02-16 08:43:15 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 1.49ms
+2026-02-16 08:43:15 - cybershield - INFO - [app.py:197] - API Request - GET /static/favicon-32x32.png - 404 - 1.54ms
+2026-02-16 08:43:15 - cybershield - INFO - [app.py:197] - API Request - GET /static/apple-touch-icon.png - 404 - 1.30ms
+2026-02-16 08:43:16 - cybershield - INFO - [app.py:197] - API Request - GET /static/favicon-16x16.png - 404 - 8.98ms
+2026-02-16 08:43:29 - cybershield - INFO - [app.py:197] - API Request - GET /phone-check - 200 - 7.78ms
+2026-02-16 08:43:30 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:30 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 5.62ms
+2026-02-16 08:43:33 - cybershield - INFO - [app.py:197] - API Request - GET /filename-check - 404 - 0.74ms
+2026-02-16 08:43:34 - cybershield - INFO - [app.py:197] - API Request - GET /favicon.ico - 404 - 0.87ms
+2026-02-16 08:43:36 - cybershield - INFO - [app.py:197] - API Request - GET /jwt-check - 404 - 0.55ms
+2026-02-16 08:43:37 - cybershield - INFO - [app.py:197] - API Request - GET /useragent-check - 404 - 0.60ms
+2026-02-16 08:43:40 - cybershield - INFO - [app.py:197] - API Request - GET /file-check - 200 - 9.91ms
+2026-02-16 08:43:40 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:40 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 18.49ms
+2026-02-16 08:43:41 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.83ms
+2026-02-16 08:43:42 - cybershield - INFO - [app.py:197] - API Request - GET /dns-check - 200 - 62.26ms
+2026-02-16 08:43:43 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:43 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 6.88ms
+2026-02-16 08:43:43 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 1.05ms
+2026-02-16 08:43:45 - cybershield - INFO - [app.py:197] - API Request - GET /api-key-check - 404 - 0.66ms
+2026-02-16 08:43:47 - cybershield - INFO - [app.py:197] - API Request - GET /port-check - 200 - 12.66ms
+2026-02-16 08:43:48 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:43:48 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 6.52ms
+2026-02-16 08:43:48 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 2.04ms
+2026-02-16 08:43:50 - cybershield - INFO - [app.py:197] - API Request - GET /credit-card-check - 200 - 1.43ms
+2026-02-16 08:43:52 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 2.43ms
+2026-02-16 08:43:53 - cybershield - INFO - [app.py:197] - API Request - GET /base64-check - 200 - 29.24ms
+2026-02-16 08:43:54 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 5.43ms
+2026-02-16 08:43:55 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.88ms
+2026-02-16 08:43:56 - cybershield - INFO - [app.py:197] - API Request - GET /hash-check - 200 - 21.84ms
+2026-02-16 08:43:57 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 9.01ms
+2026-02-16 08:43:57 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 1.98ms
+2026-02-16 08:43:58 - cybershield - INFO - [app.py:197] - API Request - GET /username-check - 200 - 26.61ms
+2026-02-16 08:43:59 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 429 - 5.30ms
+2026-02-16 08:43:59 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.85ms
+2026-02-16 08:44:04 - cybershield - INFO - [app.py:197] - API Request - GET /ip-check - 200 - 44.17ms
+2026-02-16 08:44:04 - cybershield - INFO - [app.py:197] - API Request - GET /ip-check - 200 - 1.37ms
+2026-02-16 08:44:05 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:44:05 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 5.24ms
+2026-02-16 08:44:06 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 0.76ms
+2026-02-16 08:44:07 - cybershield - INFO - [app.py:197] - API Request - GET /ip-check - 200 - 1.33ms
+2026-02-16 08:44:07 - cybershield - INFO - [app.py:197] - API Request - GET /ip-check - 200 - 5.47ms
+2026-02-16 08:44:07 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 08:44:07 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 31.24ms
+2026-02-16 09:00:46 - cybershield - INFO - [app.py:197] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-16 09:00:46 - cybershield - INFO - [app.py:197] - ✅ Rate Limiter enabled
+2026-02-16 09:00:46 - cybershield - INFO - [app.py:197] - API Request - GET / - 200 - 87.10ms
+2026-02-16 09:00:49 - cybershield - INFO - [app.py:197] - API Request - GET / - 200 - 2.74ms
+2026-02-16 09:00:49 - cybershield - ERROR - [app.py:203] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask_limiter/extension.py", line 1298, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1800, in api_stats
+    'total_scans': random.randint(100000, 500000),
+NameError: name 'random' is not defined
+2026-02-16 09:00:49 - cybershield - INFO - [app.py:197] - API Request - GET /api/stats - 500 - 23.14ms
+2026-02-16 09:00:49 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/email-security.jpg - 404 - 5.20ms
+2026-02-16 09:00:50 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/password.jpg - 404 - 3.90ms
+2026-02-16 09:00:50 - cybershield - INFO - [app.py:197] - API Request - GET /static/articles/phishing.jpg - 404 - 0.86ms
+2026-02-16 09:00:50 - cybershield - INFO - [app.py:197] - API Request - GET /static/sw.js - 404 - 3.79ms
+2026-02-16 09:01:00 - cybershield - INFO - [app.py:197] - API Request - GET /jwt-check - 404 - 3.46ms
+2026-02-16 09:58:35 - cybershield - INFO - [app.py:223] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-16 09:58:35 - cybershield - INFO - [app.py:223] - ✅ Rate Limiter enabled
+2026-02-16 09:58:35 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 162.58ms
+2026-02-16 09:58:39 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 5.68ms
+2026-02-16 09:58:39 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.99ms
+2026-02-16 09:58:39 - cybershield - INFO - [app.py:223] - API Request - GET /static/articles/email-security.jpg - 404 - 12.86ms
+2026-02-16 09:58:40 - cybershield - INFO - [app.py:223] - API Request - GET /static/articles/password.jpg - 404 - 1.36ms
+2026-02-16 09:58:40 - cybershield - INFO - [app.py:223] - API Request - GET /static/articles/phishing.jpg - 404 - 1.44ms
+2026-02-16 09:58:40 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 1.85ms
+2026-02-16 09:58:49 - cybershield - INFO - [app.py:223] - API Request - GET /filename-check - 200 - 11.07ms
+2026-02-16 09:58:49 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.31ms
+2026-02-16 09:58:50 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 0.96ms
+2026-02-16 09:58:51 - cybershield - INFO - [app.py:223] - API Request - GET /jwt-check - 200 - 19.38ms
+2026-02-16 09:58:52 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 2.54ms
+2026-02-16 09:58:52 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 1.46ms
+2026-02-16 10:08:23 - cybershield - INFO - [app.py:223] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-16 10:08:23 - cybershield - INFO - [app.py:223] - ✅ Rate Limiter enabled
+2026-02-16 10:08:23 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 125.02ms
+2026-02-16 10:08:28 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 1.49ms
+2026-02-16 10:08:29 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.47ms
+2026-02-16 10:08:29 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 8.37ms
+2026-02-16 10:08:58 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 6.56ms
+2026-02-16 10:09:29 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.48ms
+2026-02-16 10:10:01 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 5.73ms
+2026-02-16 10:11:58 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 9.43ms
+2026-02-16 10:11:59 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 10.20ms
+2026-02-16 10:11:59 - cybershield - INFO - [app.py:223] - API Request - GET /blog - 200 - 36.99ms
+2026-02-16 10:12:01 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 8.64ms
+2026-02-16 10:12:25 - cybershield - INFO - [app.py:223] - API Request - GET /about - 200 - 48.79ms
+2026-02-16 10:12:27 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 2.88ms
+2026-02-16 10:12:31 - cybershield - INFO - [app.py:223] - API Request - GET /contact - 200 - 25.74ms
+2026-02-16 10:12:32 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 1.39ms
+2026-02-16 10:12:33 - cybershield - INFO - [app.py:223] - API Request - GET /contact - 200 - 3.64ms
+2026-02-16 10:12:33 - cybershield - INFO - [app.py:223] - API Request - GET /contact - 200 - 3.82ms
+2026-02-16 10:12:33 - cybershield - INFO - [app.py:223] - API Request - GET /contact - 200 - 1.19ms
+2026-02-16 10:13:17 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 2.06ms
+2026-02-16 10:13:29 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.74ms
+2026-02-16 10:13:42 - cybershield - INFO - [app.py:223] - API Request - GET /phone-check - 200 - 28.08ms
+2026-02-16 10:13:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 6.63ms
+2026-02-16 10:13:44 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 2.92ms
+2026-02-16 10:13:45 - cybershield - INFO - [app.py:223] - API Request - POST /api/v1/scan/phone - 200 - 22.51ms
+2026-02-16 10:14:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 4.45ms
+2026-02-16 10:14:25 - cybershield - INFO - [app.py:223] - API Request - POST /api/v1/scan/phone - 200 - 61.98ms
+2026-02-16 10:14:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.32ms
+2026-02-16 10:15:06 - cybershield - INFO - [app.py:223] - API Request - POST /api/v1/scan/phone - 200 - 25.36ms
+2026-02-16 10:15:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 11.03ms
+2026-02-16 10:15:44 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 4.99ms
+2026-02-16 10:16:14 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 4.25ms
+2026-02-16 10:20:04 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 10.44ms
+2026-02-16 10:20:05 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 7.26ms
+2026-02-16 10:21:04 - cybershield - INFO - [app.py:223] - ✅ Legendary Phone Analyzer initialized - 99% accuracy
+2026-02-16 10:21:04 - cybershield - INFO - [app.py:223] - ✅ Rate Limiter enabled
+2026-02-16 10:21:05 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 490.28ms
+2026-02-16 10:21:07 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 3.28ms
+2026-02-16 10:21:07 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 3.30ms
+2026-02-16 10:21:08 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 22.25ms
+2026-02-16 10:21:17 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 7.39ms
+2026-02-16 10:21:27 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 14.43ms
+2026-02-16 10:21:37 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.27ms
+2026-02-16 10:21:41 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 1.65ms
+2026-02-16 10:21:42 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.36ms
+2026-02-16 10:21:44 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 2.18ms
+2026-02-16 10:21:52 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 3.24ms
+2026-02-16 10:22:02 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 8.03ms
+2026-02-16 10:22:12 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 11.46ms
+2026-02-16 10:22:12 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 5.93ms
+2026-02-16 10:22:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.42ms
+2026-02-16 10:22:14 - cybershield - INFO - [app.py:223] - API Request - GET /static/sw.js - 404 - 3.46ms
+2026-02-16 10:22:24 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.78ms
+2026-02-16 10:22:34 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.38ms
+2026-02-16 10:22:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.24ms
+2026-02-16 10:22:53 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 6.97ms
+2026-02-16 10:23:03 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 1.88ms
+2026-02-16 10:23:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 3.36ms
+2026-02-16 10:23:23 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 5.44ms
+2026-02-16 10:29:05 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.69ms
+2026-02-16 10:29:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.37ms
+2026-02-16 10:29:23 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 10.33ms
+2026-02-16 10:29:33 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.32ms
+2026-02-16 10:29:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.18ms
+2026-02-16 10:29:53 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 2.26ms
+2026-02-16 10:30:03 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 10.97ms
+2026-02-16 10:30:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 11.91ms
+2026-02-16 10:30:23 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.43ms
+2026-02-16 10:30:33 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 2.71ms
+2026-02-16 10:30:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.35ms
+2026-02-16 10:30:53 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 5.72ms
+2026-02-16 10:31:03 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 429 - 23.90ms
+2026-02-16 10:31:13 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 6.79ms
+2026-02-16 10:31:23 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 2.21ms
+2026-02-16 10:31:33 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 6.40ms
+2026-02-16 10:31:43 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 1.69ms
+2026-02-16 10:37:15 - cybershield - INFO - [app.py:223] - API Request - GET /robots.txt - 404 - 2.06ms
+2026-02-16 10:37:16 - cybershield - INFO - [app.py:223] - API Request - GET /password-check - 200 - 52.48ms
+2026-02-16 10:37:19 - cybershield - INFO - [app.py:223] - API Request - GET / - 200 - 1.58ms
+2026-02-16 10:37:21 - cybershield - INFO - [app.py:223] - API Request - GET /static/img/og-default.webp - 404 - 2.41ms
+2026-02-16 10:37:22 - cybershield - INFO - [app.py:223] - API Request - GET /static/img/og-default.webp - 404 - 1.55ms
+2026-02-16 10:44:20 - cybershield - INFO - [app.py:223] - API Request - GET /api/stats - 200 - 8.02ms
+2026-02-16 10:45:40 - cybershield - INFO - [app.py:227] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 10:45:40 - cybershield - INFO - [app.py:227] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 10:45:40 - cybershield - INFO - [app.py:227] - ✅ Rate Limiter enabled
+2026-02-16 10:45:40 - cybershield - INFO - [app.py:227] - API Request - GET / - 200 - 197.00ms
+2026-02-16 10:45:43 - cybershield - INFO - [app.py:227] - API Request - GET / - 200 - 21.29ms
+2026-02-16 10:45:43 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 21.00ms
+2026-02-16 10:45:44 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 47.77ms
+2026-02-16 10:45:53 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 19.85ms
+2026-02-16 10:46:03 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 24.78ms
+2026-02-16 10:46:08 - cybershield - INFO - [app.py:227] - API Request - GET /phone-check - 200 - 197.66ms
+2026-02-16 10:46:09 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 28.84ms
+2026-02-16 10:46:10 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 24.76ms
+2026-02-16 10:46:14 - cybershield - INFO - [app.py:227] - 📱 Phone Analysis - +966501234567 - Saudi Arabia - 31.63ms
+2026-02-16 10:46:14 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/phone - 200 - 89.60ms
+2026-02-16 10:46:39 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 45.88ms
+2026-02-16 10:47:09 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 33.75ms
+2026-02-16 10:47:20 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.90ms
+2026-02-16 10:47:23 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 24.69ms
+2026-02-16 10:47:31 - cybershield - INFO - [app.py:227] - API Request - GET /tools - 200 - 98.86ms
+2026-02-16 10:47:32 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 60.84ms
+2026-02-16 10:47:34 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 31.00ms
+2026-02-16 10:49:38 - cybershield - INFO - [app.py:227] - API Request - GET /phone-check - 200 - 19.14ms
+2026-02-16 10:49:38 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 22.83ms
+2026-02-16 10:49:39 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 15.72ms
+2026-02-16 10:49:47 - cybershield - INFO - [app.py:227] - 📱 Phone Analysis - +966123456789 - Saudi Arabia - 0.82ms
+2026-02-16 10:49:47 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/phone - 200 - 33.89ms
+2026-02-16 10:50:08 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 21.66ms
+2026-02-16 10:50:38 - cybershield - INFO - [app.py:227] - API Request - GET /email-check - 200 - 108.68ms
+2026-02-16 10:50:39 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 21.55ms
+2026-02-16 10:50:39 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 17.45ms
+2026-02-16 10:50:46 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/email - 200 - 54.91ms
+2026-02-16 10:51:09 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 22.48ms
+2026-02-16 10:51:52 - cybershield - INFO - [app.py:227] - API Request - GET /password-check - 200 - 33.32ms
+2026-02-16 10:51:52 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 24.33ms
+2026-02-16 10:51:56 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 15.77ms
+2026-02-16 10:51:59 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/password - 200 - 29.75ms
+2026-02-16 10:52:22 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 15.51ms
+2026-02-16 10:52:23 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/password - 200 - 40.60ms
+2026-02-16 10:52:53 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 15.65ms
+2026-02-16 10:53:23 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 25.44ms
+2026-02-16 10:56:26 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 21.18ms
+2026-02-16 10:56:34 - cybershield - INFO - [app.py:227] - API Request - GET /url-check - 200 - 53.79ms
+2026-02-16 10:56:35 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 22.35ms
+2026-02-16 10:56:36 - cybershield - INFO - [app.py:227] - API Request - GET /url-check - 200 - 16.39ms
+2026-02-16 10:56:36 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 17.20ms
+2026-02-16 10:56:37 - cybershield - INFO - [app.py:227] - API Request - GET /url-check - 200 - 17.58ms
+2026-02-16 10:56:37 - cybershield - INFO - [app.py:227] - API Request - GET /url-check - 200 - 16.71ms
+2026-02-16 10:56:37 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 23.82ms
+2026-02-16 10:56:45 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/url - 200 - 35.00ms
+2026-02-16 10:57:07 - cybershield - INFO - [app.py:227] - API Request - GET /url-check - 200 - 17.17ms
+2026-02-16 10:57:07 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.69ms
+2026-02-16 10:57:08 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 13.62ms
+2026-02-16 10:57:19 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/url - 200 - 39.92ms
+2026-02-16 10:59:18 - cybershield - INFO - [app.py:227] - API Request - GET /domain-check - 200 - 62.22ms
+2026-02-16 10:59:19 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 16.37ms
+2026-02-16 10:59:21 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 24.33ms
+2026-02-16 10:59:22 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/domain - 200 - 44.58ms
+2026-02-16 10:59:43 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/domain - 200 - 30.19ms
+2026-02-16 10:59:49 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 17.68ms
+2026-02-16 11:00:19 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 31.90ms
+2026-02-16 11:00:25 - cybershield - INFO - [app.py:227] - API Request - GET /ip-check - 200 - 64.28ms
+2026-02-16 11:00:25 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 30.08ms
+2026-02-16 11:00:26 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 32.91ms
+2026-02-16 11:00:27 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/ip - 200 - 42.94ms
+2026-02-16 11:00:55 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 18.60ms
+2026-02-16 11:01:27 - cybershield - INFO - [app.py:227] - API Request - GET /hash-check - 200 - 53.01ms
+2026-02-16 11:01:27 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 23.81ms
+2026-02-16 11:01:28 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 19.47ms
+2026-02-16 11:01:29 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/hash - 200 - 33.19ms
+2026-02-16 11:01:58 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 14.80ms
+2026-02-16 11:02:08 - cybershield - INFO - [app.py:227] - API Request - GET /base64-check - 200 - 83.40ms
+2026-02-16 11:02:08 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 40.58ms
+2026-02-16 11:02:09 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 26.32ms
+2026-02-16 11:02:10 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/base64 - 200 - 41.51ms
+2026-02-16 11:02:38 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 28.63ms
+2026-02-16 11:03:08 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 24.45ms
+2026-02-16 11:03:30 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/base64 - 200 - 30.62ms
+2026-02-16 11:03:38 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 14.32ms
+2026-02-16 11:03:55 - cybershield - INFO - [app.py:227] - API Request - GET /credit-card-check - 200 - 51.77ms
+2026-02-16 11:03:55 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 22.70ms
+2026-02-16 11:03:57 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/credit_card - 200 - 49.59ms
+2026-02-16 11:03:58 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 18.25ms
+2026-02-16 11:04:07 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/credit_card - 200 - 35.56ms
+2026-02-16 11:04:25 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 16.80ms
+2026-02-16 11:04:55 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 23.60ms
+2026-02-16 11:05:01 - cybershield - INFO - [app.py:227] - API Request - GET /port-check - 200 - 27.36ms
+2026-02-16 11:05:01 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 25.98ms
+2026-02-16 11:05:02 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 25.36ms
+2026-02-16 11:05:06 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/port - 200 - 53.26ms
+2026-02-16 11:05:31 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.60ms
+2026-02-16 11:06:03 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 31.24ms
+2026-02-16 11:06:11 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 32.29ms
+2026-02-16 11:06:26 - cybershield - INFO - [app.py:227] - API Request - GET /dns-check - 200 - 38.80ms
+2026-02-16 11:06:26 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.08ms
+2026-02-16 11:06:27 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 16.25ms
+2026-02-16 11:06:28 - cybershield - INFO - [app.py:227] - API Request - GET /dns-check - 200 - 18.44ms
+2026-02-16 11:06:28 - cybershield - INFO - [app.py:227] - API Request - GET /dns-check - 200 - 23.44ms
+2026-02-16 11:06:28 - cybershield - INFO - [app.py:227] - API Request - GET /dns-check - 200 - 17.46ms
+2026-02-16 11:06:29 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/dns - 200 - 62.56ms
+2026-02-16 11:06:43 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/dns - 200 - 30.70ms
+2026-02-16 11:06:56 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.62ms
+2026-02-16 11:07:21 - cybershield - INFO - [app.py:227] - API Request - GET /api-key-check - 200 - 42.97ms
+2026-02-16 11:07:21 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 31.45ms
+2026-02-16 11:07:22 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 28.03ms
+2026-02-16 11:07:23 - cybershield - INFO - [app.py:227] - API Request - GET /api-key-check - 200 - 20.31ms
+2026-02-16 11:07:23 - cybershield - INFO - [app.py:227] - API Request - GET /api-key-check - 200 - 20.78ms
+2026-02-16 11:07:23 - cybershield - INFO - [app.py:227] - API Request - GET /api-key-check - 200 - 16.19ms
+2026-02-16 11:08:14 - cybershield - INFO - [app.py:227] - API Request - GET /email-check - 200 - 24.15ms
+2026-02-16 11:08:14 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 27.26ms
+2026-02-16 11:08:15 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 18.55ms
+2026-02-16 11:08:45 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 29.54ms
+2026-02-16 11:08:57 - cybershield - INFO - [app.py:227] - API Request - POST /api/v1/scan/email - 200 - 36.03ms
+2026-02-16 11:09:15 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 21.69ms
+2026-02-16 11:09:46 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 29.49ms
+2026-02-16 11:22:24 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 42.28ms
+2026-02-16 11:22:45 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 20.39ms
+2026-02-16 11:23:14 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 22.13ms
+2026-02-16 11:23:45 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 27.49ms
+2026-02-16 11:24:15 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 36.36ms
+2026-02-16 11:26:50 - cybershield - INFO - [app.py:227] - API Request - GET /api/stats - 200 - 26.45ms
+2026-02-16 11:26:54 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 20.14ms
+2026-02-16 11:26:57 - cybershield - INFO - [app.py:227] - API Request - GET /static/sw.js - 404 - 19.73ms
+2026-02-16 11:28:16 - cybershield - INFO - [app.py:227] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 11:28:16 - cybershield - INFO - [app.py:227] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 11:28:16 - cybershield - INFO - [app.py:227] - ✅ Rate Limiter enabled
+2026-02-16 11:28:16 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:16 - cybershield - INFO - [app.py:227] - API Request - GET / - 500 - 19.64ms
+2026-02-16 11:28:32 - cybershield - INFO - [app.py:227] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 11:28:32 - cybershield - INFO - [app.py:227] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 11:28:32 - cybershield - INFO - [app.py:227] - ✅ Rate Limiter enabled
+2026-02-16 11:28:32 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:32 - cybershield - INFO - [app.py:227] - API Request - GET / - 500 - 58.67ms
+2026-02-16 11:28:34 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:34 - cybershield - INFO - [app.py:227] - API Request - GET / - 500 - 4.85ms
+2026-02-16 11:49:18 - cybershield - INFO - [app.py:226] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 11:49:18 - cybershield - INFO - [app.py:226] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 11:49:18 - cybershield - INFO - [app.py:226] - ✅ Rate Limiter enabled
+2026-02-16 11:49:18 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 238.52ms
+2026-02-16 11:49:21 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 18.81ms
+2026-02-16 11:49:22 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 30.49ms
+2026-02-16 11:49:22 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 89.84ms
+2026-02-16 11:49:32 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.20ms
+2026-02-16 11:49:42 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.05ms
+2026-02-16 11:49:45 - cybershield - INFO - [app.py:226] - API Request - GET /email-check - 200 - 45.36ms
+2026-02-16 11:49:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.61ms
+2026-02-16 11:49:46 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 21.10ms
+2026-02-16 11:49:59 - cybershield - INFO - [app.py:226] - API Request - POST /api/v1/scan/email - 200 - 62.53ms
+2026-02-16 11:50:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 44.79ms
+2026-02-16 11:50:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 28.38ms
+2026-02-16 12:07:11 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 32.18ms
+2026-02-16 12:07:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 45.13ms
+2026-02-16 12:07:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.69ms
+2026-02-16 12:08:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.78ms
+2026-02-16 12:08:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.42ms
+2026-02-16 12:09:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.29ms
+2026-02-16 12:09:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.90ms
+2026-02-16 12:10:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.95ms
+2026-02-16 12:11:31 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 32.91ms
+2026-02-16 12:11:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.58ms
+2026-02-16 12:12:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.98ms
+2026-02-16 12:12:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.61ms
+2026-02-16 12:13:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.01ms
+2026-02-16 12:13:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.78ms
+2026-02-16 12:15:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 31.67ms
+2026-02-16 12:15:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.56ms
+2026-02-16 12:16:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.77ms
+2026-02-16 12:16:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 46.99ms
+2026-02-16 12:17:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.49ms
+2026-02-16 12:17:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.59ms
+2026-02-16 12:18:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.96ms
+2026-02-16 12:18:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.74ms
+2026-02-16 12:19:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.02ms
+2026-02-16 12:19:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 31.30ms
+2026-02-16 12:20:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 30.97ms
+2026-02-16 12:20:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 34.60ms
+2026-02-16 12:21:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 53.22ms
+2026-02-16 12:21:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.68ms
+2026-02-16 12:22:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.68ms
+2026-02-16 12:22:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.38ms
+2026-02-16 12:23:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 38.58ms
+2026-02-16 12:23:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.65ms
+2026-02-16 12:24:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 28.92ms
+2026-02-16 12:24:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.31ms
+2026-02-16 12:25:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 43.79ms
+2026-02-16 12:25:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 26.42ms
+2026-02-16 12:26:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 40.27ms
+2026-02-16 12:26:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 29.13ms
+2026-02-16 12:27:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.34ms
+2026-02-16 12:27:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 33.01ms
+2026-02-16 12:28:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.86ms
+2026-02-16 12:28:46 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.17ms
+2026-02-16 12:29:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.70ms
+2026-02-16 12:42:58 - cybershield - INFO - [app.py:226] - API Request - GET /robots.txt - 404 - 26.02ms
+2026-02-16 13:15:28 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.87ms
+2026-02-16 13:15:36 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 32.39ms
+2026-02-16 13:15:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.72ms
+2026-02-16 13:15:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 26.81ms
+2026-02-16 13:16:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.39ms
+2026-02-16 13:16:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.49ms
+2026-02-16 13:16:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 57.54ms
+2026-02-16 13:16:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 33.83ms
+2026-02-16 13:16:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.88ms
+2026-02-16 13:16:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.95ms
+2026-02-16 13:17:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 30.29ms
+2026-02-16 13:17:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 16.38ms
+2026-02-16 13:17:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 21.01ms
+2026-02-16 13:17:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 29.14ms
+2026-02-16 13:17:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.90ms
+2026-02-16 13:17:55 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.28ms
+2026-02-16 13:18:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.89ms
+2026-02-16 13:18:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.06ms
+2026-02-16 13:18:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 18.53ms
+2026-02-16 13:18:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 13.73ms
+2026-02-16 13:18:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.60ms
+2026-02-16 13:19:03 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 48.08ms
+2026-02-16 13:19:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 33.40ms
+2026-02-16 13:19:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.43ms
+2026-02-16 13:19:23 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 76.41ms
+2026-02-16 13:19:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 22.57ms
+2026-02-16 13:19:25 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 22.40ms
+2026-02-16 13:19:35 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 28.69ms
+2026-02-16 13:19:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.23ms
+2026-02-16 13:19:55 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.40ms
+2026-02-16 13:20:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 34.93ms
+2026-02-16 13:20:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.61ms
+2026-02-16 13:20:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 30.89ms
+2026-02-16 13:20:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 19.05ms
+2026-02-16 13:20:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.94ms
+2026-02-16 13:20:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.65ms
+2026-02-16 13:21:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 37.13ms
+2026-02-16 13:21:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.00ms
+2026-02-16 13:21:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 26.60ms
+2026-02-16 13:21:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 30.47ms
+2026-02-16 13:21:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 42.66ms
+2026-02-16 13:21:55 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 45.89ms
+2026-02-16 13:22:05 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 34.65ms
+2026-02-16 13:22:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 65.67ms
+2026-02-16 13:22:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.51ms
+2026-02-16 13:22:35 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 18.63ms
+2026-02-16 13:22:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.18ms
+2026-02-16 13:23:13 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.41ms
+2026-02-16 13:23:45 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 35.43ms
+2026-02-16 13:27:25 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 39.39ms
+2026-02-16 13:27:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 14.42ms
+2026-02-16 13:27:45 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.29ms
+2026-02-16 13:27:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 16.81ms
+2026-02-16 13:28:33 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.74ms
+2026-02-16 13:28:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.71ms
+2026-02-16 13:28:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.50ms
+2026-02-16 13:28:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.84ms
+2026-02-16 13:29:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.81ms
+2026-02-16 13:29:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 24.82ms
+2026-02-16 13:29:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 20.74ms
+2026-02-16 13:29:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.85ms
+2026-02-16 13:29:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 16.06ms
+2026-02-16 13:29:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.72ms
+2026-02-16 13:30:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 26.48ms
+2026-02-16 13:30:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 39.33ms
+2026-02-16 13:30:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 24.40ms
+2026-02-16 13:30:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 14.71ms
+2026-02-16 13:30:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.19ms
+2026-02-16 13:31:26 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 30.17ms
+2026-02-16 13:31:26 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.08ms
+2026-02-16 13:31:27 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 29.74ms
+2026-02-16 13:31:28 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 18.67ms
+2026-02-16 13:31:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.30ms
+2026-02-16 13:31:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.72ms
+2026-02-16 13:31:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 49.52ms
+2026-02-16 13:32:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.56ms
+2026-02-16 13:32:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 47.21ms
+2026-02-16 13:32:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 20.02ms
+2026-02-16 13:32:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 31.54ms
+2026-02-16 13:33:37 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.90ms
+2026-02-16 13:33:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.50ms
+2026-02-16 13:33:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.72ms
+2026-02-16 13:34:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.63ms
+2026-02-16 13:34:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 18.15ms
+2026-02-16 13:34:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 21.54ms
+2026-02-16 13:34:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 20.21ms
+2026-02-16 13:34:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.06ms
+2026-02-16 13:34:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.16ms
+2026-02-16 13:35:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.03ms
+2026-02-16 13:35:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.66ms
+2026-02-16 13:35:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.48ms
+2026-02-16 13:35:34 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 26.67ms
+2026-02-16 13:35:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.40ms
+2026-02-16 13:35:54 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.73ms
+2026-02-16 13:36:04 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.90ms
+2026-02-16 13:36:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 25.02ms
+2026-02-16 13:37:56 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.56ms
+2026-02-16 13:59:00 - cybershield - INFO - [app.py:226] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 13:59:00 - cybershield - INFO - [app.py:226] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 13:59:00 - cybershield - INFO - [app.py:226] - ✅ Rate Limiter enabled
+2026-02-16 13:59:01 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 167.87ms
+2026-02-16 13:59:12 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 42.30ms
+2026-02-16 13:59:13 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 17.63ms
+2026-02-16 13:59:14 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 53.26ms
+2026-02-16 13:59:23 - cybershield - INFO - [app.py:226] - API Request - GET /password-check - 200 - 80.67ms
+2026-02-16 13:59:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.61ms
+2026-02-16 13:59:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 29.22ms
+2026-02-16 13:59:24 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 21.72ms
+2026-02-16 13:59:39 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.05ms
+2026-02-16 13:59:42 - cybershield - INFO - [app.py:226] - API Request - GET /url-check - 200 - 23.94ms
+2026-02-16 13:59:43 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.51ms
+2026-02-16 13:59:43 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 22.76ms
+2026-02-16 14:00:08 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 28.85ms
+2026-02-16 14:00:11 - cybershield - INFO - [app.py:226] - API Request - GET /ip-check - 200 - 75.50ms
+2026-02-16 14:00:12 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 26.85ms
+2026-02-16 14:00:18 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 28.82ms
+2026-02-16 14:00:42 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.87ms
+2026-02-16 14:01:13 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 40.77ms
+2026-02-16 14:01:43 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.29ms
+2026-02-16 14:02:13 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 33.40ms
+2026-02-16 14:02:16 - cybershield - INFO - [app.py:226] - API Request - GET /base64-check - 200 - 68.85ms
+2026-02-16 14:02:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 33.24ms
+2026-02-16 14:02:17 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 24.04ms
+2026-02-16 14:02:38 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 21.00ms
+2026-02-16 14:02:42 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.35ms
+2026-02-16 14:02:43 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2184, in jwt_check
+    return render_template('jwt_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/jwt_check.html", line 3, in template
+    {% block title } 🔐 فحص JWT - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 14:02:43 - cybershield - INFO - [app.py:226] - API Request - GET /jwt-check - 500 - 48.21ms
+2026-02-16 14:02:47 - cybershield - INFO - [app.py:226] - API Request - GET /user-agent-check - 200 - 49.97ms
+2026-02-16 14:02:49 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.71ms
+2026-02-16 14:02:51 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 19.91ms
+2026-02-16 14:02:57 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.66ms
+2026-02-16 14:02:58 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2192, in filename_check
+    return render_template('filename_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/filename_check.html", line 3, in template
+    {% block title } 📄 فحص أسماء الملفات - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 14:02:58 - cybershield - INFO - [app.py:226] - API Request - GET /filename-check - 500 - 36.36ms
+2026-02-16 14:03:01 - cybershield - INFO - [app.py:226] - API Request - GET /dns-check - 200 - 34.50ms
+2026-02-16 14:03:02 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 23.51ms
+2026-02-16 14:03:02 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.93ms
+2026-02-16 14:03:05 - cybershield - INFO - [app.py:226] - API Request - GET /api-key-check - 200 - 47.14ms
+2026-02-16 14:03:05 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 36.52ms
+2026-02-16 14:03:07 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 18.56ms
+2026-02-16 14:03:08 - cybershield - INFO - [app.py:226] - API Request - GET /file-check - 200 - 42.20ms
+2026-02-16 14:03:09 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 19.96ms
+2026-02-16 14:03:11 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 34.73ms
+2026-02-16 14:03:12 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 41.97ms
+2026-02-16 14:03:13 - cybershield - INFO - [app.py:226] - API Request - GET /port-check - 200 - 83.32ms
+2026-02-16 14:03:14 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 26.29ms
+2026-02-16 14:03:17 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 23.40ms
+2026-02-16 14:03:19 - cybershield - INFO - [app.py:226] - API Request - GET /credit-card-check - 200 - 40.40ms
+2026-02-16 14:03:20 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 16.53ms
+2026-02-16 14:03:22 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 31.80ms
+2026-02-16 14:03:26 - cybershield - INFO - [app.py:226] - API Request - GET /username-check - 200 - 110.99ms
+2026-02-16 14:03:27 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 59.72ms
+2026-02-16 14:03:28 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 24.65ms
+2026-02-16 14:03:30 - cybershield - INFO - [app.py:226] - API Request - GET /hash-check - 200 - 47.02ms
+2026-02-16 14:03:32 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 23.00ms
+2026-02-16 14:03:32 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 31.59ms
+2026-02-16 14:03:36 - cybershield - INFO - [app.py:226] - API Request - GET /domain-check - 200 - 37.72ms
+2026-02-16 14:03:37 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 15.11ms
+2026-02-16 14:03:40 - cybershield - INFO - [app.py:226] - API Request - GET /phone-check - 200 - 91.36ms
+2026-02-16 14:03:41 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 24.17ms
+2026-02-16 14:03:42 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 32.58ms
+2026-02-16 14:03:43 - cybershield - INFO - [app.py:226] - API Request - GET /email-check - 200 - 83.72ms
+2026-02-16 14:03:44 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 429 - 39.39ms
+2026-02-16 14:03:45 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 24.24ms
+2026-02-16 14:03:52 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 22.97ms
+2026-02-16 14:12:32 - cybershield - INFO - [app.py:226] - ✅ RealStatsTracker initialized - REAL DATA ONLY
+2026-02-16 14:12:32 - cybershield - INFO - [app.py:226] - ✅ Legendary Phone Analyzer initialized - 99.9% accuracy
+2026-02-16 14:12:32 - cybershield - INFO - [app.py:226] - ✅ Rate Limiter enabled
+2026-02-16 14:12:32 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 84.96ms
+2026-02-16 14:12:37 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 16.57ms
+2026-02-16 14:12:37 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.92ms
+2026-02-16 14:12:41 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 26.56ms
+2026-02-16 14:12:47 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 16.29ms
+2026-02-16 14:12:50 - cybershield - INFO - [app.py:226] - API Request - GET /jwt-check - 200 - 34.73ms
+2026-02-16 14:12:51 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 19.81ms
+2026-02-16 14:12:51 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 18.67ms
+2026-02-16 14:13:12 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.47ms
+2026-02-16 14:13:16 - cybershield - INFO - [app.py:226] - API Request - GET /filename-check - 200 - 53.53ms
+2026-02-16 14:13:16 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 33.85ms
+2026-02-16 14:13:17 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 21.73ms
+2026-02-16 14:13:22 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 20.03ms
+2026-02-16 14:13:24 - cybershield - INFO - [app.py:226] - API Request - GET /file-check - 200 - 48.30ms
+2026-02-16 14:13:24 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 31.05ms
+2026-02-16 14:13:25 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 30.10ms
+2026-02-16 14:13:52 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 28.72ms
+2026-02-16 14:13:57 - cybershield - INFO - [app.py:226] - API Request - GET / - 200 - 23.05ms
+2026-02-16 14:13:58 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 24.30ms
+2026-02-16 14:13:58 - cybershield - INFO - [app.py:226] - API Request - GET /static/sw.js - 404 - 20.09ms
+2026-02-16 14:14:07 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 27.29ms
+2026-02-16 14:14:18 - cybershield - INFO - [app.py:226] - API Request - GET /api/stats - 200 - 41.13ms
+2026-02-16 14:36:11 - cybershield - INFO - [app.py:226] - API Request - GET /robots.txt - 404 - 29.41ms
+2026-02-16 14:36:44 - cybershield - INFO - [app.py:226] - API Request - GET /article/password-security-science - 404 - 17.58ms
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 15:43:34 - [system] - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 16:11:47 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 16:11:47 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 16:11:47 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 16:11:47 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 16:11:47 - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 16:11:47 - cybershield - INFO - ✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy
+2026-02-16 16:11:47 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 16:11:47 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:47 - cybershield - INFO - API Request - GET / - 500 - 8.41ms
+2026-02-16 16:11:55 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:55 - cybershield - INFO - API Request - GET / - 500 - 2.96ms
+2026-02-16 16:11:56 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:56 - cybershield - INFO - API Request - GET /favicon.ico - 500 - 13.43ms
+2026-02-16 16:41:27 - cybershield - INFO - 🛑 Graceful shutdown initiated...
+2026-02-16 16:41:27 - cybershield - INFO - Saving statistics...
+2026-02-16 16:41:27 - cybershield - INFO - Saving blacklist...
+2026-02-16 16:41:34 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 16:41:34 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 16:41:34 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 16:41:34 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 16:41:34 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 16:41:34 - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 16:41:34 - cybershield - INFO - ✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy
+2026-02-16 16:41:34 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 16:41:34 - cybershield - INFO - API Request - GET / - 200 - 111.28ms
+2026-02-16 16:41:40 - cybershield - INFO - API Request - GET / - 200 - 26.29ms
+2026-02-16 16:41:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:41:41 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.14ms
+2026-02-16 16:41:42 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 30.26ms
+2026-02-16 16:41:42 - cybershield - INFO - API Request - GET /static/favicon-32x32.png - 404 - 23.15ms
+2026-02-16 16:41:42 - cybershield - INFO - API Request - GET /static/apple-touch-icon.png - 404 - 25.10ms
+2026-02-16 16:41:43 - cybershield - INFO - API Request - GET /static/favicon-16x16.png - 404 - 27.17ms
+2026-02-16 16:41:51 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:41:51 - cybershield - INFO - API Request - GET /api/stats - 401 - 14.31ms
+2026-02-16 16:42:01 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:01 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.94ms
+2026-02-16 16:42:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:11 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.91ms
+2026-02-16 16:42:21 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:21 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.85ms
+2026-02-16 16:42:31 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:31 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.79ms
+2026-02-16 16:42:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:41 - cybershield - INFO - API Request - GET /api/stats - 401 - 3.34ms
+2026-02-16 16:42:51 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:42:51 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.95ms
+2026-02-16 16:43:01 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:01 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.88ms
+2026-02-16 16:43:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:11 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.10ms
+2026-02-16 16:43:21 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:21 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.81ms
+2026-02-16 16:43:31 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:31 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.70ms
+2026-02-16 16:43:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:41 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.86ms
+2026-02-16 16:46:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:46:11 - cybershield - INFO - API Request - GET /api/stats - 401 - 12.29ms
+2026-02-16 17:04:10 - cybershield - INFO - 🛑 Graceful shutdown initiated...
+2026-02-16 17:04:10 - cybershield - INFO - Saving statistics...
+2026-02-16 17:04:10 - cybershield - INFO - Saving blacklist...
+2026-02-16 17:04:11 - cybershield - INFO - Saving phone history...
+2026-02-16 17:04:11 - cybershield - INFO - ✅ All data saved. Goodbye!
+2026-02-16 17:04:22 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:04:22 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:04:22 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:04:22 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:04:22 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:04:22 - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 17:04:22 - cybershield - INFO - ✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy
+2026-02-16 17:04:22 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 17:04:23 - cybershield - INFO - API Request - GET / - 200 - 287.42ms
+2026-02-16 17:04:26 - cybershield - INFO - API Request - GET / - 200 - 35.25ms
+2026-02-16 17:04:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:26 - cybershield - INFO - API Request - GET /api/stats - 401 - 6.99ms
+2026-02-16 17:04:28 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 50.80ms
+2026-02-16 17:04:36 - cybershield - INFO - API Request - GET /phone-check - 200 - 153.43ms
+2026-02-16 17:04:37 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:37 - cybershield - INFO - API Request - GET /api/stats - 401 - 3.85ms
+2026-02-16 17:04:38 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 29.73ms
+2026-02-16 17:04:38 - cybershield - WARNING - Security Event - missing_api_key - 188.240.108.116 - {'path': '/api/stats'}
+2026-02-16 17:04:38 - cybershield - INFO - API Request - GET /api/stats - 401 - 3.16ms
+2026-02-16 17:04:38 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:38 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.80ms
+2026-02-16 17:04:39 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/v1/scan/phone'}
+2026-02-16 17:04:39 - cybershield - INFO - API Request - POST /api/v1/scan/phone - 401 - 0.95ms
+2026-02-16 17:04:47 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:47 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.77ms
+2026-02-16 17:04:52 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:52 - cybershield - INFO - API Request - GET /api/stats - 401 - 3.21ms
+2026-02-16 17:04:53 - cybershield - INFO - API Request - GET /email-check - 200 - 65.13ms
+2026-02-16 17:04:54 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:54 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.89ms
+2026-02-16 17:04:54 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:54 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.91ms
+2026-02-16 17:04:55 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 31.20ms
+2026-02-16 17:04:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/v1/scan/email'}
+2026-02-16 17:04:56 - cybershield - INFO - API Request - POST /api/v1/scan/email - 401 - 1.02ms
+2026-02-16 17:05:04 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:04 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.78ms
+2026-02-16 17:05:14 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:14 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.80ms
+2026-02-16 17:05:24 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:24 - cybershield - INFO - API Request - GET /api/stats - 401 - 2.75ms
+2026-02-16 17:05:24 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:24 - cybershield - INFO - API Request - GET /api/stats - 401 - 9.11ms
+2026-02-16 17:05:34 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:34 - cybershield - INFO - API Request - GET /api/stats - 401 - 6.02ms
+2026-02-16 17:05:44 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:44 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.84ms
+2026-02-16 17:05:54 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:54 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.97ms
+2026-02-16 17:05:54 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:54 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.80ms
+2026-02-16 17:12:54 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:12:54 - cybershield - INFO - API Request - GET /api/stats - 401 - 6.06ms
+2026-02-16 17:12:55 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:12:55 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.23ms
+2026-02-16 17:12:55 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:12:55 - cybershield - INFO - API Request - GET /api/stats - 401 - 2.40ms
+2026-02-16 17:12:57 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 28.60ms
+2026-02-16 17:13:30 - cybershield - INFO - 🛑 Graceful shutdown initiated...
+2026-02-16 17:13:30 - cybershield - INFO - Saving statistics...
+2026-02-16 17:13:30 - cybershield - INFO - Saving blacklist...
+2026-02-16 17:13:30 - cybershield - INFO - Saving phone history...
+2026-02-16 17:13:30 - cybershield - INFO - ✅ All data saved. Goodbye!
+2026-02-16 17:31:13 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:31:13 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:31:13 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:31:13 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:31:13 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:31:13 - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 17:31:13 - cybershield - INFO - ✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy
+2026-02-16 17:31:13 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 17:31:14 - cybershield - INFO - API Request - GET / - 200 - 452.06ms
+2026-02-16 17:31:17 - cybershield - INFO - API Request - GET / - 200 - 80.09ms
+2026-02-16 17:31:17 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:31:17 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.09ms
+2026-02-16 17:31:18 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 59.75ms
+2026-02-16 17:31:25 - cybershield - INFO - API Request - GET /phone-check - 200 - 129.35ms
+2026-02-16 17:31:25 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:31:25 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.99ms
+2026-02-16 17:31:25 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}
+2026-02-16 17:31:25 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.85ms
+2026-02-16 17:31:27 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/v1/scan/phone'}
+2026-02-16 17:31:27 - cybershield - INFO - API Request - POST /api/v1/scan/phone - 401 - 0.82ms
+2026-02-16 17:31:28 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 28.18ms
+2026-02-16 17:31:36 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}
+2026-02-16 17:31:36 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.80ms
+2026-02-16 17:31:46 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:31:46 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.92ms
+2026-02-16 17:31:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:31:56 - cybershield - INFO - API Request - GET /api/stats - 401 - 2.68ms
+2026-02-16 17:31:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:31:56 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.56ms
+2026-02-16 17:32:06 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:06 - cybershield - INFO - API Request - GET /api/stats - 401 - 1.16ms
+2026-02-16 17:32:16 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:16 - cybershield - INFO - API Request - GET /api/stats - 401 - 6.86ms
+2026-02-16 17:32:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:26 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.82ms
+2026-02-16 17:32:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:26 - cybershield - INFO - API Request - GET /api/stats - 401 - 4.73ms
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - INFO - API Request - GET /api/stats - 401 - 2.66ms
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.90ms
+2026-02-16 17:38:35 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 31.28ms
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - INFO - API Request - GET /api/stats - 401 - 0.69ms
+2026-02-16 17:39:06 - cybershield - INFO - 🛑 Graceful shutdown initiated...
+2026-02-16 17:39:06 - cybershield - INFO - Saving statistics...
+2026-02-16 17:39:06 - cybershield - INFO - Saving blacklist...
+2026-02-16 17:39:06 - cybershield - INFO - Saving phone history...
+2026-02-16 17:39:06 - cybershield - INFO - ✅ All data saved. Goodbye!
+2026-02-16 17:39:16 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:39:16 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:39:16 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:39:16 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:39:16 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:39:16 - cybershield - INFO - ✅ PhoneScanHistory initialized - 0 cached scans
+2026-02-16 17:39:16 - cybershield - INFO - ✅ Legendary Phone Analyzer v18 initialized - 99.9% accuracy
+2026-02-16 17:39:16 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 17:39:16 - cybershield - INFO - API Request - GET / - 200 - 202.22ms
+2026-02-16 17:39:18 - cybershield - INFO - API Request - GET / - 200 - 23.45ms
+2026-02-16 17:39:19 - cybershield - INFO - API Request - GET /api/stats - 200 - 27.32ms
+2026-02-16 17:39:23 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 67.00ms
+2026-02-16 17:39:28 - cybershield - INFO - API Request - GET /phone-check - 200 - 105.01ms
+2026-02-16 17:39:28 - cybershield - INFO - API Request - GET /api/stats - 200 - 26.70ms
+2026-02-16 17:39:28 - cybershield - INFO - API Request - GET /api/stats - 200 - 31.43ms
+2026-02-16 17:39:29 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 35.60ms
+2026-02-16 17:39:31 - cybershield - INFO - 📱 Phone Analysis - +966501234567 - Saudi Arabia - 79.74ms
+2026-02-16 17:39:31 - cybershield - INFO - API Request - POST /api/v1/scan/phone - 200 - 149.08ms
+2026-02-16 17:39:38 - cybershield - INFO - API Request - GET /api/stats - 200 - 27.97ms
+2026-02-16 17:39:48 - cybershield - INFO - API Request - GET /api/stats - 200 - 34.15ms
+2026-02-16 17:39:58 - cybershield - INFO - API Request - GET /api/stats - 429 - 32.25ms
+2026-02-16 17:39:58 - cybershield - INFO - API Request - GET /api/stats - 429 - 48.65ms
+2026-02-16 17:40:06 - cybershield - INFO - API Request - GET /api/stats - 429 - 40.89ms
+2026-02-16 17:40:09 - cybershield - INFO - API Request - GET /api/stats - 429 - 35.91ms
+2026-02-16 17:40:11 - cybershield - INFO - API Request - GET /email-check - 200 - 86.67ms
+2026-02-16 17:40:12 - cybershield - INFO - API Request - GET /api/stats - 429 - 42.17ms
+2026-02-16 17:40:12 - cybershield - INFO - API Request - GET /api/stats - 429 - 30.15ms
+2026-02-16 17:40:12 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 36.35ms
+2026-02-16 17:40:13 - cybershield - INFO - API Request - POST /api/v1/scan/email - 200 - 108.31ms
+2026-02-16 17:40:22 - cybershield - INFO - API Request - GET /api/stats - 200 - 36.81ms
+2026-02-16 17:40:25 - cybershield - INFO - API Request - GET /api/stats - 200 - 48.93ms
+2026-02-16 17:40:29 - cybershield - INFO - API Request - GET /api/stats - 200 - 36.25ms
+2026-02-16 17:40:39 - cybershield - INFO - API Request - GET /api/stats - 200 - 37.57ms
+2026-02-16 17:40:41 - cybershield - INFO - API Request - GET /tools - 200 - 68.87ms
+2026-02-16 17:40:42 - cybershield - INFO - API Request - GET /api/stats - 200 - 30.75ms
+2026-02-16 17:40:42 - cybershield - INFO - API Request - GET /api/stats - 429 - 29.97ms
+2026-02-16 17:40:43 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 26.31ms
+2026-02-16 17:40:52 - cybershield - INFO - API Request - GET /api/stats - 429 - 39.06ms
+2026-02-16 17:40:54 - cybershield - INFO - API Request - GET /filename-check - 200 - 50.99ms
+2026-02-16 17:40:54 - cybershield - INFO - API Request - GET /api/stats - 429 - 23.99ms
+2026-02-16 17:40:54 - cybershield - INFO - API Request - GET /api/stats - 429 - 32.76ms
+2026-02-16 17:40:57 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 25.23ms
+2026-02-16 17:41:04 - cybershield - INFO - API Request - GET /api/stats - 200 - 51.51ms
+2026-02-16 17:41:08 - cybershield - INFO - API Request - GET /file-check - 200 - 61.78ms
+2026-02-16 17:41:08 - cybershield - INFO - API Request - GET /api/stats - 200 - 33.38ms
+2026-02-16 17:41:09 - cybershield - INFO - API Request - GET /api/stats - 200 - 29.41ms
+2026-02-16 17:41:09 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 29.62ms
+2026-02-16 17:41:18 - cybershield - INFO - API Request - GET /api/stats - 200 - 28.86ms
+2026-02-16 17:41:28 - cybershield - INFO - API Request - GET /api/stats - 200 - 28.56ms
+2026-02-16 17:41:38 - cybershield - INFO - API Request - GET /api/stats - 429 - 42.31ms
+2026-02-16 17:41:48 - cybershield - INFO - API Request - GET /api/stats - 429 - 27.58ms
+2026-02-16 17:41:52 - cybershield - INFO - API Request - GET /api/stats - 429 - 26.62ms
+2026-02-16 17:41:59 - cybershield - INFO - API Request - GET /api/stats - 429 - 24.03ms
+2026-02-16 17:42:09 - cybershield - INFO - API Request - GET /api/stats - 200 - 40.28ms
+2026-02-16 17:42:09 - cybershield - INFO - API Request - GET /url-check - 200 - 29.16ms
+2026-02-16 17:42:10 - cybershield - INFO - API Request - GET /api/stats - 200 - 25.92ms
+2026-02-16 17:42:10 - cybershield - INFO - API Request - GET /api/stats - 200 - 23.68ms
+2026-02-16 17:42:11 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 28.60ms
+2026-02-16 17:42:20 - cybershield - INFO - API Request - GET /api/stats - 200 - 21.11ms
+2026-02-16 17:42:26 - cybershield - INFO - API Request - GET /api/stats - 200 - 37.06ms
+2026-02-16 17:42:29 - cybershield - INFO - API Request - GET /api/stats - 429 - 37.56ms
+2026-02-16 17:42:39 - cybershield - INFO - API Request - GET /api/stats - 429 - 28.38ms
+2026-02-16 17:42:49 - cybershield - INFO - API Request - GET /api/stats - 429 - 48.04ms
+2026-02-16 17:42:53 - cybershield - INFO - API Request - GET / - 200 - 28.03ms
+2026-02-16 17:42:54 - cybershield - INFO - API Request - GET /api/stats - 429 - 26.62ms
+2026-02-16 17:42:55 - cybershield - INFO - API Request - GET /static/sw.js - 404 - 50.33ms
+2026-02-16 17:43:04 - cybershield - INFO - API Request - GET /api/stats - 429 - 32.51ms
+2026-02-16 17:43:15 - cybershield - INFO - API Request - GET /api/stats - 200 - 35.34ms
+2026-02-16 17:43:24 - cybershield - INFO - API Request - GET /api/stats - 200 - 31.43ms
+2026-02-16 17:43:34 - cybershield - INFO - API Request - GET /api/stats - 200 - 31.38ms
+2026-02-16 17:43:44 - cybershield - INFO - API Request - GET /api/stats - 200 - 24.77ms
+2026-02-16 17:43:54 - cybershield - INFO - API Request - GET /api/stats - 200 - 39.82ms
+2026-02-16 17:44:04 - cybershield - INFO - API Request - GET /api/stats - 429 - 34.76ms
+2026-02-16 17:48:05 - cybershield - INFO - API Request - GET /api/stats - 200 - 37.99ms
+2026-02-16 17:50:32 - cybershield - INFO - 🛑 Graceful shutdown initiated...
+2026-02-16 17:50:32 - cybershield - INFO - Saving statistics...
+2026-02-16 17:50:32 - cybershield - INFO - Saving blacklist...
+2026-02-16 17:50:32 - cybershield - INFO - Saving phone history...
+2026-02-16 17:50:32 - cybershield - INFO - ✅ All data saved. Goodbye!
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:50:42 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:01:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:40:44 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 21:15:14 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 18:56:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:01:11 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:05:26 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:09:43 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:37 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:48 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:05:18 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:12:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:13:38 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:15:06 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 21:06:47 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Rate Limiter enabled

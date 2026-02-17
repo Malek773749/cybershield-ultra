@@ -1,0 +1,741 @@
+{% extends "base.html" %}
+
+{% block title %}CyberShield Ultra - منصة الأمن السيبراني العربية الأولى{% endblock %}
+
+{% block meta_description %}منصة الأمن السيبراني العربية المتكاملة مع 17 أداة احترافية، إحصائيات حية، وذكاء اصطناعي داخلي.{% endblock %}
+
+{% block styles %}
+<style>
+    /* ============================================================
+       CYBERSHIELD ULTRA - LEGENDARY DESIGN v3.0
+       ألوان أسطورية | تأثيرات سينمائية | إحصائيات حية
+       ============================================================ */
+
+    /* متغيرات الألوان الجديدة - لوحة ألوان أسطورية */
+    :root {
+        --primary-900: #050510;
+        --primary-800: #0a0a1a;
+        --primary-700: #12122b;
+        --primary-600: #1a1a3a;
+        --primary-500: #252550;
+
+        --accent-neon: #00f3ff;
+        --accent-purple: #b829e0;
+        --accent-pink: #ff2b8f;
+        --accent-orange: #ff6b2b;
+        --accent-gold: #ffd700;
+
+        --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        --gradient-4: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        --gradient-5: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+
+        --glow-neon: 0 0 20px rgba(0, 243, 255, 0.5);
+        --glow-purple: 0 0 20px rgba(184, 41, 224, 0.5);
+        --glow-pink: 0 0 20px rgba(255, 43, 143, 0.5);
+    }
+
+    /* ============================================================
+       HERO SECTION - سينمائي متحرك
+       ============================================================ */
+    .hero-legendary {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 0;
+        overflow: hidden;
+        background: var(--primary-900);
+    }
+
+    /* خلفية متحركة ثلاثية الأبعاد */
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:
+            radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.2) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.2) 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, rgba(240, 147, 251, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 70% 20%, rgba(79, 172, 254, 0.15) 0%, transparent 50%);
+        animation: bgPulse 15s ease-in-out infinite alternate;
+        z-index: 0;
+    }
+
+    /* جسيمات متحركة */
+    .hero-particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+            radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at 90% 60%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 200px 200px;
+        animation: particlesMove 60s linear infinite;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    @keyframes bgPulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        100% { transform: scale(1.2); opacity: 1; }
+    }
+
+    @keyframes particlesMove {
+        0% { transform: translateY(0) translateX(0); }
+        100% { transform: translateY(-100px) translateX(100px); }
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 10;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* شعار متوهج */
+    .hero-badge {
+        display: inline-block;
+        padding: 12px 30px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(0, 243, 255, 0.3);
+        border-radius: 50px;
+        color: var(--accent-neon);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+        box-shadow: var(--glow-neon);
+        animation: badgeGlow 3s infinite alternate;
+    }
+
+    @keyframes badgeGlow {
+        0% { box-shadow: 0 0 20px rgba(0, 243, 255, 0.3); }
+        100% { box-shadow: 0 0 40px rgba(0, 243, 255, 0.8); }
+    }
+
+    /* العنوان الرئيسي - متدرج متحرك */
+    .hero-title {
+        font-size: clamp(3rem, 8vw, 6rem);
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        background: linear-gradient(
+            135deg,
+            #fff 0%,
+            #00f3ff 20%,
+            #b829e0 40%,
+            #ff2b8f 60%,
+            #ff6b2b 80%,
+            #fff 100%
+        );
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 8s ease infinite;
+        text-shadow: 0 0 60px rgba(0, 243, 255, 0.3);
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 800px;
+        margin: 0 auto 40px;
+        line-height: 1.8;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-highlight {
+        color: var(--accent-neon);
+        font-weight: 800;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hero-highlight::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--accent-neon), var(--accent-purple), var(--accent-pink), transparent);
+        animation: lineGlow 3s infinite;
+    }
+
+    @keyframes lineGlow {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+
+    /* أزرار متوهجة */
+    .hero-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .btn-legendary {
+        padding: 18px 45px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .btn-legendary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #00f3ff, #b829e0, #ff2b8f);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: -1;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        box-shadow: 0 10px 30px -5px rgba(102, 126, 234, 0.5);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 20px 40px -5px rgba(102, 126, 234, 0.8);
+    }
+
+    .btn-primary:hover::before {
+        opacity: 1;
+    }
+
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(0, 243, 255, 0.3);
+        color: var(--accent-neon);
+    }
+
+    .btn-secondary:hover {
+        border-color: var(--accent-neon);
+        background: rgba(0, 243, 255, 0.1);
+        transform: translateY(-5px);
+        box-shadow: var(--glow-neon);
+    }
+
+    /* ============================================================
+       STATS CARDS - REAL TIME DATA
+       ============================================================ */
+    .stats-legendary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin: 80px 0;
+        position: relative;
+        z-index: 20;
+    }
+
+    .stat-card-legendary {
+        background: rgba(10, 10, 26, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 243, 255, 0.2);
+        border-radius: 30px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+    }
+
+    .stat-card-legendary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #00f3ff, #b829e0, #ff2b8f, #ff6b2b);
+        background-size: 300% 100%;
+        animation: gradientMove 6s linear infinite;
+    }
+
+    .stat-card-legendary::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle at center, rgba(0, 243, 255, 0.1), transparent 70%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+
+    .stat-card-legendary:hover {
+        transform: translateY(-15px) scale(1.02);
+        border-color: rgba(0, 243, 255, 0.5);
+        box-shadow: 0 30px 60px -15px rgba(0, 243, 255, 0.4);
+    }
+
+    .stat-card-legendary:hover::after {
+        opacity: 1;
+    }
+
+    .stat-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 0 20px currentColor);
+        animation: statFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes statFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    .stat-value {
+        font-size: 3.2rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #fff, #00f3ff, #b829e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+    }
+
+    .stat-label {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .stat-trend {
+        display: inline-block;
+        padding: 6px 15px;
+        background: rgba(0, 243, 255, 0.1);
+        border: 1px solid rgba(0, 243, 255, 0.3);
+        border-radius: 50px;
+        color: var(--accent-neon);
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .trend-up { color: #10b981; }
+    .trend-down { color: #ef4444; }
+    .trend-neutral { color: #f59e0b; }
+
+    /* ============================================================
+       TOOLS SECTION - بطاقات متطورة
+       ============================================================ */
+    .tools-legendary {
+        margin: 100px 0;
+    }
+
+    .section-header-legendary {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .section-title-legendary {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #fff, #00f3ff, #b829e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle-legendary {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .tools-grid-legendary {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 50px;
+    }
+
+    .tool-card-legendary {
+        background: rgba(10, 10, 26, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 243, 255, 0.2);
+        border-radius: 30px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tool-card-legendary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(184, 41, 224, 0.1));
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+        z-index: 0;
+    }
+
+    .tool-card-legendary:hover {
+        transform: translateY(-10px);
+        border-color: rgba(0, 243, 255, 0.5);
+        box-shadow: 0 30px 60px -20px rgba(0, 243, 255, 0.4);
+    }
+
+    .tool-card-legendary:hover::before {
+        transform: translateY(0);
+    }
+
+    .tool-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        filter: drop-shadow(0 0 20px currentColor);
+        transition: all 0.4s ease;
+    }
+
+    .tool-card-legendary:hover .tool-icon {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    .tool-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .tool-desc {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .tool-badge {
+        display: inline-block;
+        padding: 6px 15px;
+        background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(184, 41, 224, 0.2));
+        border: 1px solid rgba(0, 243, 255, 0.4);
+        border-radius: 50px;
+        color: var(--accent-neon);
+        font-size: 0.85rem;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* ============================================================
+       FEATURES SECTION
+       ============================================================ */
+    .features-legendary {
+        margin: 100px 0;
+        padding: 80px 0;
+        background: linear-gradient(180deg, transparent, rgba(0, 243, 255, 0.05), transparent);
+        border-radius: 100px;
+    }
+
+    .features-grid-legendary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 50px;
+    }
+
+    .feature-item-legendary {
+        background: rgba(10, 10, 26, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(184, 41, 224, 0.2);
+        border-radius: 30px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+
+    .feature-item-legendary:hover {
+        border-color: rgba(184, 41, 224, 0.5);
+        transform: translateY(-10px);
+        box-shadow: 0 30px 60px -20px rgba(184, 41, 224, 0.4);
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 0 20px currentColor);
+    }
+
+    .feature-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .feature-desc {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 1024px) {
+        .stats-legendary {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+        }
+
+        .stats-legendary {
+            grid-template-columns: 1fr;
+        }
+
+        .section-title-legendary {
+            font-size: 2.2rem;
+        }
+
+        .btn-legendary {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section - أسطوري -->
+<section class="hero-legendary">
+    <div class="hero-bg"></div>
+    <div class="hero-particles"></div>
+
+    <div class="hero-content">
+        <span class="hero-badge">🚀 منصة الأمن السيبراني العربية الأولى</span>
+
+        <h1 class="hero-title">
+            <span class="hero-highlight">CyberShield</span><br>
+            Ultra
+        </h1>
+
+        <p class="hero-subtitle">
+            <span class="hero-highlight">١٧</span> أداة احترافية مدعومة بالذكاء الاصطناعي<br>
+            لحماية فضاءك الرقمي في <span class="hero-highlight">٢٢</span> دولة عربية
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/tools" class="btn-legendary btn-primary">🔍 استعرض الأدوات</a>
+            <a href="/about" class="btn-legendary btn-secondary">📚 تعرف علينا</a>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <!-- Stats Section - إحصائيات حية دقيقة 100% -->
+    <div class="stats-legendary">
+        <div class="stat-card-legendary">
+            <div class="stat-icon">🛡️</div>
+            <div class="stat-value" id="total-scans">٠</div>
+            <div class="stat-label">إجمالي الفحوصات</div>
+            <div class="stat-trend" id="scans-trend">📈 +٠ اليوم</div>
+        </div>
+
+        <div class="stat-card-legendary">
+            <div class="stat-icon">👥</div>
+            <div class="stat-value" id="total-users">٠</div>
+            <div class="stat-label">المستخدمين الفريدين</div>
+            <div class="stat-trend" id="users-trend">👤 ٠ نشط الآن</div>
+        </div>
+
+        <div class="stat-card-legendary">
+            <div class="stat-icon">🤖</div>
+            <div class="stat-value" id="blocked-bots">٠</div>
+            <div class="stat-label">بوتات محظورة</div>
+            <div class="stat-trend" id="bots-trend">🚫 ٠ اليوم</div>
+        </div>
+
+        <div class="stat-card-legendary">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-value" id="avg-time">٠</div>
+            <div class="stat-label">متوسط الوقت (ms)</div>
+            <div class="stat-trend" id="time-trend">⚡ سريع جداً</div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <section class="tools-legendary">
+        <div class="section-header-legendary">
+            <h2 class="section-title-legendary">أدواتنا الاحترافية</h2>
+            <p class="section-subtitle-legendary">١٧ أداة متكاملة لفحص وتأمين جميع جوانب الأمن السيبراني</p>
+        </div>
+
+        <div class="tools-grid-legendary">
+            {% set tools = [
+                ('📱', 'فحص الهاتف', 'تحليل الأرقام وكشف الاحتيال', '/phone-check'),
+                ('📧', 'فحص البريد', 'كشف البريد المؤقت والمزيف', '/email-check'),
+                ('🔐', 'كلمة المرور', 'تحليل القوة ووقت الكسر', '/password-check'),
+                ('🔗', 'الروابط', 'كشف روابط التصيد', '/url-check'),
+                ('🌐', 'النطاقات', 'تحليل DNS والمعلومات', '/domain-check'),
+                ('📍', 'IP', 'تحليل عناوين IP', '/ip-check'),
+                ('👤', 'اسم المستخدم', 'تحليل الأنماط', '/username-check'),
+                ('🔑', 'Hash', 'التعرف على التجزئة', '/hash-check'),
+                ('🔢', 'Base64', 'فك تشفير', '/base64-check'),
+                ('💳', 'البطاقات', 'التحقق من Luhn', '/credit-card-check'),
+                ('🚪', 'المنافذ', 'تحليل المنافذ', '/port-check'),
+                ('📁', 'الملفات', 'كشف الامتدادات الخطرة', '/file-check'),
+                ('🌍', 'DNS', 'استعلام السجلات', '/dns-check'),
+                ('🔐', 'API Keys', 'تحليل المفاتيح', '/api-key-check'),
+                ('🔑', 'JWT', 'فك تشفير التوكنز', '/jwt-check'),
+                ('🌐', 'User Agent', 'تحليل المتصفح', '/user-agent-check'),
+                ('📄', 'أسماء الملفات', 'تحليل الأسماء', '/filename-check'),
+            ] %}
+
+            {% for icon, name, desc, url in tools %}
+            <div class="tool-card-legendary" onclick="window.location.href='{{ url }}'">
+                <div class="tool-icon">{{ icon }}</div>
+                <h3 class="tool-name">{{ name }}</h3>
+                <p class="tool-desc">{{ desc }}</p>
+                <span class="tool-badge">جرب الآن</span>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-legendary">
+        <div class="section-header-legendary">
+            <h2 class="section-title-legendary">لماذا نحن الأفضل؟</h2>
+            <p class="section-subtitle-legendary">مميزات تجعلنا المنصة العربية الأولى</p>
+        </div>
+
+        <div class="features-grid-legendary">
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🚀</div>
+                <h3 class="feature-title">سرعة خارقة</h3>
+                <p class="feature-desc">نتائج فورية في أجزاء من الثانية مع نظام تخزين مؤقت ذكي</p>
+            </div>
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">دقة ٩٩٪</h3>
+                <p class="feature-desc">فحوصات دقيقة تعتمد على أحدث التقنيات والمكتبات العالمية</p>
+            </div>
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">خصوصية كاملة</h3>
+                <p class="feature-desc">لا نخزن بياناتك، لا نشاركها، لا نبيعها. خصوصيتك أولاً</p>
+            </div>
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🌍</div>
+                <h3 class="feature-title">عربي ١٠٠٪</h3>
+                <p class="feature-desc">دعم كامل للدول العربية والمشغلين المحليين</p>
+            </div>
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🧠</div>
+                <h3 class="feature-title">ذكاء اصطناعي</h3>
+                <p class="feature-desc">تحليل متقدم للأنماط وتوقع المخاطر بخوارزميات ذكية</p>
+            </div>
+            <div class="feature-item-legendary">
+                <div class="feature-icon">🆓</div>
+                <h3 class="feature-title">مجاني دائماً</h3>
+                <p class="feature-desc">جميع الأدوات متاحة مجاناً للجميع بدون أي رسوم</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+    "use strict";
+
+    // ============================================================
+    // STATS ARE NOW HANDLED BY BASE.HTML
+    // ============================================================
+
+    // ============================================================
+    // ANIMATIONS
+    // ============================================================
+
+    // مراقب التمرير للأنيميشن
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '50px' });
+
+    // إضافة تأثير الظهور التدريجي
+    document.querySelectorAll('.stat-card-legendary, .tool-card-legendary, .feature-item-legendary').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        observer.observe(el);
+    });
+})();
+</script>
+{% endblock %}

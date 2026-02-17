@@ -1,0 +1,300 @@
+2026-02-16 11:28:16 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:32 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 11:28:34 - cybershield - ERROR - [app.py:233] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 1903, in before_request
+    stats_tracker.add_visitor(ip)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 397, in add_visitor
+    self.stats['unique_visitors'].add(ip)
+AttributeError: 'list' object has no attribute 'add'
+2026-02-16 14:02:43 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2184, in jwt_check
+    return render_template('jwt_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/jwt_check.html", line 3, in template
+    {% block title } 🔐 فحص JWT - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 14:02:58 - cybershield - ERROR - [app.py:232] - Internal error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2192, in filename_check
+    return render_template('filename_check.html', config=CONFIG)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/CyberSecurityPro/cybershield-ultra-main/templates/filename_check.html", line 3, in template
+    {% block title } 📄 فحص أسماء الملفات - CyberShield Ultra{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+2026-02-16 16:11:47 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:55 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:11:56 - cybershield - ERROR - Unhandled exception: name 'blacklist' is not defined
+Traceback (most recent call last):
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/venv/lib/python3.10/site-packages/flask/app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "/home/CyberSecurityPro/cybershield-ultra-main/./app.py", line 2453, in before_request
+    if blacklist.is_blocked(ip):
+NameError: name 'blacklist' is not defined
+2026-02-16 16:41:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:41:51 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:01 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:21 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:31 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 16:42:51 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:01 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:21 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:31 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:43:41 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 16:46:11 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:37 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:38 - cybershield - WARNING - Security Event - missing_api_key - 188.240.108.116 - {'path': '/api/stats'}
+2026-02-16 17:04:38 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:39 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/v1/scan/phone'}
+2026-02-16 17:04:47 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:52 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:54 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:04:54 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:04:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/v1/scan/email'}
+2026-02-16 17:05:04 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:14 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:24 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:05:24 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:34 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:44 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:54 - cybershield - WARNING - Security Event - missing_api_key - 188.240.113.84 - {'path': '/api/stats'}
+2026-02-16 17:05:54 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:12:54 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:12:55 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:12:55 - cybershield - WARNING - Security Event - missing_api_key - 178.130.68.68 - {'path': '/api/stats'}
+2026-02-16 17:31:17 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:31:25 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:31:25 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}
+2026-02-16 17:31:27 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/v1/scan/phone'}
+2026-02-16 17:31:36 - cybershield - WARNING - Security Event - missing_api_key - 176.123.21.141 - {'path': '/api/stats'}
+2026-02-16 17:31:46 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:31:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:31:56 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:06 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:16 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:32:26 - cybershield - WARNING - Security Event - missing_api_key - 134.35.11.77 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:38:35 - cybershield - WARNING - Security Event - missing_api_key - 134.35.12.14 - {'path': '/api/stats'}
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 17:50:42 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 17:50:42 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 17:50:42 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 17:50:42 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:01:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:01:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:01:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:01:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 18:40:44 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 18:40:44 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 18:40:44 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 18:40:44 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-16 21:15:14 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-16 21:15:14 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-16 21:15:14 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-16 21:15:14 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 18:56:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 18:56:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 18:56:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 18:56:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:01:11 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:01:11 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:01:11 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:01:11 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:05:26 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:05:26 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:05:26 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:05:26 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:09:43 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:09:43 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:09:43 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:09:43 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:37 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:37 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:37 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:37 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 19:30:48 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 19:30:48 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 19:30:48 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 19:30:48 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:05:18 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:05:18 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:05:18 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:05:18 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:12:27 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:12:27 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:12:27 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:12:27 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:13:38 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:13:38 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:13:38 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:13:38 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 20:15:06 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 20:15:06 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 20:15:06 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 20:15:06 - cybershield - INFO - ✅ Rate Limiter enabled
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseStatsTracker initialized - 100% REAL DATA
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PersistentBlacklist initialized - 0 IPs blocked
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseRateLimiter initialized - 120 requests/minute
+2026-02-17 21:06:47 - cybershield - INFO - ✅ APIKeyManager initialized
+2026-02-17 21:06:47 - cybershield - INFO - ✅ EnterpriseCache initialized - maxsize: 2000, timeout: 300s
+2026-02-17 21:06:47 - cybershield - INFO - ✅ PhoneScanHistory initialized - 1 cached scans
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Legendary Phone Analyzer v18.5 initialized - 99.9% accuracy
+2026-02-17 21:06:47 - cybershield - INFO - ✅ Rate Limiter enabled

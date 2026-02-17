@@ -1,0 +1,19 @@
+{
+  "total_scans": 0,
+  "unique_visitors": [
+    "134.35.11.77",
+    "100.48.83.238"
+  ],
+  "blocked_bots": 0,
+  "total_requests": 6,
+  "start_time": "2026-02-16T16:11:47.639217",
+  "last_scan": null,
+  "scans_by_tool": {},
+  "scans_by_ip": {},
+  "active_users": {
+    "100.48.83.238": 1771260094.4381216,
+    "134.35.11.77": 1771260103.2974567
+  },
+  "timestamp": "2026-02-16T17:04:10.963907",
+  "hash": "80e0a7e83c9628c491d8fc2917db6f50aa77204c015b7a7b6b7c4813a78b104b"
+}

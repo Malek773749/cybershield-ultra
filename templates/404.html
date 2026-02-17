@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+
+{% block title %}❌ 404 - الصفحة غير موجودة - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}عذراً، الصفحة التي تبحث عنها غير موجودة. العودة إلى الصفحة الرئيسية.{% endblock %}
+
+{% block meta_keywords %}خطأ 404, صفحة غير موجودة{% endblock %}
+
+{% block og_title %}❌ 404 - الصفحة غير موجودة{% endblock %}
+
+{% block og_description %}عذراً، الصفحة التي تبحث عنها غير موجودة.{% endblock %}
+
+{% block styles %}
+<style>
+    /* 404 Page Specific Styles */
+    .error-404 {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: var(--space-16) 0;
+    }
+
+    .error-code {
+        font-size: 10rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #ef4444, #f97316, #f59e0b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1;
+        margin-bottom: var(--space-4);
+        text-shadow: 0 0 60px rgba(239, 68, 68, 0.3);
+        animation: glitch 3s infinite;
+    }
+
+    @keyframes glitch {
+        0%, 100% { transform: skew(0deg, 0deg); opacity: 1; }
+        95% { transform: skew(5deg, 2deg); opacity: 0.8; }
+        96% { transform: skew(-5deg, -2deg); opacity: 0.9; }
+        97% { transform: skew(3deg, 1deg); opacity: 0.8; }
+        98% { transform: skew(-3deg, -1deg); opacity: 0.9; }
+    }
+
+    .error-title {
+        font-size: 3rem;
+        margin-bottom: var(--space-4);
+        color: var(--text-primary);
+    }
+
+    .error-message {
+        font-size: 1.2rem;
+        color: var(--text-tertiary);
+        max-width: 600px;
+        margin: 0 auto var(--space-8);
+        line-height: 1.8;
+    }
+
+    .error-actions {
+        display: flex;
+        gap: var(--space-4);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: var(--space-8) 0;
+    }
+
+    .error-suggestions {
+        margin-top: var(--space-12);
+        padding-top: var(--space-8);
+        border-top: 1px solid var(--border-2);
+    }
+
+    .suggestions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--space-4);
+        margin-top: var(--space-6);
+    }
+
+    .suggestion-card {
+        background: var(--bg-glass);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-lg);
+        padding: var(--space-4);
+        transition: all var(--transition-base);
+    }
+
+    .suggestion-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--aurora-cyan);
+        box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.3);
+    }
+
+    .suggestion-card a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    .suggestion-icon {
+        font-size: 2rem;
+    }
+
+    .suggestion-name {
+        font-weight: 700;
+        color: var(--aurora-cyan);
+    }
+
+    .suggestion-desc {
+        font-size: 0.8rem;
+        color: var(--text-tertiary);
+    }
+
+    .search-container {
+        max-width: 500px;
+        margin: var(--space-8) auto;
+    }
+
+    .search-box {
+        display: flex;
+        gap: var(--space-2);
+    }
+
+    .search-input {
+        flex: 1;
+        padding: var(--space-3) var(--space-4);
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--border-2);
+        border-radius: var(--radius-lg);
+        color: var(--text-primary);
+        font-size: 1rem;
+    }
+
+    .search-input:focus {
+        outline: none;
+        border-color: var(--aurora-cyan);
+        box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
+    }
+
+    .search-btn {
+        padding: var(--space-3) var(--space-6);
+        background: linear-gradient(145deg, #06b6d4, #0891b2);
+        border: none;
+        border-radius: var(--radius-lg);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+    }
+
+    .search-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="error-404">
+        <div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">عذراً! الصفحة غير موجودة</h1>
+            <p class="error-message">
+                يبدو أنك قد ضللت الطريق في فضاءنا الرقمي. الصفحة التي تبحث عنها قد تكون
+                انتقلت أو تم حذفها أو لم توجد أصلاً.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-lg">
+                    <span>🏠</span> العودة للرئيسية
+                </a>
+                <a href="/tools" class="btn btn-lg btn-outline">
+                    <span>🛠️</span> استعرض الأدوات
+                </a>
+                <a href="/contact" class="btn btn-lg btn-outline">
+                    <span>📞</span> أبلغ عن مشكلة
+                </a>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" class="search-input" placeholder="ابحث في الموقع...">
+                    <button class="search-btn" id="search-btn">🔍 بحث</button>
+                </div>
+            </div>
+
+            <div class="error-suggestions">
+                <h3 style="margin-bottom: var(--space-4);">قد تبحث عن إحدى هذه الأدوات</h3>
+                <div class="suggestions-grid">
+                    <div class="suggestion-card">
+                        <a href="/phone-check">
+                            <span class="suggestion-icon">📱</span>
+                            <span class="suggestion-name">فحص الهاتف</span>
+                            <span class="suggestion-desc">تحليل الأرقام وكشف الاحتيال</span>
+                        </a>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <a href="/email-check">
+                            <span class="suggestion-icon">📧</span>
+                            <span class="suggestion-name">فحص البريد</span>
+                            <span class="suggestion-desc">كشف البريد المؤقت</span>
+                        </a>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <a href="/password-check">
+                            <span class="suggestion-icon">🔐</span>
+                            <span class="suggestion-name">كلمة المرور</span>
+                            <span class="suggestion-desc">تحليل القوة والأمان</span>
+                        </a>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <a href="/url-check">
+                            <span class="suggestion-icon">🔗</span>
+                            <span class="suggestion-name">الروابط</span>
+                            <span class="suggestion-desc">كشف روابط التصيد</span>
+                        </a>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <a href="/ip-check">
+                            <span class="suggestion-icon">📍</span>
+                            <span class="suggestion-name">فحص IP</span>
+                            <span class="suggestion-desc">تحليل عناوين IP</span>
+                        </a>
+                    </div>
+
+                    <div class="suggestion-card">
+                        <a href="/domain-check">
+                            <span class="suggestion-icon">🌐</span>
+                            <span class="suggestion-name">النطاقات</span>
+                            <span class="suggestion-desc">تحليل DNS والمعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--space-12); color: var(--text-quaternary); font-size: 0.85rem;">
+                <span>⚠️ خطأ 404 - الصفحة غير موجودة</span>
+                <span style="margin: 0 var(--space-2);">|</span>
+                <span>{{ request.path }}</span>
+                <span style="margin: 0 var(--space-2);">|</span>
+                <span>{{ request.method }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('search-btn').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value.trim();
+    if (query) {
+        window.location.href = '/tools?search=' + encodeURIComponent(query);
+    }
+});
+
+document.getElementById('search-input').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        document.getElementById('search-btn').click();
+    }
+});
+</script>
+{% endblock %}

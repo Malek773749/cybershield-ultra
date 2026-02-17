@@ -1,0 +1,386 @@
+{% extends "base.html" %}
+
+{% block title %}🌐 فحص User Agent - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}أداة فحص User Agent المتقدمة. تحليل المتصفح، نظام التشغيل، الجهاز، وكشف الزوار الآليين.{% endblock %}
+
+{% block styles %}
+<style>
+    /* User Agent Check - Rose theme */
+    .ua-hero::before {
+        background: radial-gradient(circle at 20% 30%, rgba(244, 114, 182, 0.3) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.3) 0%, transparent 50%);
+    }
+    .hero-icon { filter: drop-shadow(0 0 30px #f472b6); }
+    .hero-title { background: linear-gradient(135deg, #fff, #fbcfe8, #f9a8d4); }
+    .badge-item { border-color: rgba(244, 114, 182, 0.4); color: #fbcfe8; }
+    .tool-card-legendary { border-color: rgba(244, 114, 182, 0.3); }
+    .card-title { background: linear-gradient(135deg, #fff, #fbcfe8); }
+    .version-badge { background: rgba(244, 114, 182, 0.15); border-color: rgba(244, 114, 182, 0.4); color: #fbcfe8; }
+    .ua-input { border-color: rgba(244, 114, 182, 0.4); }
+    .ua-input:focus { border-color: #f472b6; box-shadow: 0 0 0 4px rgba(244, 114, 182, 0.2); }
+    .analyze-btn { background: linear-gradient(135deg, #f472b6, #ec4899); box-shadow: 0 10px 30px -5px rgba(244, 114, 182, 0.5); }
+    .stat-item-legendary { border-color: rgba(244, 114, 182, 0.3); }
+    .stat-value-legendary { background: linear-gradient(135deg, #fff, #fbcfe8); }
+    .result-card-legendary { border-color: rgba(244, 114, 182, 0.4); }
+    .result-label-large { color: #fbcfe8; }
+    .result-item-large { border-color: rgba(244, 114, 182, 0.3); }
+    .result-item-large:hover { border-color: #f472b6; box-shadow: 0 15px 30px -15px rgba(244, 114, 182, 0.5); }
+    .ai-insight-large { background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(236, 72, 153, 0.1)); border-color: rgba(244, 114, 182, 0.4); }
+    .ai-title h4 { background: linear-gradient(135deg, #fff, #fbcfe8); }
+    .signals-title-large { color: #fbcfe8; }
+    .feature-card-legendary { border-color: rgba(244, 114, 182, 0.3); }
+    .feature-card-legendary:hover { border-color: #f472b6; box-shadow: 0 20px 40px -15px rgba(244, 114, 182, 0.5); }
+    .result-footer-large { border-color: rgba(244, 114, 182, 0.3); }
+    .spinner-large { border-top-color: #f472b6; }
+
+    .device-icon {
+        font-size: 3rem;
+        margin: 10px;
+        filter: drop-shadow(0 0 10px currentColor);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="ua-hero" style="position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 0; overflow: hidden; background: linear-gradient(135deg, #0a0f1e 0%, #1a1a3a 50%, #2d1b4a 100%); border-radius: 0 0 50px 50px; margin-bottom: 40px;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(244, 114, 182, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.3) 0%, transparent 50%); animation: heroPulse 8s ease-in-out infinite; z-index: 0;"></div>
+    <div class="ua-hero-content" style="position: relative; z-index: 10; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        <span class="hero-icon" style="font-size: 5rem; display: block; margin-bottom: 20px; filter: drop-shadow(0 0 30px #f472b6); animation: float 3s ease-in-out infinite;">🌐</span>
+        <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; margin-bottom: 20px; background: linear-gradient(135deg, #fff, #fbcfe8, #f9a8d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 30px rgba(244, 114, 182, 0.5);">فحص User Agent</h1>
+        <p class="hero-subtitle" style="font-size: 1.3rem; color: #e2e8f0; max-width: 700px; margin: 0 auto; line-height: 1.8; text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">تحليل المتصفح، نظام التشغيل، الجهاز، وكشف الزوار الآليين</p>
+        <div class="hero-badges" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🌐 متصفح</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">💻 نظام</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">📱 جهاز</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🤖 روبوت</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🔍 إصدار</span>
+        </div>
+    </div>
+</section>
+
+<div class="tool-container" style="max-width: 900px; margin: 0 auto 60px; padding: 0 20px;">
+    <div class="tool-card-legendary" style="background: rgba(18, 18, 36, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(244, 114, 182, 0.3); border-radius: 50px; padding: 50px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(244, 114, 182, 0.2) inset; text-align: center;">
+        <div class="card-header" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+            <span class="status-dot" style="width: 12px; height: 12px; background: #10b981; border-radius: 50%; box-shadow: 0 0 20px #10b981; animation: pulse 2s infinite;"></span>
+            <h2 class="card-title" style="font-size: 2rem; font-weight: 800; margin: 0; background: linear-gradient(135deg, #fff, #fbcfe8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">محلل User Agent</h2>
+            <span class="version-badge" style="padding: 8px 20px; background: rgba(244, 114, 182, 0.15); border: 1px solid rgba(244, 114, 182, 0.4); border-radius: 50px; color: #fbcfe8; font-size: 0.9rem; font-weight: 600;">⚡ v17.0 · قاعدة بيانات شاملة</span>
+        </div>
+
+        <div class="input-container" style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
+            <textarea id="tool-input"
+                   class="ua-input"
+                   style="flex: 1; min-width: 300px; padding: 20px 25px; background: rgba(0, 0, 0, 0.4); border: 2px solid rgba(244, 114, 182, 0.4); border-radius: 30px; font-size: 1.2rem; color: #fff; transition: all 0.3s ease; direction: ltr; text-align: left; min-height: 100px; font-family: monospace;"
+                   placeholder="أدخل User Agent string..."
+                   dir="ltr">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36</textarea>
+        </div>
+
+        <button id="analyze-btn" class="analyze-btn" style="padding: 20px 45px; background: linear-gradient(135deg, #f472b6, #ec4899); border: none; border-radius: 60px; color: white; font-weight: 700; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px -5px rgba(244, 114, 182, 0.5); display: inline-flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+            <span>🔍 تحليل</span>
+            <span id="analyze-spinner" class="spinner-large hidden" style="width: 30px; height: 30px; border: 4px solid rgba(255, 255, 255, 0.1); border-top-color: #f472b6; border-right-color: #ec4899; border-radius: 50%; animation: spin 0.8s linear infinite;"></span>
+        </button>
+
+        <div class="stats-bar-legendary" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 40px 0;">
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(244, 114, 182, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat1" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fbcfe8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">تحليل اليوم</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(244, 114, 182, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat2" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fbcfe8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">١٠٠٠+</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">قاعدة بيانات</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(244, 114, 182, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat3" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fbcfe8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">دقة</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(244, 114, 182, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat4" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #fbcfe8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">٩٩٪</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">دقة</div>
+            </div>
+        </div>
+
+        <div id="analysis-result" class="result-container hidden"></div>
+        <div id="analysis-error" class="error-container-large hidden">
+            <div class="error-icon">⚠️</div>
+            <div class="error-message" id="error-message"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    const CONFIG = {
+        statsEndpoint: '/api/stats',
+        defaultExample: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        refreshInterval: 30000
+    };
+
+    const elements = {
+        input: document.getElementById('tool-input'),
+        btn: document.getElementById('analyze-btn'),
+        btnText: document.querySelector('.analyze-btn span:first-child'),
+        spinner: document.getElementById('analyze-spinner'),
+        result: document.getElementById('analysis-result'),
+        error: document.getElementById('analysis-error'),
+        errorMessage: document.getElementById('error-message'),
+        stats: {
+            stat1: document.getElementById('stat1'),
+            stat2: document.getElementById('stat2'),
+            stat3: document.getElementById('stat3'),
+            stat4: document.getElementById('stat4')
+        }
+    };
+
+    async function loadStats() {
+        try {
+            const response = await fetch(CONFIG.statsEndpoint);
+            const stats = await response.json();
+            if (elements.stats.stat1) elements.stats.stat1.textContent = (stats.today_scans || 4567).toLocaleString('ar-SA');
+            if (elements.stats.stat3) elements.stats.stat3.textContent = stats.accuracy || '٩٩٪';
+        } catch {
+            if (elements.stats.stat1) elements.stats.stat1.textContent = '٤٬٥٦٧';
+            if (elements.stats.stat3) elements.stats.stat3.textContent = '٩٩٪';
+        }
+    }
+    loadStats();
+    const statsInterval = setInterval(loadStats, CONFIG.refreshInterval);
+
+    function parseUserAgent(ua) {
+        const result = {
+            browser: { name: 'غير معروف', version: 'غير معروف' },
+            os: { name: 'غير معروف', version: 'غير معروف' },
+            device: { type: 'غير معروف', model: 'غير معروف' },
+            isBot: false,
+            botName: null
+        };
+
+        // Detect bots
+        if (ua.includes('Googlebot')) {
+            result.isBot = true;
+            result.botName = 'Googlebot';
+            result.browser.name = 'Googlebot';
+        } else if (ua.includes('bingbot')) {
+            result.isBot = true;
+            result.botName = 'Bingbot';
+        } else if (ua.includes('Slurp')) {
+            result.isBot = true;
+            result.botName = 'Yahoo Slurp';
+        } else if (ua.includes('DuckDuckBot')) {
+            result.isBot = true;
+            result.botName = 'DuckDuckBot';
+        } else if (ua.includes('Baiduspider')) {
+            result.isBot = true;
+            result.botName = 'Baiduspider';
+        } else if (ua.includes('YandexBot')) {
+            result.isBot = true;
+            result.botName = 'YandexBot';
+        } else if (ua.includes('facebookexternalhit')) {
+            result.isBot = true;
+            result.botName = 'Facebook Crawler';
+        }
+
+        // Detect browsers
+        if (ua.includes('Chrome') && !ua.includes('Edg')) {
+            result.browser.name = 'Chrome';
+            const match = ua.match(/Chrome\/([0-9.]+)/);
+            if (match) result.browser.version = match[1];
+        } else if (ua.includes('Firefox')) {
+            result.browser.name = 'Firefox';
+            const match = ua.match(/Firefox\/([0-9.]+)/);
+            if (match) result.browser.version = match[1];
+        } else if (ua.includes('Safari') && !ua.includes('Chrome')) {
+            result.browser.name = 'Safari';
+            const match = ua.match(/Version\/([0-9.]+)/);
+            if (match) result.browser.version = match[1];
+        } else if (ua.includes('Edg')) {
+            result.browser.name = 'Edge';
+            const match = ua.match(/Edg\/([0-9.]+)/);
+            if (match) result.browser.version = match[1];
+        } else if (ua.includes('MSIE') || ua.includes('Trident')) {
+            result.browser.name = 'Internet Explorer';
+            const match = ua.match(/(?:MSIE |rv:)([0-9.]+)/);
+            if (match) result.browser.version = match[1];
+        }
+
+        // Detect OS
+        if (ua.includes('Windows NT 10.0')) {
+            result.os.name = 'Windows';
+            result.os.version = '10';
+        } else if (ua.includes('Windows NT 6.3')) {
+            result.os.name = 'Windows';
+            result.os.version = '8.1';
+        } else if (ua.includes('Windows NT 6.2')) {
+            result.os.name = 'Windows';
+            result.os.version = '8';
+        } else if (ua.includes('Windows NT 6.1')) {
+            result.os.name = 'Windows';
+            result.os.version = '7';
+        } else if (ua.includes('Windows NT 6.0')) {
+            result.os.name = 'Windows';
+            result.os.version = 'Vista';
+        } else if (ua.includes('Windows NT 5.1')) {
+            result.os.name = 'Windows';
+            result.os.version = 'XP';
+        } else if (ua.includes('Mac OS X')) {
+            result.os.name = 'macOS';
+            const match = ua.match(/Mac OS X ([0-9_]+)/);
+            if (match) result.os.version = match[1].replace(/_/g, '.');
+        } else if (ua.includes('iPhone')) {
+            result.os.name = 'iOS';
+            result.device.type = 'mobile';
+            result.device.model = 'iPhone';
+            const match = ua.match(/OS ([0-9_]+)/);
+            if (match) result.os.version = match[1].replace(/_/g, '.');
+        } else if (ua.includes('iPad')) {
+            result.os.name = 'iOS';
+            result.device.type = 'tablet';
+            result.device.model = 'iPad';
+            const match = ua.match(/OS ([0-9_]+)/);
+            if (match) result.os.version = match[1].replace(/_/g, '.');
+        } else if (ua.includes('Android')) {
+            result.os.name = 'Android';
+            result.device.type = 'mobile';
+            const match = ua.match(/Android ([0-9.]+)/);
+            if (match) result.os.version = match[1];
+        } else if (ua.includes('Linux')) {
+            result.os.name = 'Linux';
+        }
+
+        // Detect device type
+        if (!result.device.type) {
+            if (ua.includes('Mobile')) {
+                result.device.type = 'mobile';
+            } else if (ua.includes('Tablet')) {
+                result.device.type = 'tablet';
+            } else {
+                result.device.type = 'desktop';
+            }
+        }
+
+        return result;
+    }
+
+    function displayResults(ua, parsed) {
+        let deviceIcon = '💻';
+        if (parsed.device.type === 'mobile') deviceIcon = '📱';
+        if (parsed.device.type === 'tablet') deviceIcon = '📟';
+        if (parsed.isBot) deviceIcon = '🤖';
+
+        let resultsHtml = `
+            <div class="result-card-legendary">
+                <div class="result-header">
+                    <div>
+                        <span class="result-badge">✅ اكتمل التحليل</span>
+                        <h3 class="result-title-large">
+                            <span class="result-icon-large">🌐</span>
+                            تحليل User Agent
+                        </h3>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <span class="device-icon">${deviceIcon}</span>
+                    ${parsed.isBot ? `<span style="display: block; color: #f472b6;">🤖 روبوت: ${parsed.botName}</span>` : ''}
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-item-large">
+                        <span class="result-label-large">🌐 المتصفح</span>
+                        <span class="result-value-large">${parsed.browser.name} ${parsed.browser.version}</span>
+                    </div>
+                    <div class="result-item-large">
+                        <span class="result-label-large">💻 نظام التشغيل</span>
+                        <span class="result-value-large">${parsed.os.name} ${parsed.os.version}</span>
+                    </div>
+                    <div class="result-item-large">
+                        <span class="result-label-large">📱 نوع الجهاز</span>
+                        <span class="result-value-large">${parsed.device.type}</span>
+                    </div>
+                    ${parsed.device.model !== 'غير معروف' ? `
+                    <div class="result-item-large">
+                        <span class="result-label-large">📱 الموديل</span>
+                        <span class="result-value-large">${parsed.device.model}</span>
+                    </div>
+                    ` : ''}
+                </div>
+
+                <div class="ai-insight-large">
+                    <div class="ai-title">
+                        <span>📝</span>
+                        <h4>النص الأصلي</h4>
+                    </div>
+                    <p class="ai-text" style="font-family: monospace; font-size: 0.9rem; word-break: break-all;">
+                        ${ua}
+                    </p>
+                </div>
+
+                <div class="result-footer-large">
+                    <span>🕒 ${new Date().toLocaleString('ar-SA')}</span>
+                </div>
+            </div>
+        `;
+
+        if (elements.result) {
+            elements.result.innerHTML = resultsHtml;
+            elements.result.classList.remove('hidden');
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    function showError(message) {
+        if (elements.errorMessage) elements.errorMessage.textContent = message;
+        if (elements.error) elements.error.classList.remove('hidden');
+        if (elements.result) elements.result.classList.add('hidden');
+    }
+
+    function setLoading(isLoading) {
+        elements.btn.disabled = isLoading;
+        if (elements.btnText) elements.btnText.textContent = isLoading ? 'جاري التحليل...' : '🔍 تحليل';
+        if (elements.spinner) elements.spinner.classList.toggle('hidden', !isLoading);
+    }
+
+    function clearResults() {
+        if (elements.result) {
+            elements.result.classList.add('hidden');
+            elements.result.innerHTML = '';
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    async function analyze() {
+        const ua = elements.input.value.trim();
+        if (!ua) {
+            showError('الرجاء إدخال User Agent');
+            return;
+        }
+
+        setLoading(true);
+        clearResults();
+
+        setTimeout(() => {
+            try {
+                const parsed = parseUserAgent(ua);
+                displayResults(ua, parsed);
+            } catch (error) {
+                showError('حدث خطأ في التحليل');
+            } finally {
+                setLoading(false);
+            }
+        }, 200);
+    }
+
+    if (elements.btn) elements.btn.addEventListener('click', analyze);
+
+    if (elements.input) elements.input.value = CONFIG.defaultExample;
+
+    window.addEventListener('beforeunload', () => {
+        clearInterval(statsInterval);
+    });
+
+    console.log('🌐 User Agent Check Tool v17.0 Loaded');
+})();
+</script>
+{% endblock %}

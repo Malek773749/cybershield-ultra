@@ -1,0 +1,17 @@
+{
+  "total_scans": 0,
+  "unique_visitors": [
+    "100.48.83.238"
+  ],
+  "blocked_bots": 0,
+  "total_requests": 1,
+  "start_time": "2026-02-16T16:11:47.639217",
+  "last_scan": null,
+  "scans_by_tool": {},
+  "scans_by_ip": {},
+  "active_users": {
+    "100.48.83.238": 1771260094.4381216
+  },
+  "timestamp": "2026-02-16T16:41:34.438152",
+  "hash": "a78866af61abbdb17eebafaad006755144720187a554c8f2fdbae06a9da025c5"
+}

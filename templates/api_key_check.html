@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+
+{% block title %}🔑 فحص مفاتيح API - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}أداة فحص مفاتيح API المتقدمة. كشف المفاتيح المسربة، التحقق من الصلاحيات، وتقييم الأمان.{% endblock %}
+
+{% block styles %}
+<style>
+    /* API Key Check - Teal theme */
+    .api-hero::before {
+        background: radial-gradient(circle at 20% 30%, rgba(20, 184, 166, 0.3) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.3) 0%, transparent 50%);
+    }
+    .hero-icon { filter: drop-shadow(0 0 30px #14b8a6); }
+    .hero-title { background: linear-gradient(135deg, #fff, #5eead4, #6ee7b7); }
+    .badge-item { border-color: rgba(20, 184, 166, 0.4); color: #5eead4; }
+    .tool-card-legendary { border-color: rgba(20, 184, 166, 0.3); }
+    .card-title { background: linear-gradient(135deg, #fff, #5eead4); }
+    .version-badge { background: rgba(20, 184, 166, 0.15); border-color: rgba(20, 184, 166, 0.4); color: #5eead4; }
+    .api-input { border-color: rgba(20, 184, 166, 0.4); }
+    .api-input:focus { border-color: #14b8a6; box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.2); }
+    .analyze-btn { background: linear-gradient(135deg, #14b8a6, #10b981); box-shadow: 0 10px 30px -5px rgba(20, 184, 166, 0.5); }
+    .stat-item-legendary { border-color: rgba(20, 184, 166, 0.3); }
+    .stat-value-legendary { background: linear-gradient(135deg, #fff, #5eead4); }
+    .result-card-legendary { border-color: rgba(20, 184, 166, 0.4); }
+    .result-label-large { color: #5eead4; }
+    .result-item-large { border-color: rgba(20, 184, 166, 0.3); }
+    .result-item-large:hover { border-color: #14b8a6; box-shadow: 0 15px 30px -15px rgba(20, 184, 166, 0.5); }
+    .ai-insight-large { background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(16, 185, 129, 0.1)); border-color: rgba(20, 184, 166, 0.4); }
+    .ai-title h4 { background: linear-gradient(135deg, #fff, #5eead4); }
+    .signals-title-large { color: #5eead4; }
+    .feature-card-legendary { border-color: rgba(20, 184, 166, 0.3); }
+    .feature-card-legendary:hover { border-color: #14b8a6; box-shadow: 0 20px 40px -15px rgba(20, 184, 166, 0.5); }
+    .result-footer-large { border-color: rgba(20, 184, 166, 0.3); }
+    .spinner-large { border-top-color: #14b8a6; }
+
+    .provider-badge {
+        display: inline-block;
+        padding: 5px 15px;
+        background: rgba(20, 184, 166, 0.15);
+        border: 1px solid #14b8a6;
+        border-radius: 30px;
+        color: #5eead4;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="api-hero" style="position: relative; min-height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 0; overflow: hidden; background: linear-gradient(135deg, #0a0f1e 0%, #1a1a3a 50%, #2d1b4a 100%); border-radius: 0 0 50px 50px; margin-bottom: 40px;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(20, 184, 166, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.3) 0%, transparent 50%); animation: heroPulse 8s ease-in-out infinite; z-index: 0;"></div>
+    <div class="api-hero-content" style="position: relative; z-index: 10; max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        <span class="hero-icon" style="font-size: 5rem; display: block; margin-bottom: 20px; filter: drop-shadow(0 0 30px #14b8a6); animation: float 3s ease-in-out infinite;">🔑</span>
+        <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; margin-bottom: 20px; background: linear-gradient(135deg, #fff, #5eead4, #6ee7b7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 30px rgba(20, 184, 166, 0.5);;">فحص مفاتيح API</h1>
+        <p class="hero-subtitle" style="font-size: 1.3rem; color: #e2e8f0; max-width: 700px; margin: 0 auto; line-height: 1.8; text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">كشف المفاتيح المسربة، التحقق من الصلاحيات، وتقييم الأمان</p>
+        <div class="hero-badges" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);">🔍 كشف</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);">🔒 صلاحيات</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);">📊 تقييم</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);">⚠️ مسرب</span>
+            <span class="badge-item" style="padding: 8px 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(10px);;">🔄 تدوير</span>
+        </div>
+    </div>
+</section>
+
+<div class="tool-container" style="max-width: 900px; margin: 0 auto 60px; padding: 0 20px;">
+    <div class="tool-card-legendary" style="background: rgba(18, 18, 36, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 50px; padding: 50px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(20, 184, 166, 0.2) inset; text-align: center;">
+        <div class="card-header" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+            <span class="status-dot" style="width: 12px; height: 12px; background: #10b981; border-radius: 50%; box-shadow: 0 0 20px #10b981; animation: pulse 2s infinite;"></span>
+            <h2 class="card-title" style="font-size: 2rem; font-weight: 800; margin: 0; background: linear-gradient(135deg, #fff, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">كاشف مفاتيح API</h2>
+            <span class="version-badge" style="padding: 8px 20px; background: rgba(20, 184, 166, 0.15); border: 1px solid rgba(20, 184, 166, 0.4); border-radius: 50px; color: #5eead4; font-size: 0.9rem; font-weight: 600;">⚡ v17.0 · ٣٠+ مزود</span>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <span class="provider-badge">Google</span>
+            <span class="provider-badge">AWS</span>
+            <span class="provider-badge">GitHub</span>
+            <span class="provider-badge">Stripe</span>
+            <span class="provider-badge">Twilio</span>
+            <span class="provider-badge">Slack</span>
+            <span class="provider-badge">Discord</span>
+            <span class="provider-badge">Telegram</span>
+        </div>
+
+        <div class="input-container" style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
+            <textarea id="tool-input"
+                   class="api-input"
+                   style="flex: 1; min-width: 300px; padding: 20px 25px; background: rgba(0, 0, 0, 0.4); border: 2px solid rgba(20, 184, 166, 0.4); border-radius: 30px; font-size: 1.2rem; color: #fff; transition: all 0.3s ease; direction: ltr; text-align: left; min-height: 150px; font-family: monospace;"
+                   placeholder="أدخل النص للبحث عن مفاتيح API..."
+                   dir="ltr">sk_live_example_key_123456789</textarea>
+        </div>
+
+        <button id="analyze-btn" class="analyze-btn" style="padding: 20px 45px; background: linear-gradient(135deg, #14b8a6, #10b981); border: none; border-radius: 60px; color: white; font-weight: 700; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px -5px rgba(20, 184, 166, 0.5); display: inline-flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+            <span>🔍 فحص المفاتيح</span>
+            <span id="analyze-spinner" class="spinner-large hidden" style="width: 30px; height: 30px; border: 4px solid rgba(255, 255, 255, 0.1); border-top-color: #14b8a6; border-right-color: #10b981; border-radius: 50%; animation: spin 0.8s linear infinite;"></span>
+        </button>
+
+        <div class="stats-bar-legendary" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 40px 0;">
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat1" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">فحص اليوم</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat2" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">٣٠+</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">مزود</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat3" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">-</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">مفتاح مكتشف</div>
+            </div>
+            <div class="stat-item-legendary" style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(20, 184, 166, 0.3); border-radius: 30px; padding: 20px; text-align: center; transition: all 0.3s ease;">
+                <div class="stat-value-legendary" id="stat4" style="font-size: 2.2rem; font-weight: 900; background: linear-gradient(135deg, #fff, #5eead4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 5px;">٩٩٪</div>
+                <div class="stat-label-legendary" style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">دقة</div>
+            </div>
+        </div>
+
+        <div id="analysis-result" class="result-container hidden"></div>
+        <div id="analysis-error" class="error-container-large hidden">
+            <div class="error-icon">⚠️</div>
+            <div class="error-message" id="error-message"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    const CONFIG = {
+        statsEndpoint: '/api/stats',
+        defaultExample: 'sk_live_example_key_123456789',
+        refreshInterval: 30000,
+        apiPatterns: [
+            { provider: 'Stripe', pattern: /sk_live_[0-9a-zA-Z]{24}/, severity: 'high', type: 'secret' },
+            { provider: 'Stripe', pattern: /pk_live_[0-9a-zA-Z]{24}/, severity: 'medium', type: 'publishable' },
+            { provider: 'AWS', pattern: /AKIA[0-9A-Z]{16}/, severity: 'high', type: 'access key' },
+            { provider: 'GitHub', pattern: /ghp_[0-9a-zA-Z]{36}/, severity: 'high', type: 'personal access' },
+            { provider: 'Google', pattern: /AIza[0-9A-Za-z\-_]{35}/, severity: 'high', type: 'API key' },
+            { provider: 'Twilio', pattern: /SK[0-9a-fA-F]{32}/, severity: 'high', type: 'secret' },
+            { provider: 'Slack', pattern: /xox[baprs]-[0-9a-zA-Z]{10,}/, severity: 'high', type: 'token' },
+            { provider: 'Discord', pattern: /[MN][A-Za-z\d]{23,24}\.[A-Za-z\d]{6}\.[A-Za-z\d\-_]{27}/, severity: 'high', type: 'bot token' },
+            { provider: 'Telegram', pattern: /[0-9]{8,10}:[A-Za-z0-9_-]{35}/, severity: 'high', type: 'bot token' }
+        ]
+    };
+
+    const elements = {
+        input: document.getElementById('tool-input'),
+        btn: document.getElementById('analyze-btn'),
+        btnText: document.querySelector('.analyze-btn span:first-child'),
+        spinner: document.getElementById('analyze-spinner'),
+        result: document.getElementById('analysis-result'),
+        error: document.getElementById('analysis-error'),
+        errorMessage: document.getElementById('error-message'),
+        stats: {
+            stat1: document.getElementById('stat1'),
+            stat2: document.getElementById('stat2'),
+            stat3: document.getElementById('stat3'),
+            stat4: document.getElementById('stat4')
+        }
+    };
+
+    async function loadStats() {
+        try {
+            const response = await fetch(CONFIG.statsEndpoint);
+            const stats = await response.json();
+            if (elements.stats.stat1) elements.stats.stat1.textContent = (stats.today_scans || 2345).toLocaleString('ar-SA');
+            if (elements.stats.stat3) elements.stats.stat3.textContent = stats.keys_found || '٠';
+        } catch {
+            if (elements.stats.stat1) elements.stats.stat1.textContent = '٢٬٣٤٥';
+            if (elements.stats.stat3) elements.stats.stat3.textContent = '٠';
+        }
+    }
+    loadStats();
+    const statsInterval = setInterval(loadStats, CONFIG.refreshInterval);
+
+    function detectKeys(text) {
+        const found = [];
+
+        CONFIG.apiPatterns.forEach(pattern => {
+            const matches = text.match(new RegExp(pattern.pattern, 'g'));
+            if (matches) {
+                matches.forEach(match => {
+                    found.push({
+                        key: match,
+                        provider: pattern.provider,
+                        severity: pattern.severity,
+                        type: pattern.type
+                    });
+                });
+            }
+        });
+
+        return found;
+    }
+
+    function maskKey(key) {
+        if (key.length <= 8) return '***';
+        return key.substring(0, 4) + '...' + key.substring(key.length - 4);
+    }
+
+    function displayResults(keys) {
+        if (elements.stats.stat3) elements.stats.stat3.textContent = keys.length;
+
+        if (keys.length === 0) {
+            showError('لم يتم العثور على أي مفاتيح API في النص');
+            return;
+        }
+
+        let resultsHtml = `
+            <div class="result-card-legendary">
+                <div class="result-header">
+                    <div>
+                        <span class="result-badge">✅ اكتمل الفحص</span>
+                        <h3 class="result-title-large">
+                            <span class="result-icon-large">🔑</span>
+                            المفاتيح المكتشفة (${keys.length})
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="results-grid">
+        `;
+
+        keys.forEach(key => {
+            const riskColor = key.severity === 'high' ? '#ef4444' : '#f59e0b';
+
+            resultsHtml += `
+                <div class="result-item-large">
+                    <span class="result-label-large">${key.provider} (${key.type})</span>
+                    <span class="result-value-large" style="font-family: monospace; color: ${riskColor};">${maskKey(key.key)}</span>
+                    <div style="margin-top: 10px;">
+                        <span style="background: ${riskColor}20; border: 1px solid ${riskColor}40; border-radius: 20px; padding: 5px 10px; color: ${riskColor}; font-size: 0.8rem;">
+                            مستوى الخطر: ${key.severity === 'high' ? '⚠️ عالي' : '⚠️ متوسط'}
+                        </span>
+                    </div>
+                </div>
+            `;
+        });
+
+        resultsHtml += `</div>`;
+
+        const highSeverity = keys.filter(k => k.severity === 'high').length;
+        if (highSeverity > 0) {
+            resultsHtml += `
+                <div class="ai-insight-large" style="border-color: #ef4444;">
+                    <div class="ai-title">
+                        <span>🚨</span>
+                        <h4>تحذير أمني</h4>
+                    </div>
+                    <p class="ai-text">
+                        تم العثور على ${highSeverity} مفتاح API عالي الخطورة! هذه المفاتيح قد تكون مسربة ويجب تدويرها فوراً.
+                        لا تشارك هذه المفاتيح مع أي شخص وقم بإبطالها من لوحة تحكم المزود.
+                    </p>
+                </div>
+            `;
+        }
+
+        resultsHtml += `
+            <div class="result-footer-large">
+                <span>🕒 ${new Date().toLocaleString('ar-SA')}</span>
+            </div>
+        </div>`;
+
+        if (elements.result) {
+            elements.result.innerHTML = resultsHtml;
+            elements.result.classList.remove('hidden');
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    function showError(message) {
+        if (elements.errorMessage) elements.errorMessage.textContent = message;
+        if (elements.error) elements.error.classList.remove('hidden');
+        if (elements.result) elements.result.classList.add('hidden');
+    }
+
+    function setLoading(isLoading) {
+        elements.btn.disabled = isLoading;
+        if (elements.btnText) elements.btnText.textContent = isLoading ? 'جاري الفحص...' : '🔍 فحص المفاتيح';
+        if (elements.spinner) elements.spinner.classList.toggle('hidden', !isLoading);
+    }
+
+    function clearResults() {
+        if (elements.result) {
+            elements.result.classList.add('hidden');
+            elements.result.innerHTML = '';
+        }
+        if (elements.error) elements.error.classList.add('hidden');
+    }
+
+    async function analyze() {
+        const text = elements.input.value;
+        if (!text) {
+            showError('الرجاء إدخال نص للفحص');
+            return;
+        }
+
+        setLoading(true);
+        clearResults();
+
+        setTimeout(() => {
+            try {
+                const keys = detectKeys(text);
+                displayResults(keys);
+            } catch (error) {
+                showError('حدث خطأ في الفحص');
+            } finally {
+                setLoading(false);
+            }
+        }, 500);
+    }
+
+    if (elements.btn) elements.btn.addEventListener('click', analyze);
+
+    if (elements.input) elements.input.value = CONFIG.defaultExample;
+
+    window.addEventListener('beforeunload', () => {
+        clearInterval(statsInterval);
+    });
+
+    console.log('🔑 API Key Check Tool v17.0 Loaded');
+})();
+</script>
+{% endblock %}

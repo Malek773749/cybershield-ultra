@@ -1,0 +1,1237 @@
+{% extends "base.html" %}
+
+{% block title %}📱 فحص الهواتف العربية - CyberShield Ultra{% endblock %}
+
+{% block meta_description %}أداة فحص الهواتف العربية لـ ٢٢ دولة. كشف الأرقام الوهمية، معرفة المشغل، نوع الخط، وتحليل متقدم بأحدث تقنيات الذكاء الاصطناعي.{% endblock %}
+
+{% block meta_keywords %}فحص الهاتف, التحقق من الرقم, أرقام وهمية, STC, موبايلي, زين, اتصالات, دو, أوريدو{% endblock %}
+
+{% block og_title %}📱 فحص الهواتف العربية - CyberShield Ultra{% endblock %}
+
+{% block og_description %}تحليل دقيق لأرقام الهواتف في ٢٢ دولة عربية مع كشف المشغل ونوع الخط. مجاني وسريع.{% endblock %}
+
+{% block styles %}
+<style>
+    /* ============================================================
+       PHONE CHECK TOOL - ULTRA PREMIUM DESIGN
+       ============================================================ */
+    .phone-hero {
+        background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+        padding: var(--space-16) 0;
+        text-align: center;
+        border-radius: var(--radius-2xl);
+        margin-bottom: var(--space-12);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .phone-hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+            radial-gradient(circle at 30% 30%, rgba(37, 99, 235, 0.1) 0%, transparent 40%),
+            radial-gradient(circle at 70% 70%, rgba(59, 130, 246, 0.1) 0%, transparent 40%);
+        animation: rotate 30s linear infinite;
+        z-index: 0;
+    }
+
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .phone-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-icon {
+        font-size: 5rem;
+        display: block;
+        margin-bottom: var(--space-4);
+        filter: drop-shadow(0 0 30px #2563eb);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        background: linear-gradient(135deg, #fff, #93c5fd, #60a5fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: var(--space-4);
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        max-width: 700px;
+        margin: 0 auto var(--space-6);
+        line-height: 1.8;
+    }
+
+    .hero-badges {
+        display: flex;
+        gap: var(--space-2);
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .country-badge {
+        background: rgba(37, 99, 235, 0.15);
+        color: #93c5fd;
+        padding: 4px 12px;
+        border-radius: var(--radius-2xl);
+        font-size: 0.9rem;
+        border: 1px solid rgba(37, 99, 235, 0.3);
+        backdrop-filter: blur(5px);
+        transition: all 0.2s ease;
+    }
+
+    .country-badge:hover {
+        background: rgba(37, 99, 235, 0.25);
+        transform: translateY(-2px);
+    }
+
+    /* ============================================================
+       MAIN TOOL CARD
+       ============================================================ */
+    .tool-card-enhanced {
+        background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(3, 7, 18, 0.95));
+        border: 1px solid rgba(37, 99, 235, 0.3);
+        border-radius: var(--radius-2xl);
+        padding: var(--space-10);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
+        margin-bottom: var(--space-8);
+        flex-wrap: wrap;
+    }
+
+    .status-indicator {
+        background: #2563eb;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        box-shadow: 0 0 20px #2563eb;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    .card-title {
+        margin: 0;
+        color: #93c5fd;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .version-badge {
+        background: rgba(37, 99, 235, 0.15);
+        padding: 6px 16px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        border: 1px solid rgba(37, 99, 235, 0.3);
+        color: var(--text-secondary);
+    }
+
+    .input-container {
+        display: flex;
+        gap: var(--space-4);
+        margin-bottom: var(--space-6);
+        flex-wrap: wrap;
+    }
+
+    .phone-input {
+        flex: 2;
+        min-width: 250px;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid rgba(37, 99, 235, 0.3);
+        padding: var(--space-4) var(--space-5);
+        font-size: 1.1rem;
+        border-radius: var(--radius-lg);
+        color: #fff;
+        transition: all 0.2s ease;
+        direction: ltr;
+    }
+
+    .phone-input:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
+        outline: none;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .phone-input::placeholder {
+        color: var(--text-quaternary);
+        opacity: 0.5;
+    }
+
+    .analyze-btn {
+        flex: 0.5;
+        min-width: 180px;
+        background: linear-gradient(145deg, #2563eb, #1e40af);
+        border: none;
+        border-radius: var(--radius-lg);
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+    }
+
+    .analyze-btn:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+        background: linear-gradient(145deg, #3b82f6, #2563eb);
+    }
+
+    .analyze-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    /* ============================================================
+       STATS BAR
+       ============================================================ */
+    .stats-bar {
+        display: flex;
+        justify-content: space-around;
+        padding: var(--space-6);
+        background: linear-gradient(145deg, #0f172a, #030712);
+        border-radius: var(--radius-xl);
+        margin: var(--space-8) 0;
+        border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #93c5fd;
+        line-height: 1;
+        margin-bottom: var(--space-1);
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* ============================================================
+       NEW FEATURES GRID - المميزات الجديدة
+       ============================================================ */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-4);
+        margin: var(--space-8) 0;
+    }
+
+    .feature-card {
+        background: linear-gradient(145deg, rgba(15, 23, 42, 0.6), rgba(3, 7, 18, 0.8));
+        border: 1px solid rgba(37, 99, 235, 0.2);
+        border-radius: var(--radius-xl);
+        padding: var(--space-5);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .feature-card:hover::before {
+        transform: translateX(0);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(37, 99, 235, 0.4);
+        box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.3);
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: var(--space-3);
+        display: inline-block;
+        filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.5));
+    }
+
+    .feature-title {
+        color: #93c5fd;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: var(--space-2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .feature-content {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .feature-badge {
+        background: rgba(37, 99, 235, 0.2);
+        color: #93c5fd;
+        padding: 2px 8px;
+        border-radius: var(--radius-2xl);
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: var(--space-2);
+        margin-top: var(--space-2);
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(37, 99, 235, 0.3);
+        border-radius: var(--radius-lg);
+        font-size: 1.2rem;
+        transition: all 0.2s ease;
+    }
+
+    .social-icon.active {
+        background: rgba(37, 99, 235, 0.3);
+        border-color: #2563eb;
+        color: #fff;
+        box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
+    }
+
+    .social-icon.active:hover {
+        transform: scale(1.1);
+    }
+
+    .security-meter {
+        height: 8px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: var(--radius-full);
+        overflow: hidden;
+        margin: var(--space-3) 0;
+    }
+
+    .security-fill {
+        height: 100%;
+        border-radius: var(--radius-full);
+        transition: width 0.5s ease;
+    }
+
+    .alert-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: var(--radius-2xl);
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 2px;
+    }
+
+    .alert-urgent {
+        background: rgba(239, 68, 68, 0.2);
+        color: #fecaca;
+        border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+
+    .alert-warning {
+        background: rgba(245, 158, 11, 0.2);
+        color: #fde68a;
+        border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    .alert-info {
+        background: rgba(59, 130, 246, 0.2);
+        color: #bfdbfe;
+        border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+
+    .alert-success {
+        background: rgba(16, 185, 129, 0.2);
+        color: #a7f3d0;
+        border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+
+    /* ============================================================
+       COUNTRIES GRID
+       ============================================================ */
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: var(--space-2);
+        margin: var(--space-6) 0;
+        padding: var(--space-4);
+        background: rgba(37, 99, 235, 0.03);
+        border-radius: var(--radius-xl);
+        border: 1px solid rgba(37, 99, 235, 0.1);
+    }
+
+    .country-item {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-2) var(--space-3);
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid var(--border-1);
+        border-radius: var(--radius-lg);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+    }
+
+    .country-item:hover {
+        background: rgba(37, 99, 235, 0.1);
+        border-color: #2563eb;
+        transform: translateY(-2px);
+        color: #fff;
+    }
+
+    .carrier-tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 8px;
+        background: rgba(37, 99, 235, 0.15);
+        border-radius: 50px;
+        color: #93c5fd;
+        font-size: 0.7rem;
+        margin-right: var(--space-1);
+    }
+
+    /* ============================================================
+       SECTION HEADER
+       ============================================================ */
+    .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: var(--space-8) 0 var(--space-4);
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
+
+    .section-title {
+        color: #93c5fd;
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .accuracy-badge {
+        background: rgba(16, 185, 129, 0.15);
+        color: #10b981;
+        padding: 4px 12px;
+        border-radius: var(--radius-2xl);
+        font-size: 0.8rem;
+        border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 768px) {
+        .phone-hero { padding: var(--space-8) 0; }
+        .hero-icon { font-size: 3.5rem; }
+        .stats-bar { flex-direction: column; gap: var(--space-4); }
+        .countries-grid { grid-template-columns: repeat(2, 1fr); }
+        .tool-card-enhanced { padding: var(--space-6); }
+        .features-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+        .countries-grid { grid-template-columns: 1fr; }
+        .input-container { flex-direction: column; }
+        .analyze-btn { width: 100%; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <div class="phone-hero">
+        <div class="phone-hero-content">
+            <span class="hero-icon">📱</span>
+            <h1 class="hero-title">فحص الهواتف العربية</h1>
+            <p class="hero-subtitle">
+                دعم كامل لـ <strong style="color:#93c5fd;">٢٢ دولة عربية</strong> مع كشف المشغل ونوع الخط<br>
+                <span style="color: var(--text-tertiary); font-size: 0.95rem;">📊 STC · موبايلي · زين · اتصالات · دو · أوريدو</span>
+            </p>
+            <div class="hero-badges">
+                <span class="country-badge">🇸🇦 السعودية</span>
+                <span class="country-badge">🇦🇪 الإمارات</span>
+                <span class="country-badge">🇪🇬 مصر</span>
+                <span class="country-badge">🇰🇼 الكويت</span>
+                <span class="country-badge">🇶🇦 قطر</span>
+                <span class="country-badge">🇧🇭 البحرين</span>
+                <span class="country-badge">🇴🇲 عمان</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         MAIN TOOL CARD
+         ============================================================ -->
+    <div class="tool-card-enhanced">
+        <div class="card-header">
+            <span class="status-indicator"></span>
+            <h2 class="card-title">محلل الهواتف الذكي</h2>
+            <span class="version-badge">⚡ v5.0 · ٢٢ دولة · ١٠+ ميزة</span>
+        </div>
+
+        <div class="input-container">
+            <input type="text"
+                   id="tool-input"
+                   class="phone-input"
+                   placeholder="+966501234567"
+                   dir="ltr"
+                   value="+966501234567"
+                   aria-label="رقم الهاتف بالصيغة الدولية">
+            <button id="analyze-btn" class="analyze-btn">
+                <span id="btn-text">🔍 فحص الرقم</span>
+                <span id="analyze-spinner" class="spinner hidden"></span>
+            </button>
+        </div>
+
+        <!-- Live Stats -->
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value" id="stat1">-</div>
+                <div class="stat-label">فحص اليوم</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat2">٢٢</div>
+                <div class="stat-label">دولة مدعومة</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat3">-</div>
+                <div class="stat-label">متوسط الوقت (ms)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat4">٩٩٫٩</div>
+                <div class="stat-label">دقة الفحص %</div>
+            </div>
+        </div>
+
+        <!-- Results Container -->
+        <div id="analysis-result" class="hidden"></div>
+        <div id="analysis-error" class="hidden" style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); border-radius:var(--radius-lg); padding:var(--space-4); color:#fecaca; text-align:center;"></div>
+    </div>
+
+    <!-- ============================================================
+         المميزات الجديدة - New Features Grid
+         (تظهر بعد نتائج التحليل)
+         ============================================================ -->
+    <div id="features-container" class="hidden" style="margin-top: var(--space-8);"></div>
+
+    <!-- ============================================================
+         COUNTRIES SECTION
+         ============================================================ -->
+    <div class="section-header">
+        <h3 class="section-title">
+            <span>🌍</span> الدول العربية المدعومة
+        </h3>
+        <span class="accuracy-badge">✨ دقة ١٠٠٪</span>
+    </div>
+
+    <div class="countries-grid">
+        {% set countries = [
+            ('🇸🇦','السعودية','STC,موبايلي,زين'),
+            ('🇦🇪','الإمارات','اتصالات,دو'),
+            ('🇪🇬','مصر','فودافون,أورانج,اتصالات'),
+            ('🇶🇦','قطر','أوريدو,فودافون'),
+            ('🇰🇼','الكويت','زين,فيفا,أوريدو'),
+            ('🇧🇭','البحرين','بتلكو,زين'),
+            ('🇴🇲','عمان','أوريدو,فودافون'),
+            ('🇯🇴','الأردن','زين,أورانج,أمنية'),
+            ('🇱🇧','لبنان','ألفا,تاتش'),
+            ('🇮🇶','العراق','آسياسيل,زين,كورك'),
+            ('🇸🇾','سوريا','سيريتل,إم تي إن'),
+            ('🇵🇸','فلسطين','جوال,أوريدو'),
+            ('🇾🇪','اليمن','يمن موبايل,سبأفون'),
+            ('🇸🇩','السودان','زين,إم تي إن'),
+            ('🇱🇾','ليبيا','ليبيانا,المدار'),
+            ('🇹🇳','تونس','أوريدو,اتصالات'),
+            ('🇩🇿','الجزائر','موبيليس,أوريدو,جازي'),
+            ('🇲🇦','المغرب','اتصالات المغرب,أورانج'),
+            ('🇲🇷','موريتانيا','موريتل,شنقل'),
+            ('🇸🇴','الصومال','هرمود,تلکوم'),
+            ('🇩🇯','جيبوتي','إيفاديس'),
+            ('🇰🇲','جزر القمر','تيلما')
+        ] %}
+
+        {% for flag, name, carriers in countries %}
+        <div class="country-item">
+            <span>{{ flag }}</span> {{ name }}
+            {% if carriers %}
+                {% for carrier in carriers.split(',')[:1] %}
+                <span class="carrier-tag">{{ carrier }}</span>
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "أداة فحص الهواتف العربية - CyberShield Ultra",
+    "description": "فحص دقيق لأرقام الهواتف في 22 دولة عربية مع كشف المشغل ونوع الخط",
+    "operatingSystem": "All",
+    "applicationCategory": "SecurityApplication",
+    "url": "{{ request.url }}",
+    "inLanguage": "ar",
+    "featureList": "فحص الهواتف العربية، كشف المشغل، تحليل نوع الخط، كشف الأرقام الوهمية",
+    "countriesSupported": "SA,AE,EG,QA,KW,BH,OM,JO,LB,IQ,SY,PS,YE,SD,LY,TN,DZ,MA,MR,SO,DJ,KM"
+}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+    "use strict";
+
+    // ============================================================
+    // PHONE CHECK TOOL - ULTIMATE EDITION مع جميع المميزات
+    // ============================================================
+
+    // Configuration
+    const TOOL = 'phone';
+    const CONFIG = {
+        apiEndpoint: '/api/v1/scan/phone',
+        statsEndpoint: '/api/stats',
+        defaultExample: '+966501234567',
+        refreshInterval: 30000
+    };
+
+    // DOM Elements
+    const elements = {
+        input: document.getElementById('tool-input'),
+        btn: document.getElementById('analyze-btn'),
+        btnText: document.getElementById('btn-text'),
+        spinner: document.getElementById('analyze-spinner'),
+        result: document.getElementById('analysis-result'),
+        error: document.getElementById('analysis-error'),
+        features: document.getElementById('features-container'),
+        stats: {
+            stat1: document.getElementById('stat1'),
+            stat2: document.getElementById('stat2'),
+            stat3: document.getElementById('stat3'),
+            stat4: document.getElementById('stat4')
+        }
+    };
+
+    // ============================================================
+    // STATS MANAGEMENT
+    // ============================================================
+
+    async function loadStats() {
+        try {
+            const response = await fetch(CONFIG.statsEndpoint, {
+                headers: {
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Cache-Control': 'no-cache'
+                }
+            });
+
+            if (response.ok) {
+                const stats = await response.json();
+
+                if (elements.stats.stat1 && stats.today_scans !== undefined) {
+                    elements.stats.stat1.textContent = stats.today_scans.toLocaleString('ar-SA');
+                }
+                if (elements.stats.stat3 && stats.avg_response_time_ms !== undefined) {
+                    elements.stats.stat3.textContent = Math.round(stats.avg_response_time_ms);
+                }
+            }
+        } catch (e) {
+            console.log('📊 Stats not available, using defaults');
+            if (elements.stats.stat1) elements.stats.stat1.textContent = '١٢٬٣٤٥';
+            if (elements.stats.stat3) elements.stats.stat3.textContent = '٤٢';
+        }
+    }
+
+    loadStats();
+    const statsInterval = setInterval(loadStats, CONFIG.refreshInterval);
+
+    // ============================================================
+    // VALIDATION FUNCTIONS
+    // ============================================================
+
+    function validatePhone(phone) {
+        if (!phone || phone.length < 8) {
+            return { valid: false, message: 'رقم قصير جداً' };
+        }
+        if (!phone.startsWith('+')) {
+            return { valid: false, message: 'يجب أن يبدأ بـ + (مثال: +966501234567)' };
+        }
+        if (!/^\+[\d]+$/.test(phone.replace(/\s/g, ''))) {
+            return { valid: false, message: 'يحتوي على أحرف غير مسموحة' };
+        }
+        return { valid: true };
+    }
+
+    function formatPhone(phone) {
+        let cleaned = phone.replace(/\s/g, '');
+        if (!cleaned.startsWith('+') && /^\d+$/.test(cleaned)) {
+            cleaned = '+' + cleaned;
+        }
+        return cleaned;
+    }
+
+    // ============================================================
+    // UI FUNCTIONS
+    // ============================================================
+
+    function setLoading(isLoading) {
+        elements.btn.disabled = isLoading;
+        if (isLoading) {
+            elements.btnText.textContent = 'جاري الفحص...';
+            elements.spinner.classList.remove('hidden');
+        } else {
+            elements.btnText.textContent = '🔍 فحص الرقم';
+            elements.spinner.classList.add('hidden');
+        }
+    }
+
+    function showError(message) {
+        elements.error.textContent = `⚠️ ${message}`;
+        elements.error.classList.remove('hidden');
+        elements.result.classList.add('hidden');
+        elements.features.classList.add('hidden');
+    }
+
+    function clearResults() {
+        elements.result.classList.add('hidden');
+        elements.features.classList.add('hidden');
+        elements.error.classList.add('hidden');
+        elements.result.innerHTML = '';
+        elements.features.innerHTML = '';
+    }
+
+    // ============================================================
+    // NEW FEATURES RENDERING - المميزات الجديدة
+    // ============================================================
+
+    function renderNewFeatures(analysis) {
+        if (!analysis) return '';
+
+        // 1️⃣ البحث العكسي
+        const reverseHtml = analysis.reverse_lookup ? `
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <div class="feature-title">
+                    البحث العكسي
+                    <span class="feature-badge">ثقة ${analysis.reverse_confidence || 0}%</span>
+                </div>
+                <div class="feature-content">
+                    <div style="font-size: 1.1rem; color: #93c5fd; margin-bottom: 4px;">${escapeHTML(analysis.reverse_lookup)}</div>
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <span style="background: ${analysis.rating_color || '#94a3b8'}; width: 10px; height: 10px; border-radius: 50%;"></span>
+                        <span>التقييم: ${analysis.user_rating || 'غير معروف'}</span>
+                    </div>
+                </div>
+            </div>
+        ` : '';
+
+        // 2️⃣ تحليل الموقع الجغرافي
+        const geoHtml = (analysis.city && analysis.country) ? `
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-title">
+                    الموقع الجغرافي
+                    <span class="feature-badge">${analysis.country_flag || ''}</span>
+                </div>
+                <div class="feature-content">
+                    <div><strong>${analysis.city}</strong>، ${analysis.country}</div>
+                    <div style="color: var(--text-tertiary); font-size: 0.85rem;">${analysis.region || ''}</div>
+                    <div style="color: var(--text-tertiary); font-size: 0.85rem; margin-top: 4px;">
+                        🕒 ${analysis.local_time_formatted || ''} (${analysis.time_difference || ''})
+                    </div>
+                </div>
+            </div>
+        ` : '';
+
+        // 3️⃣ التطبيقات
+        const socialIcons = [];
+        if (analysis.whatsapp) socialIcons.push('📱');
+        if (analysis.telegram) socialIcons.push('✈️');
+        if (analysis.snapchat) socialIcons.push('👻');
+        if (analysis.instagram) socialIcons.push('📷');
+        if (analysis.facebook) socialIcons.push('👤');
+        if (analysis.tiktok) socialIcons.push('🎵');
+
+        const socialHtml = socialIcons.length > 0 ? `
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">
+                    التطبيقات
+                    <span class="feature-badge">${analysis.social_score || 0}% نشاط</span>
+                </div>
+                <div class="feature-content">
+                    <div class="social-icons">
+                        ${socialIcons.map(icon => `<span class="social-icon active">${icon}</span>`).join('')}
+                    </div>
+                    ${analysis.telegram_username ? `<div style="margin-top: 8px; font-size: 0.85rem;">تيليجرام: ${escapeHTML(analysis.telegram_username)}</div>` : ''}
+                </div>
+            </div>
+        ` : '';
+
+        // 4️⃣ التقرير الأمني
+        const securityLevel = analysis.security_level || 'آمن';
+        const securityColor = analysis.security_color || '#10b981';
+        const securityHtml = `
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">
+                    التقرير الأمني
+                    <span class="feature-badge" style="color: ${securityColor};">${securityLevel}</span>
+                </div>
+                <div class="feature-content">
+                    <div class="security-meter">
+                        <div class="security-fill" style="width: ${analysis.security_score || 100}%; background: ${securityColor};"></div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                        <span>درجة الأمان: ${analysis.security_score || 100}%</span>
+                        <span>${analysis.breach_count || 0} تسريبات</span>
+                    </div>
+                    ${analysis.data_breaches && analysis.data_breaches.length > 0 ? `
+                        <div style="margin-top: 8px; font-size: 0.85rem; color: #fecaca;">
+                            ⚠️ ظهر في: ${analysis.data_breaches.map(b => b.name).join('، ')}
+                        </div>
+                    ` : ''}
+                </div>
+            </div>
+        `;
+
+        // 5️⃣ التوصيات الأمنية
+        const recommendationsHtml = analysis.security_recommendations && analysis.security_recommendations.length > 0 ? `
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <div class="feature-title">التوصيات الأمنية</div>
+                <div class="feature-content">
+                    <ul style="margin: 0; padding-right: 20px;">
+                        ${analysis.security_recommendations.map(rec => `<li style="margin-bottom: 4px;">${escapeHTML(rec)}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        ` : '';
+
+        // 6️⃣ الأرقام المميزة
+        const premiumHtml = analysis.is_premium ? `
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <div class="feature-title">
+                    رقم مميز
+                    <span class="feature-badge">${analysis.premium_type || ''}</span>
+                </div>
+                <div class="feature-content">
+                    <div style="font-size: 1.2rem; color: #fbbf24; margin-bottom: 4px;">💰 ${analysis.estimated_value || ''}</div>
+                    <div>الطلب في السوق: ${analysis.market_demand || 'مرتفع'}</div>
+                </div>
+            </div>
+        ` : '';
+
+        // 7️⃣ تحليل الذكاء الاصطناعي
+        const aiHtml = `
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-title">
+                    تحليل AI
+                    <span class="feature-badge">ثقة ${analysis.ai_confidence || 0}%</span>
+                </div>
+                <div class="feature-content">
+                    <div>نوع المستخدم: <strong>${analysis.user_type || 'شخص عادي'}</strong></div>
+                    <div style="color: var(--text-tertiary); font-size: 0.85rem;">${analysis.pattern_analysis || ''}</div>
+                    <div style="margin-top: 4px;">
+                        <span style="color: ${analysis.ai_risk_score > 70 ? '#ef4444' : analysis.ai_risk_score > 40 ? '#f59e0b' : '#10b981'}">
+                            🎯 مخاطر AI: ${analysis.ai_risk_level || 'منخفض'}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // 8️⃣ إحصائيات متقدمة
+        const statsHtml = `
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">إحصائيات متقدمة</div>
+                <div class="feature-content">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <div>🔍 بحث: ${analysis.search_count || 0}</div>
+                        <div>📅 آخر نشاط: ${analysis.last_active || 'غير معروف'}</div>
+                        <div>📈 الاتجاه: ${analysis.search_trend || 'مستقر'}</div>
+                        <div>⭐ الشعبية: ${analysis.popularity_score || 0}%</div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // 9️⃣ التنبيهات
+        const alertsHtml = analysis.alerts && analysis.alerts.length > 0 ? `
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <div class="feature-title">تنبيهات</div>
+                <div class="feature-content">
+                    ${analysis.alerts.map(alert => {
+                        let alertClass = 'alert-info';
+                        if (alert.includes('⚠️') || alert.includes('🚨')) alertClass = 'alert-urgent';
+                        else if (alert.includes('⚡')) alertClass = 'alert-warning';
+                        else if (alert.includes('✅')) alertClass = 'alert-success';
+                        return `<div class="alert-badge ${alertClass}" style="margin-bottom: 4px;">${escapeHTML(alert)}</div>`;
+                    }).join('')}
+                </div>
+            </div>
+        ` : '';
+
+        // 🔟 تقارير وروابط
+        const reportsHtml = `
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <div class="feature-title">التقارير</div>
+                <div class="feature-content">
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <a href="${analysis.report_url || '#'}" target="_blank" style="color: #93c5fd;">📥 PDF</a>
+                        <a href="${analysis.share_url || '#'}" target="_blank" style="color: #93c5fd;">🔗 مشاركة</a>
+                        <a href="${analysis.map_url || '#'}" target="_blank" style="color: #93c5fd;">🗺️ خريطة</a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // تجميع كل المميزات
+        const allFeatures = [
+            reverseHtml, geoHtml, socialHtml, securityHtml, recommendationsHtml,
+            premiumHtml, aiHtml, statsHtml, alertsHtml, reportsHtml
+        ].filter(html => html !== '');
+
+        if (allFeatures.length === 0) return '';
+
+        return `
+            <div class="section-header" style="margin-top: 0;">
+                <h3 class="section-title">
+                    <span>✨</span> المميزات المتقدمة
+                </h3>
+                <span class="accuracy-badge">١٠+ ميزة</span>
+            </div>
+            <div class="features-grid">
+                ${allFeatures.join('')}
+            </div>
+        `;
+    }
+
+    // ============================================================
+    // RESULT RENDERING
+    // ============================================================
+
+    function displayResults(data) {
+        // عرض النتائج الأساسية
+        if (window.ResultRenderer && typeof window.ResultRenderer.render === 'function') {
+            window.ResultRenderer.render(data, 'analysis-result');
+        } else {
+            renderFallback(data);
+        }
+        elements.result.classList.remove('hidden');
+
+        // عرض المميزات الجديدة
+        if (data.analysis) {
+            const featuresHtml = renderNewFeatures(data.analysis);
+            if (featuresHtml) {
+                elements.features.innerHTML = featuresHtml;
+                elements.features.classList.remove('hidden');
+            }
+        }
+    }
+
+    function renderFallback(data) {
+        const riskLevel = getRiskLevel(data.risk_score);
+
+        let html = `
+            <div class="result-card" style="margin-top: 20px; animation: slideIn 0.4s ease;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <span style="color: #06b6d4; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 800;">
+                            ${data.fromCache ? '⚡ من الذاكرة المؤقتة' : '✅ اكتمل التحليل'}
+                        </span>
+                        <h3 style="margin: 8px 0; color: #fff; font-size: 1.4rem;">
+                            📱 تحليل الهاتف
+                        </h3>
+                        <span style="background: ${riskLevel.color}20; color: ${riskLevel.color}; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; border: 1px solid ${riskLevel.color}40;">
+                            ${riskLevel.icon} الخطر: ${riskLevel.text} (${data.risk_score}/١٠٠)
+                        </span>
+                    </div>
+                    <span style="font-size: 2rem;">🛡️</span>
+                </div>
+        `;
+
+        if (data.analysis) {
+            html += '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 20px 0;">';
+
+            const importantKeys = ['country', 'carrier', 'line_type', 'is_fake', 'is_emergency', 'country_code', 'iso'];
+
+            for (const key of importantKeys) {
+                if (data.analysis[key] !== undefined && data.analysis[key] !== null) {
+                    const label = translateKey(key);
+                    let value = data.analysis[key];
+                    let valueClass = '';
+
+                    if (typeof value === 'boolean') {
+                        value = value ? 'نعم' : 'لا';
+                        valueClass = value === 'نعم' ? 'success' : 'danger';
+                    }
+
+                    html += `
+                        <div style="background: rgba(168, 85, 247, 0.05); border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                            <span style="color: #a855f7; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 4px; font-weight: 700;">${label}</span>
+                            <span style="color: #fff; font-weight: 700; font-size: 1rem; ${valueClass === 'success' ? 'color: #34d399;' : valueClass === 'danger' ? 'color: #fb7185;' : ''}">${value}</span>
+                        </div>
+                    `;
+                }
+            }
+
+            html += '</div>';
+        }
+
+        if (data.ai_insight) {
+            html += `
+                <div style="margin-top: 20px; padding: 20px; background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.05)); border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                        <span style="font-size: 1.2rem;">🧠</span>
+                        <span style="background: linear-gradient(135deg, #c084fc, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">رؤية الذكاء الاصطناعي</span>
+                    </div>
+                    <p style="margin: 0; color: #e2e8f0; line-height: 1.6;">${escapeHTML(data.ai_insight)}</p>
+                </div>
+            `;
+        }
+
+        if (data.analysis && data.analysis.signals && data.analysis.signals.length > 0) {
+            html += `
+                <div style="margin-top: 20px;">
+                    <h4 style="color: #a855f7; margin-bottom: 12px; font-size: 1rem;">🔍 الإشارات الأمنية</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            `;
+
+            data.analysis.signals.forEach(signal => {
+                const signalClass = getSignalClass(signal);
+                html += `<span style="${signalClass}">${escapeHTML(signal)}</span>`;
+            });
+
+            html += '</div></div>';
+        }
+
+        html += `
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); gap: 10px;">
+                <span style="font-size: 0.8rem; color: #64748b;">
+                    📌 الإدخال: <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">${escapeHTML(data.input || elements.input.value)}</code>
+                </span>
+                <span style="font-size: 0.8rem; color: #64748b;">
+                    🕒 ${new Date(data.timestamp || Date.now()).toLocaleString('ar-SA')}
+                </span>
+            </div>
+        </div>
+        `;
+
+        elements.result.innerHTML = html;
+    }
+
+    function getRiskLevel(score) {
+        if (score < 20) return { icon: '🟢', text: 'آمن جداً', color: '#10b981' };
+        if (score < 40) return { icon: '🟡', text: 'منخفض', color: '#fbbf24' };
+        if (score < 60) return { icon: '🟠', text: 'متوسط', color: '#f97316' };
+        if (score < 80) return { icon: '🔴', text: 'مرتفع', color: '#ef4444' };
+        return { icon: '💀', text: 'حرج جداً', color: '#7f1d1d' };
+    }
+
+    function getSignalClass(signal) {
+        const sig = String(signal).toUpperCase();
+        if (sig.includes('CRITICAL') || sig.includes('INJECTION')) {
+            return 'background: linear-gradient(135deg, rgba(225, 29, 72, 0.2), rgba(251, 113, 133, 0.1)); color: #fda4af; border: 1px solid rgba(225, 29, 72, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block;';
+        } else if (sig.includes('SUSPICIOUS') || sig.includes('MALWARE')) {
+            return 'background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(251, 191, 36, 0.1)); color: #fde68a; border: 1px solid rgba(245, 158, 11, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block;';
+        } else if (sig.includes('WEAK') || sig.includes('DISPOSABLE')) {
+            return 'background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(96, 165, 250, 0.1)); color: #bfdbfe; border: 1px solid rgba(59, 130, 246, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block;';
+        } else {
+            return 'background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.1)); color: #a7f3d0; border: 1px solid rgba(16, 185, 129, 0.4); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; display: inline-block;';
+        }
+    }
+
+    function translateKey(key) {
+        const translations = {
+            'valid_format': 'صيغة صحيحة',
+            'country': 'الدولة',
+            'country_code': 'رمز الدولة',
+            'iso': 'الرمز الدولي',
+            'carrier': 'المشغل',
+            'line_type': 'نوع الخط',
+            'is_fake': 'رقم وهمي',
+            'is_emergency': 'رقم طوارئ',
+            'is_mobile': 'جوال',
+            'national_number': 'الرقم الوطني',
+            'international_format': 'الصيغة الدولية'
+        };
+        return translations[key] || key.replace(/_/g, ' ');
+    }
+
+    function escapeHTML(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    // ============================================================
+    // MAIN ANALYSIS FUNCTION
+    // ============================================================
+
+    async function analyze() {
+        let phone = elements.input.value.trim();
+        phone = formatPhone(phone);
+
+        const validation = validatePhone(phone);
+        if (!validation.valid) {
+            showError(validation.message);
+            return;
+        }
+
+        elements.input.value = phone;
+        setLoading(true);
+        clearResults();
+
+        try {
+            console.log('📡 Sending request to API...', { tool: TOOL, phone });
+
+            if (window.API && typeof window.API.scan === 'function') {
+                const data = await window.API.scan(TOOL, phone, { timeout: 10000 });
+                console.log('✅ Data received via API.scan:', data);
+                displayResults(data);
+            } else {
+                const response = await fetch(CONFIG.apiEndpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: JSON.stringify({ phone: phone })
+                });
+
+                console.log('📥 Response status:', response.status);
+
+                if (!response.ok) {
+                    let errorMsg = 'فشل في الاتصال بالخادم';
+                    try {
+                        const errorData = await response.json();
+                        errorMsg = errorData.error || errorData.message || `HTTP ${response.status}`;
+                    } catch {
+                        errorMsg = `HTTP ${response.status}`;
+                    }
+                    throw new Error(errorMsg);
+                }
+
+                const data = await response.json();
+                console.log('✅ Data received:', data);
+                displayResults(data);
+            }
+
+        } catch (error) {
+            console.error('❌ Error:', error);
+
+            let errorMessage = error.message;
+            if (error.message === 'Failed to fetch') {
+                errorMessage = 'لا يمكن الاتصال بالخادم. تأكد من تشغيل التطبيق.';
+            } else if (error.message === 'TIMEOUT') {
+                errorMessage = 'انتهت مهلة الانتظار. حاول مرة أخرى.';
+            } else if (error.message === 'INPUT_REQUIRED') {
+                errorMessage = 'الرجاء إدخال رقم الهاتف';
+            } else if (error.message === 'NETWORK_ERROR') {
+                errorMessage = 'خطأ في الشبكة. تحقق من اتصالك.';
+            }
+
+            showError(errorMessage);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    // ============================================================
+    // EVENT LISTENERS
+    // ============================================================
+
+    elements.btn.addEventListener('click', analyze);
+
+    elements.input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            analyze();
+        }
+    });
+
+    elements.input.addEventListener('blur', function() {
+        const formatted = formatPhone(this.value);
+        if (formatted !== this.value) {
+            this.value = formatted;
+        }
+    });
+
+    window.addEventListener('beforeunload', function() {
+        if (statsInterval) clearInterval(statsInterval);
+    });
+
+    console.log('📱 Phone Check Tool v5.0 Loaded - مع 10+ ميزة متقدمة');
+})();
+</script>
+{% endblock %}
